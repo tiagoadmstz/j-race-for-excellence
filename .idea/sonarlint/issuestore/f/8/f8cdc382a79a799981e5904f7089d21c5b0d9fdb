@@ -1,0 +1,17 @@
+
+Asquid:S1444"+Make this "public static METAL" field final(ùíæ
+Hsquid:S1444",Make this "public static NIMBUS" field final(Ÿ¢‡¼ùÿÿÿÿ
+Gsquid:S1444"+Make this "public static MOTIF" field final(Ã¢¹ÿÿÿÿÿ
+Isquid:S1444"-Make this "public static WINDOWS" field final(ĞñĞûÿÿÿÿ
+Qsquid:S1444"5Make this "public static WINDOWS_CLASSIC" field final(¾¯¼‰ıÿÿÿÿ
+~"squid:ClassVariableVisibilityCheck"QMake METAL a static final constant or non-public and provide accessors if needed.(ùíæ
+…"squid:ClassVariableVisibilityCheck"RMake NIMBUS a static final constant or non-public and provide accessors if needed.(Ÿ¢‡¼ùÿÿÿÿ
+„"squid:ClassVariableVisibilityCheck"QMake MOTIF a static final constant or non-public and provide accessors if needed.(Ã¢¹ÿÿÿÿÿ
+†"squid:ClassVariableVisibilityCheck"SMake WINDOWS a static final constant or non-public and provide accessors if needed.(ĞñĞûÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"[Make WINDOWS_CLASSIC a static final constant or non-public and provide accessors if needed.(¾¯¼‰ıÿÿÿÿ
+fsquid:S3008"PRename this field "METAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùíæ
+msquid:S3008"QRename this field "NIMBUS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¢‡¼ùÿÿÿÿ
+lsquid:S3008"PRename this field "MOTIF" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¢¹ÿÿÿÿÿ
+nsquid:S3008"RRename this field "WINDOWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞñĞûÿÿÿÿ
+vsquid:S3008"ZRename this field "WINDOWS_CLASSIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¯¼‰ıÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(òÁ©Îøÿÿÿÿ

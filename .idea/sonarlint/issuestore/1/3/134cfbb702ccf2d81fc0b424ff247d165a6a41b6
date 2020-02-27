@@ -1,0 +1,48 @@
+
+Ysquid:UselessImportCheck"/Remove this unused import 'java.sql.Timestamp'.(èò½+8½ıíÙ….
+vsquid:S1450•"WRemove the "jLabel27" field and declare it as a local variable in the relevant methods.(åõ„ß8±ĞĞÙ….
+{squid:S1450‰"WRemove the "jLabel14" field and declare it as a local variable in the relevant methods.(ÖóœÍıÿÿÿÿ8ÔÙ….
+lsquid:S1192¨"HDefine a constant instead of duplicating this literal "Tahoma" 24 times.(ëŒ›Îüÿÿÿÿ8ÔÙ….
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ºäŒøúÿÿÿÿ8ÅÎéÙ….
+ysquid:S1450 "ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉ8±ĞĞÙ….
+{squid:S1450ƒ"WRemove the "jButton4" field and declare it as a local variable in the relevant methods.(€„ˆÎÿÿÿÿÿ8ÔÙ….
+{squid:S1450ˆ"WRemove the "jLabel13" field and declare it as a local variable in the relevant methods.(ÑİĞİıÿÿÿÿ8±ĞĞÙ….
+xsquid:S00116é"SRename this field "CbBlend1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ²Ôıÿÿÿÿ8ÔÙ….
+zsquid:S1450"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8±ĞĞÙ….
+{squid:S1450"WRemove the "jLabel20" field and declare it as a local variable in the relevant methods.(ëƒß›úÿÿÿÿ8±ĞĞÙ….
+vsquid:S1450"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ8ÔÙ….
+vsquid:S1450Œ"WRemove the "jLabel17" field and declare it as a local variable in the relevant methods.(„Ç›Ä8±ĞĞÙ….
+ysquid:S1450¡"ZRemove the "jSeparator2" field and declare it as a local variable in the relevant methods.(èÅĞø8±ĞĞÙ….
+usquid:S1450›"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8±ĞĞÙ….
+zsquid:S1450Ÿ"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8±ĞĞÙ….
+Hsquid:S1172!"*Remove this unused method parameter "evt".(™ÃŠñ8ÔÙ….
+{squid:S1450…"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8ÔÙ….
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ïöÜüÿÿÿÿ8ÔÙ….
+Fsquid:S1604”"(Make this anonymous inner class a lambda(¥Šîj8ÔÙ….
+|squid:S1450ê"XRemove the "btnSalvar" field and declare it as a local variable in the relevant methods.(ÔÆŸşÿÿÿÿ8ÔÙ….
+{squid:S1450†"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿ8±ĞĞÙ….
+{squid:S1450"WRemove the "jLabel19" field and declare it as a local variable in the relevant methods.(Şù’±ıÿÿÿÿ8±ĞĞÙ….
+zsquid:S1450"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ8±ĞĞÙ….
+zsquid:S1450„"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8±ĞĞÙ….
+{squid:S1450”"WRemove the "jLabel26" field and declare it as a local variable in the relevant methods.(ÄšÔÃıÿÿÿÿ8ÔÙ….
+vsquid:S1450‡"WRemove the "jLabel12" field and declare it as a local variable in the relevant methods.(¶“¡8±ĞĞÙ….
+zsquid:S1450—"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8±ĞĞÙ….
+usquid:S1450™"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8±ĞĞÙ….
+zsquid:S1450"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8±ĞĞÙ….
+usquid:S1450˜"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8±ĞĞÙ….
+{squid:S1450‹"WRemove the "jLabel16" field and declare it as a local variable in the relevant methods.(š¼ª¯üÿÿÿÿ8±ĞĞÙ….
+usquid:S1450"WRemove the "jLabel18" field and declare it as a local variable in the relevant methods.(†«=8±ĞĞÙ….
+vsquid:S1450’"WRemove the "jLabel23" field and declare it as a local variable in the relevant methods.(õöäò8±ĞĞÙ….
+{squid:S1450‘"WRemove the "jLabel21" field and declare it as a local variable in the relevant methods.(Üœäÿûÿÿÿÿ8±ĞĞÙ….
+usquid:S1450œ"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8±ĞĞÙ….
+Msquid:S1172"*Remove this unused method parameter "evt".(Œš×¯ıÿÿÿÿ8ÔÙ….
+{squid:S1450Š"WRemove the "jLabel15" field and declare it as a local variable in the relevant methods.(³şâçøÿÿÿÿ8±ĞĞÙ….
+Gsquid:S1604‹"(Make this anonymous inner class a lambda(ØÅÃò8ÔÙ….
+Gsquid:S1172"*Remove this unused method parameter "evt".(Š–ÿG8ÔÙ….
+msquid:S00100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊçÜè8ÔÙ….
+rsquid:S00100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ˆ‚ııÿÿÿÿ8ÔÙ….
+zsquid:S1450š"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8±ĞĞÙ….
+vsquid:S1450–"WRemove the "jLabel28" field and declare it as a local variable in the relevant methods.(ŒÄöı8±ĞĞÙ….
+Lsquid:S1604›"(Make this anonymous inner class a lambda(üåêøÿÿÿÿ8ÔÙ….
+{squid:S1450‚"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ8ÔÙ….
+{squid:S1450“"WRemove the "jLabel24" field and declare it as a local variable in the relevant methods.(¢×µæúÿÿÿÿ8±ĞĞÙ….
