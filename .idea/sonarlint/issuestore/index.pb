@@ -71,3 +71,9 @@ x
 Hsrc/main/java/com/cooperstandard/race/listeners/CadastroKpiListener.java,0\c\0c169c42555c1fbe600e403afe3c473485942af3
 y
 Isrc/main/java/com/cooperstandard/race/tables/editors/ColorCellEditor.java,e\a\eaa09b57397f6a2994426ad19e6b946930e10ba3
+w
+Gsrc/main/java/com/cooperstandard/race/tables/models/MetaTableModel.java,5\f\5f71fac09a39f24f12cc1561c4fb1876aa2e755b
+„
+Tsrc/main/java/com/cooperstandard/race/tables/interfaces/DefaultTableModelCustom.java,3\8\3807d1628a46afe00b50d33449dc00532567f1d5
+o
+?src/main/java/com/cooperstandard/race/ui/IconThumbSliderUI.java,b\2\b269ef342b4dbac0080b228dd430633694c633f4

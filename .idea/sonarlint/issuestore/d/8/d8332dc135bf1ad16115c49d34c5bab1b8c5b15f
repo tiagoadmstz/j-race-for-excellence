@@ -1,26 +1,17 @@
 
-esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Ó†˜Õ
-\squid:S1197Ý"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ8 Ž¬ó†.
-ssquid:S1450‡"VRemove the "ckAtivo" field and declare it as a local variable in the relevant methods.(¡À¸ùûÿÿÿÿ
-{squid:S1450"WRemove the "scTurnos" field and declare it as a local variable in the relevant methods.(Äé­»ûÿÿÿÿ8 Ž¬ó†.
-}squid:S1450Ž"`Remove the "scMetasVinculadas" field and declare it as a local variable in the relevant methods.(…—ƒ’ùÿÿÿÿ
-nsquid:S1450Œ"VRemove the "lbCarro" field and declare it as a local variable in the relevant methods.(îÐÌæ
-{squid:S1450þ"^Remove the "btAdicionarMeta" field and declare it as a local variable in the relevant methods.(¨¯“éüÿÿÿÿ
-tsquid:S1450„"WRemove the "btSalvar" field and declare it as a local variable in the relevant methods.(¹üÉ˜úÿÿÿÿ
-}squid:S1450’"YRemove the "txtNomeKpi" field and declare it as a local variable in the relevant methods.(òò³çúÿÿÿÿ8 Ž¬ó†.
-psquid:S1450"XRemove the "mainPanel" field and declare it as a local variable in the relevant methods.(£ðê—
-zsquid:S1450‚"]Remove the "btExcluirTurno" field and declare it as a local variable in the relevant methods.(¢–¤üÿÿÿÿ
-ssquid:S1450†"\Remove the "cbTipoEntrada" field and declare it as a local variable in the relevant methods.(¹Ô«j
-ssquid:S1450Š"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
-nsquid:S1450‹"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
-Lsquid:S1604ö"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8 Ž¬ó†.
-|squid:S1450ÿ"_Remove the "btAdicionarTurno" field and declare it as a local variable in the relevant methods.(Ô—œ‰øÿÿÿÿ
-rsquid:S1450€"ZRemove the "btAtualizar" field and declare it as a local variable in the relevant methods.(°™²ú
-wsquid:S1450ƒ"ZRemove the "btPesquisar" field and declare it as a local variable in the relevant methods.(ÜÇü¦úÿÿÿÿ
-ssquid:S1450‰"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
-dsquid:S2147î"ECombine this catch with the one at line 234, which has the same body.(ã€ 8 Ž¬ó†.
-dsquid:S2147ì"ECombine this catch with the one at line 234, which has the same body.(¨¦Š½8 Ž¬ó†.
-csquid:S2147ð"ECombine this catch with the one at line 234, which has the same body.(ñÎ¯%8 Ž¬ó†.
-tsquid:S1450"\Remove the "btExcluirMeta" field and declare it as a local variable in the relevant methods.(øŸúŸ
-ssquid:S1450ˆ"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
-}squid:S1450…"`Remove the "btSelecionarCarro" field and declare it as a local variable in the relevant methods.(Æ»ˆÁüÿÿÿÿ
+{squid:S1450¯"WRemove the "scTurnos" field and declare it as a local variable in the relevant methods.(Äé­»ûÿÿÿÿ8 Ž¬ó†.
+nsquid:S1450«"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+dsquid:S2147Ž"ECombine this catch with the one at line 266, which has the same body.(ã€ 8 Ž¬ó†.
+ssquid:S1450¨"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+psquid:S1450­"XRemove the "mainPanel" field and declare it as a local variable in the relevant methods.(£ðê—
+Lsquid:S1604–"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8 Ž¬ó†.
+}squid:S1450¥"`Remove the "btSelecionarCarro" field and declare it as a local variable in the relevant methods.(Æ»ˆÁüÿÿÿÿ
+csquid:S2147"ECombine this catch with the one at line 266, which has the same body.(ñÎ¯%8 Ž¬ó†.
+nsquid:S1450¬"VRemove the "lbCarro" field and declare it as a local variable in the relevant methods.(îÐÌæ
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Ó†˜Õ
+ssquid:S1450¦"\Remove the "cbTipoEntrada" field and declare it as a local variable in the relevant methods.(¹Ô«j
+}squid:S1450®"`Remove the "scMetasVinculadas" field and declare it as a local variable in the relevant methods.(…—ƒ’ùÿÿÿÿ
+\squid:S1197ý"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ8 Ž¬ó†.
+ssquid:S1450©"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+ssquid:S1450ª"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+dsquid:S2147Œ"ECombine this catch with the one at line 266, which has the same body.(¨¦Š½8 Ž¬ó†.

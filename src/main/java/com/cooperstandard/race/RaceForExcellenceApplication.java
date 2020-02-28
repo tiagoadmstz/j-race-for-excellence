@@ -1,7 +1,7 @@
 package com.cooperstandard.race;
 
 import com.cooperstandard.race.enumerates.LOOKANDFEEL;
-import com.cooperstandard.race.views.ViewKpi;
+import com.cooperstandard.race.frames.views.ViewKpi;
 
 import javax.swing.*;
 

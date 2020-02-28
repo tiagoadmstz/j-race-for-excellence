@@ -11,7 +11,7 @@ import com.cooperstandard.race.tables.editors.ColorCellEditor;
 import com.cooperstandard.race.tables.models.MetaTableModel;
 import com.cooperstandard.race.tables.models.TurnoTableModel;
 import com.cooperstandard.race.tables.renderers.ColorCellRenderer;
-import com.cooperstandard.race.views.CadastroKpi;
+import com.cooperstandard.race.frames.views.CadastroKpi;
 
 import java.awt.event.ActionEvent;
 
