@@ -6,11 +6,11 @@
 package com.cooperstandard.race.frames.panels;
 
 import com.cooperstandard.race.ui.IconThumbSliderUI;
-import javax.swing.ImageIcon;
-import javax.swing.JSlider;
+import com.cooperstandard.race.util.ImageUtil;
+
+import javax.swing.*;
 
 /**
- *
  * @author Tiago
  */
 public class RacePanel extends javax.swing.JPanel {
@@ -20,17 +20,17 @@ public class RacePanel extends javax.swing.JPanel {
      */
     public RacePanel() {
         initComponents();
-        addCinderTrack(jSlider1, "/images/car (1).png");
-        addCinderTrack(jSlider2, "/images/car (3).png");
-        addCinderTrack(jSlider3, "/images/car (4).png");
+        addCinderTrack(jSlider1, "config/images/cars/2018-f1-ferrari.png");
+        addCinderTrack(jSlider2, "config/images/cars/2018-f1-mclaren.png");
+        addCinderTrack(jSlider3, "config/images/cars/2018-f1-red-bull.png");
     }
 
-    public void addCinderTrack(JSlider jslider, String imagePath){
-        ImageIcon imageIcon = new ImageIcon(getClass().getResource(imagePath));
+    public void addCinderTrack(JSlider jslider, String imagePath) {
+        ImageIcon imageIcon = ImageUtil.getImageIconFromUserPath(imagePath);
         IconThumbSliderUI iconThumbSliderUI = new IconThumbSliderUI(jslider, imageIcon, imageIcon);
         jslider.setUI(iconThumbSliderUI);
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -93,40 +93,40 @@ public class RacePanel extends javax.swing.JPanel {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbOee1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbOeeMeta4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbOeeMeta6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbOeeMeta5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
-                    .addComponent(jSlider2, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
-                    .addComponent(jSlider3, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE))
-                .addGap(0, 0, 0))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lbOee1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(129, 129, 129)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(lbOeeMeta4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(lbOeeMeta6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(lbOeeMeta5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
+                                        .addComponent(jSlider2, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
+                                        .addComponent(jSlider3, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE))
+                                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lbOee1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbOeeMeta6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSlider2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbOeeMeta5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, 0)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbOeeMeta4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jSlider3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(0, 0, 0))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(lbOee1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(lbOeeMeta6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jSlider2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(lbOeeMeta5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGap(0, 0, 0)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(lbOeeMeta4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(jSlider3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGap(0, 0, 0))
         );
     }// </editor-fold>//GEN-END:initComponents
 

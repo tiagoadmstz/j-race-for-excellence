@@ -15,7 +15,7 @@ public class CinderTrack extends javax.swing.JFrame {
         setExtendedState(MAXIMIZED_BOTH);
         addObjects();
     }
-    
+
     private void addObjects(){
         CabecalhoPanel cabecalhoPanel = new CabecalhoPanel();
         RacePanel racePanel = new RacePanel();
