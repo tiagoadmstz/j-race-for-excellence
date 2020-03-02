@@ -2,41 +2,51 @@ package com.cooperstandard.race.frames.views;
 
 import com.cooperstandard.race.frames.panels.CabecalhoPanel;
 import com.cooperstandard.race.frames.panels.RacePanel;
-import javax.swing.GroupLayout;
+
+import javax.swing.*;
 
 /**
- *
  * @author rsouza10
  */
 public class CinderTrack extends javax.swing.JFrame {
-    
+
     public CinderTrack() {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
-        addObjects();
+        addObjects(new CabecalhoPanel(), new RacePanel());
     }
 
-    private void addObjects(){
-        CabecalhoPanel cabecalhoPanel = new CabecalhoPanel();
-        RacePanel racePanel = new RacePanel();
+    private void addObjects(JComponent... components) {
         javax.swing.GroupLayout jpInputLayout = (GroupLayout) jpInput.getLayout();
         jpInputLayout.setHorizontalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInputLayout.createSequentialGroup()
-                .addGroup(jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cabecalhoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1240, Short.MAX_VALUE)
-                    .addComponent(racePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(1, 1, 1))
+                jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jpInputLayout.createSequentialGroup()
+                                .addGroup(addHorizontalGroups(jpInputLayout, components))
+                                .addGap(0, 0, 0))
         );
         jpInputLayout.setVerticalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInputLayout.createSequentialGroup()
-                .addComponent(cabecalhoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(racePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(addVerticalGroups(jpInputLayout, components))
         );
     }
-    
+
+    private GroupLayout.ParallelGroup addHorizontalGroups(GroupLayout jpInputLayout, JComponent... components) {
+        GroupLayout.ParallelGroup parallelGroup = jpInputLayout.createParallelGroup(GroupLayout.Alignment.LEADING);
+        for (JComponent component : components) {
+            parallelGroup.addComponent(component, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE);
+        }
+        return parallelGroup;
+    }
+
+    private GroupLayout.ParallelGroup addVerticalGroups(GroupLayout jpInputLayout, JComponent... components) {
+        GroupLayout.ParallelGroup parallelGroup = jpInputLayout.createParallelGroup(GroupLayout.Alignment.LEADING);
+        for (JComponent component : components) {
+            parallelGroup.addComponent(component, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE);
+            if (components[components.length - 1] != component) parallelGroup.addGap(0, 0, 0);
+        }
+        return parallelGroup;
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -53,12 +63,12 @@ public class CinderTrack extends javax.swing.JFrame {
         javax.swing.GroupLayout jpInputLayout = new javax.swing.GroupLayout(jpInput);
         jpInput.setLayout(jpInputLayout);
         jpInputLayout.setHorizontalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
+                jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 1241, Short.MAX_VALUE)
         );
         jpInputLayout.setVerticalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
+                jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 220, Short.MAX_VALUE)
         );
 
         jScrollPane2.setViewportView(jpInput);
@@ -66,12 +76,12 @@ public class CinderTrack extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane2)
         );
 
         pack();
@@ -85,7 +95,7 @@ public class CinderTrack extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
