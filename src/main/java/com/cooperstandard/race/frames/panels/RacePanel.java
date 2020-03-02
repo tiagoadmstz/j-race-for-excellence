@@ -7,6 +7,7 @@ package com.cooperstandard.race.frames.panels;
 
 import com.cooperstandard.race.ui.IconThumbSliderUI;
 import javax.swing.ImageIcon;
+import javax.swing.JSlider;
 
 /**
  *
@@ -19,17 +20,17 @@ public class RacePanel extends javax.swing.JPanel {
      */
     public RacePanel() {
         initComponents();
-        ImageIcon imageIcon = new ImageIcon(getClass().getResource("/images/car (1).png"));
-        IconThumbSliderUI iconThumbSliderUI = new IconThumbSliderUI(jSlider1, imageIcon, imageIcon);
-        jSlider1.setUI(iconThumbSliderUI);
-        ImageIcon imageIcon2 = new ImageIcon(getClass().getResource("/images/car (3).png"));
-        IconThumbSliderUI iconThumbSliderUI2 = new IconThumbSliderUI(jSlider2, imageIcon2, imageIcon2);
-        jSlider2.setUI(iconThumbSliderUI2);
-        ImageIcon imageIcon3 = new ImageIcon(getClass().getResource("/images/car (4).png"));
-        IconThumbSliderUI iconThumbSliderUI3 = new IconThumbSliderUI(jSlider3, imageIcon3, imageIcon3);
-        jSlider3.setUI(iconThumbSliderUI3);
+        addCinderTrack(jSlider1, "/images/car (1).png");
+        addCinderTrack(jSlider2, "/images/car (3).png");
+        addCinderTrack(jSlider3, "/images/car (4).png");
     }
 
+    public void addCinderTrack(JSlider jslider, String imagePath){
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource(imagePath));
+        IconThumbSliderUI iconThumbSliderUI = new IconThumbSliderUI(jslider, imageIcon, imageIcon);
+        jslider.setUI(iconThumbSliderUI);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

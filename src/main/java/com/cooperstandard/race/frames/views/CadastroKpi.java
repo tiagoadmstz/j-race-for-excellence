@@ -89,7 +89,7 @@ public class CadastroKpi extends javax.swing.JFrame {
         btAdicionarTurno = new javax.swing.JButton();
         btExcluirTurno = new javax.swing.JButton();
         scTurnos = new javax.swing.JScrollPane();
-        tbTurbos = new javax.swing.JTable();
+        tbTurnos = new javax.swing.JTable();
         btSalvar = new javax.swing.JButton();
         btAtualizar = new javax.swing.JButton();
         btPesquisar = new javax.swing.JButton();
@@ -133,7 +133,7 @@ public class CadastroKpi extends javax.swing.JFrame {
 
         btExcluirTurno.setText("Excluir");
 
-        tbTurbos.setModel(new javax.swing.table.DefaultTableModel(
+        tbTurnos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -141,7 +141,7 @@ public class CadastroKpi extends javax.swing.JFrame {
                 "Nome", "Ordem"
             }
         ));
-        scTurnos.setViewportView(tbTurbos);
+        scTurnos.setViewportView(tbTurnos);
 
         btSalvar.setText("Salvar");
 
@@ -302,7 +302,7 @@ public class CadastroKpi extends javax.swing.JFrame {
     private javax.swing.JScrollPane scMetasVinculadas;
     private javax.swing.JScrollPane scTurnos;
     private javax.swing.JTable tbMetasVinculadas;
-    private javax.swing.JTable tbTurbos;
+    private javax.swing.JTable tbTurnos;
     private javax.swing.JTextField txtNomeKpi;
     // End of variables declaration//GEN-END:variables
 }

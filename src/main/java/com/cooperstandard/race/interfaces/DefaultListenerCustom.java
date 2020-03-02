@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.cooperstandard.race.listeners;
+package com.cooperstandard.race.interfaces;
 
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;

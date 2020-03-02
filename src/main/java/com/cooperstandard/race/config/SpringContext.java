@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class SpringContext {
 
-    private static final String packages = "config,factories,dal";
+    private static final String packages = "config,factories,dal,services";
     private static final AnnotationConfigApplicationContext context = loadContext(getProfile());
 
     public static ApplicationContext getContext() {
