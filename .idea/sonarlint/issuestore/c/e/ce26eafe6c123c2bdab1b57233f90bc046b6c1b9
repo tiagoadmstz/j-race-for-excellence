@@ -1,0 +1,32 @@
+
+ƒ
+java:S1450¥"`Remove the "btSelecionarCarro" field and declare it as a local variable in the relevant methods.(Æ»ˆÁüÿÿÿÿ8³Õï±‰.
+c
+java:S2147"ECombine this catch with the one at line 266, which has the same body.(ã€ 8³Õï±‰.
+y
+java:S1450ª"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8³Õï±‰.
+c
+java:S2147Œ"ECombine this catch with the one at line 266, which has the same body.(¨¦Š½8³Õï±‰.
+ƒ
+java:S1450®"`Remove the "scMetasVinculadas" field and declare it as a local variable in the relevant methods.(…—ƒ’ùÿÿÿÿ8³Õï±‰.
+b
+java:S2147"ECombine this catch with the one at line 266, which has the same body.(ñÎ¯%8³Õï±‰.
+y
+java:S1450¦"\Remove the "cbTipoEntrada" field and declare it as a local variable in the relevant methods.(¹Ô«j8³Õï±‰.
+y
+java:S1450¨"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8³Õï±‰.
+K
+java:S1604–"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8³Õï±‰.
+X	java:S110"<This class has 6 parents which is greater than 5 authorized.(Ó†˜Õ8³Õï±‰.
+t
+java:S1450«"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8³Õï±‰.
+y
+java:S1450©"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8³Õï±‰.
+t
+java:S1450¬"VRemove the "lbCarro" field and declare it as a local variable in the relevant methods.(îĞÌæ8³Õï±‰.
+v
+java:S1450­"XRemove the "mainPanel" field and declare it as a local variable in the relevant methods.(£ğê—8³Õï±‰.
+[
+java:S1197ı"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ8³Õï±‰.
+z
+java:S1450¯"WRemove the "scTurnos" field and declare it as a local variable in the relevant methods.(Äé­»ûÿÿÿÿ8³Õï±‰.

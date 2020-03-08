@@ -1,168 +1,0 @@
-
-{squid:S1450²"^Remove the "lbDownTimeMeta2" field and declare it as a local variable in the relevant methods.(ùÑŠÇøÿÿÿÿ
-qsquid:S1450ƒ"ZRemove the "jpCabecalho" field and declare it as a local variable in the relevant methods.(¾»¯
-rsquid:S1450è"[Remove the "lbScrapMeta3" field and declare it as a local variable in the relevant methods.(›ëÛQ
-^squid:S2147é
-"FCombine this catch with the one at line 1381, which has the same body.(ã€ 
-xsquid:S1450ã"`Remove the "lbRheometriaMeta2" field and declare it as a local variable in the relevant methods.(ÀÑ”‡
-}squid:S1450¼"`Remove the "lbGranuladorMeta2" field and declare it as a local variable in the relevant methods.(€¬“şÿÿÿÿ
-osquid:S1450•"WRemove the "lbBlend2" field and declare it as a local variable in the relevant methods.(Ï–ÉØ
-qsquid:S1450Ì"YRemove the "lbOeeMeta1" field and declare it as a local variable in the relevant methods.(ö•´À
-vsquid:S1450¢"YRemove the "lbBtsMeta3" field and declare it as a local variable in the relevant methods.(ò¶ëùşÿÿÿÿ
-tsquid:S1450ë"\Remove the "lbScrapPonto3" field and declare it as a local variable in the relevant methods.(µ©Œ…
-qsquid:S1450¡"YRemove the "lbBtsMeta2" field and declare it as a local variable in the relevant methods.(Øğ´¨
-wsquid:S1450Ñ"ZRemove the "lbOeePonto3" field and declare it as a local variable in the relevant methods.(ñ÷Å¶ûÿÿÿÿ
-ysquid:S1450È"\Remove the "lbNormecMeta2" field and declare it as a local variable in the relevant methods.(õé¹åıÿÿÿÿ
-tsquid:S1450é"\Remove the "lbScrapPonto1" field and declare it as a local variable in the relevant methods.(Ó„¡ó
-}squid:S1450ğ"`Remove the "lbSegurancaPonto2" field and declare it as a local variable in the relevant methods.(ıÛë¦ÿÿÿÿÿ
-]squid:S2147ë
-"FCombine this catch with the one at line 1381, which has the same body.(ñÎ¯%
-vsquid:S1450‹"YRemove the "lbBatchOff" field and declare it as a local variable in the relevant methods.(¨äáùÿÿÿÿ
-qsquid:S1450 "YRemove the "lbBtsMeta1" field and declare it as a local variable in the relevant methods.(Ö§üÚ
-€squid:S4144Ğ
-"iUpdate this method so that its implementation is not identical to "jButton1ActionPerformed" on line 1355.(Š–ÿG
-xsquid:S1450â"`Remove the "lbRheometriaMeta1" field and declare it as a local variable in the relevant methods.(´ãÄ®
-zsquid:S1450İ"bRemove the "lbQualidadeVgaMeta1" field and declare it as a local variable in the relevant methods.(¥ğ
-vsquid:S1450±"^Remove the "lbDownTimeMeta1" field and declare it as a local variable in the relevant methods.(¸ëë
-vsquid:S1450‰"^Remove the "lbAbsentePonto1" field and declare it as a local variable in the relevant methods.(¦ğêÄ
-tsquid:S1450—"\Remove the "lbBlend2Meta2" field and declare it as a local variable in the relevant methods.(œ¥¸Ü
-|squid:S1450"_Remove the "lbBatchOffPonto1" field and declare it as a local variable in the relevant methods.(Åàİòúÿÿÿÿ
-rsquid:S1450‚"ZRemove the "jSeparator2" field and declare it as a local variable in the relevant methods.(èÅĞø
-ksquid:S1450Ë"TRemove the "lbOee" field and declare it as a local variable in the relevant methods.(Ç¾U
-|squid:S1450ı"_Remove the "lbStripMilPonto1" field and declare it as a local variable in the relevant methods.(ıÀö†üÿÿÿÿ
-{squid:S1450ú"^Remove the "lbStrainerMeta2" field and declare it as a local variable in the relevant methods.(£şäşÿÿÿÿ
-tsquid:S1450–"\Remove the "lbBlend2Meta1" field and declare it as a local variable in the relevant methods.(á°ã‘
-xsquid:S1450ÿ
-"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
-rsquid:S1450"ZRemove the "lbBtoPonto2" field and declare it as a local variable in the relevant methods.(¨¿çé
-rsquid:S1450µ"URemove the "lbDrop" field and declare it as a local variable in the relevant methods.(ÿß¾Èúÿÿÿÿ
-zsquid:S1450Ù"bRemove the "lbQualidadeAtbMeta2" field and declare it as a local variable in the relevant methods.(ïµ„Ä
-xsquid:S1450¹"[Remove the "lbDropPonto2" field and declare it as a local variable in the relevant methods.(ú¡§ÿÿÿÿÿÿ
-zsquid:S1450§"]Remove the "lbChronosMeta1" field and declare it as a local variable in the relevant methods.(¿Şï…ùÿÿÿÿ
-xsquid:S1450¸"[Remove the "lbDropPonto1" field and declare it as a local variable in the relevant methods.(»£Óÿÿÿÿÿ
-zsquid:S1450Ê"]Remove the "lbNormecPonto2" field and declare it as a local variable in the relevant methods.(ƒ‰÷¾ıÿÿÿÿ
-wsquid:S1450"_Remove the "lbBatchOffPonto2" field and declare it as a local variable in the relevant methods.(ç­ğÕ
-€squid:S1450Ú"cRemove the "lbQualidadeAtbPonto1" field and declare it as a local variable in the relevant methods.(î€ÆÄıÿÿÿÿ
-ssquid:S1450ô"[Remove the "lbSetupMeta3" field and declare it as a local variable in the relevant methods.(Ä¯˜ô
-rsquid:S1450£"ZRemove the "lbBtsPonto1" field and declare it as a local variable in the relevant methods.(øıÃÔ
-wsquid:S1450ÿ"ZRemove the "lbStripMill" field and declare it as a local variable in the relevant methods.(ˆ—Üşÿÿÿÿ
-~squid:S1450Ä"aRemove the "lbMisturadorPonto1" field and declare it as a local variable in the relevant methods.(øùü¹üÿÿÿÿ
-wsquid:S1450"_Remove the "lbStripMillMeta2" field and declare it as a local variable in the relevant methods.(ÃÁÒ¹
-Esquid:S1604á"(Make this anonymous inner class a lambda(…æ©âÿÿÿÿÿ
-qsquid:S1450«"TRemove the "lbCpk" field and declare it as a local variable in the relevant methods.(¯Úƒãüÿÿÿÿ
-Wsquid:S1161¾":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ
-rsquid:S1450À"URemove the "lbMeta" field and declare it as a local variable in the relevant methods.(ƒ Øşÿÿÿÿ
-rsquid:S1450·"ZRemove the "lbDropMeta2" field and declare it as a local variable in the relevant methods.(‘Â—
-{squid:S1450Õ"^Remove the "lbPesagemPonto1" field and declare it as a local variable in the relevant methods.(½òÕœûÿÿÿÿ
-qsquid:S1450š"TRemove the "lbBto" field and declare it as a local variable in the relevant methods.(èœüÙüÿÿÿÿ
-Asquid:S1172Ğ
-"*Remove this unused method parameter "evt".(Š–ÿG
-{squid:S1450Û"cRemove the "lbQualidadeAtbPonto2" field and declare it as a local variable in the relevant methods.(¥É¥
-rsquid:S1450ì"ZRemove the "lbSeguranca" field and declare it as a local variable in the relevant methods.(ÓÈ±
-|squid:S1450î"_Remove the "lbSegurancaMeta2" field and declare it as a local variable in the relevant methods.(ë¼¢·ÿÿÿÿÿ
-zsquid:S1450É"]Remove the "lbNormecPonto1" field and declare it as a local variable in the relevant methods.(›â©¾ıÿÿÿÿ
-xsquid:S1450æ"[Remove the "lbScrapMeta1" field and declare it as a local variable in the relevant methods.(à¨²äşÿÿÿÿ
-vsquid:S1450¬"YRemove the "lbCpkMeta1" field and declare it as a local variable in the relevant methods.(óÎ·»úÿÿÿÿ
-ysquid:S1450ê"\Remove the "lbScrapPonto2" field and declare it as a local variable in the relevant methods.(ãÁÑºøÿÿÿÿ
-Esquid:S1604ò
-"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
-rsquid:S1450®"ZRemove the "lbCpkPonto1" field and declare it as a local variable in the relevant methods.(‚½–
-wsquid:S1450ş"_Remove the "lbStripMilPonto2" field and declare it as a local variable in the relevant methods.(ÃÓÙ
-vsquid:S1450œ"YRemove the "lbBtoMeta2" field and declare it as a local variable in the relevant methods.(İèÅÓúÿÿÿÿ
-|squid:S1450û"_Remove the "lbStrainerPonto1" field and declare it as a local variable in the relevant methods.(…Í×Ãıÿÿÿÿ
-ysquid:S1450½"aRemove the "lbGranuladorPonto1" field and declare it as a local variable in the relevant methods.(ÔâÏ¹
-vsquid:S1450©"^Remove the "lbChronosPonto1" field and declare it as a local variable in the relevant methods.(¦—ªÛ
-{squid:S1450Š"^Remove the "lbAbsentePonto2" field and declare it as a local variable in the relevant methods.(»ò‰áşÿÿÿÿ
-ysquid:S1450Å"aRemove the "lbMisturadorPonto2" field and declare it as a local variable in the relevant methods.(¡°µæ
-zsquid:S1450Ş"bRemove the "lbQualidadeVgaMeta2" field and declare it as a local variable in the relevant methods.(Æ‘ø÷
-usquid:S1450”"]Remove the "lbBlend1Ponto2" field and declare it as a local variable in the relevant methods.(•Á¥ª
-qsquid:S1450¿"TRemove the "lbKpi" field and declare it as a local variable in the relevant methods.(Ğ¸âúÿÿÿÿ
-ssquid:S1450û
-"VRemove the "cbTurno" field and declare it as a local variable in the relevant methods.(ª™Îúÿÿÿÿ
-wsquid:S1450ü"_Remove the "lbStrainerPonto2" field and declare it as a local variable in the relevant methods.(´´ºæ
-?squid:S1604³
-"(Make this anonymous inner class a lambda(¥Šîj
-usquid:S1450“"]Remove the "lbBlend1Ponto1" field and declare it as a local variable in the relevant methods.(úÀ™Å
-rsquid:S1450¥"ZRemove the "lbBtsPonto3" field and declare it as a local variable in the relevant methods.(›³¼°
-lsquid:S1450ú
-"TRemove the "cbMes" field and declare it as a local variable in the relevant methods.(ÖõµÃ
-tsquid:S1450Ç"\Remove the "lbNormecMeta1" field and declare it as a local variable in the relevant methods.(ÆÓîã
-wsquid:S1450Ğ"ZRemove the "lbOeePonto2" field and declare it as a local variable in the relevant methods.(ùÈúöúÿÿÿÿ
-usquid:S1450Ü"]Remove the "lbQualidadeVga" field and declare it as a local variable in the relevant methods.(ş×ø«
-tsquid:S1450õ"\Remove the "lbSetupPonto1" field and declare it as a local variable in the relevant methods.(ĞùÛØ
-zsquid:S1450à"cRemove the "lbQualidadeVgaPonto2" field and declare it as a local variable in the relevant methods.(ò·›j
-tsquid:S1450‘"\Remove the "lbBlend1Meta1" field and declare it as a local variable in the relevant methods.(°şÒ
-wsquid:S1450"ZRemove the "lbBtoPonto1" field and declare it as a local variable in the relevant methods.(±æÔíúÿÿÿÿ
-asquid:S1192¥"IDefine a constant instead of duplicating this literal "Tahoma" 126 times.(§¤â€
-xsquid:S1450ç"[Remove the "lbScrapMeta2" field and declare it as a local variable in the relevant methods.(Êçœ’ıÿÿÿÿ
-usquid:S1450×"]Remove the "lbQualidadeAtb" field and declare it as a local variable in the relevant methods.(÷úä’
-}squid:S1450ï"`Remove the "lbSegurancaPonto1" field and declare it as a local variable in the relevant methods.(é‡³ûıÿÿÿÿ
-wsquid:S1450¤"ZRemove the "lbBtsPonto2" field and declare it as a local variable in the relevant methods.(¶Ú®„üÿÿÿÿ
-Usquid:S1197Ø
-"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
-zsquid:S1450Ô"]Remove the "lbPesagemMeta2" field and declare it as a local variable in the relevant methods.(­ãÉåüÿÿÿÿ
-psquid:S1450†"XRemove the "lbAbsente" field and declare it as a local variable in the relevant methods.(­˜†œ
-ssquid:S1450Á"[Remove the "lbMisturador" field and declare it as a local variable in the relevant methods.(òŞç—
-usquid:S1450¨"]Remove the "lbChronosMeta2" field and declare it as a local variable in the relevant methods.(¬¸¹‘
-wsquid:S1450³"_Remove the "lbDownTimePonto1" field and declare it as a local variable in the relevant methods.(ŞÇÌÀ
-rsquid:S1450¶"ZRemove the "lbDropMeta1" field and declare it as a local variable in the relevant methods.(»¡Òø
-vsquid:S1450ø"YRemove the "lbStrainer" field and declare it as a local variable in the relevant methods.(„ÕêÆşÿÿÿÿ
-€squid:S1450„"cRemove the "jpDescricaoCabecalho" field and declare it as a local variable in the relevant methods.(Êùí‘üÿÿÿÿ
-vsquid:S1450Ö"^Remove the "lbPesagemPonto2" field and declare it as a local variable in the relevant methods.(¯ƒéµ
-vsquid:S1450"^Remove the "lbBatchOffMeta2" field and declare it as a local variable in the relevant methods.(âÌ­†
-}squid:S1450»"`Remove the "lbGranuladorMeta1" field and declare it as a local variable in the relevant methods.(³ï°Şûÿÿÿÿ
-~squid:S1450¾"aRemove the "lbGranuladorPonto2" field and declare it as a local variable in the relevant methods.(®şöîúÿÿÿÿ
-nsquid:S1450ş
-"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
-ysquid:S1450’"\Remove the "lbBlend1Meta2" field and declare it as a local variable in the relevant methods.(×à’ºúÿÿÿÿ
-zsquid:S1450ˆ"]Remove the "lbAbsenteMeta2" field and declare it as a local variable in the relevant methods.(ü­òşÿÿÿÿ
-xsquid:S1450ò"[Remove the "lbSetupMeta1" field and declare it as a local variable in the relevant methods.(Üƒ…ğûÿÿÿÿ
-|squid:S1450´"_Remove the "lbDownTimePonto2" field and declare it as a local variable in the relevant methods.(˜£¹”üÿÿÿÿ
-xsquid:S1450ó"[Remove the "lbSetupMeta2" field and declare it as a local variable in the relevant methods.(™“™œÿÿÿÿÿ
-usquid:S1450¦"XRemove the "lbChronos" field and declare it as a local variable in the relevant methods.(ÍŠ”¿ûÿÿÿÿ
-€squid:S1450ß"cRemove the "lbQualidadeVgaPonto1" field and declare it as a local variable in the relevant methods.(Ö»ùŸÿÿÿÿÿ
-squid:S1450Ø"bRemove the "lbQualidadeAtbMeta1" field and declare it as a local variable in the relevant methods.(ºïõğøÿÿÿÿ
-xsquid:S1450º"[Remove the "lbGranulador" field and declare it as a local variable in the relevant methods.(Ú’ÊÃúÿÿÿÿ
-ysquid:S1450ä"aRemove the "lbRheometriaPonto1" field and declare it as a local variable in the relevant methods.(Í—¼Á
-|squid:S1450€"_Remove the "lbStripMillMeta1" field and declare it as a local variable in the relevant methods.(äÎ–›üÿÿÿÿ
-tsquid:S1450ı
-"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ
-rsquid:S1450"ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉ
-zsquid:S1450‡"]Remove the "lbAbsenteMeta1" field and declare it as a local variable in the relevant methods.(õĞÔ£ûÿÿÿÿ
-tsquid:S1450ƒ"WRemove the "tbPontos" field and declare it as a local variable in the relevant methods.(şÅôøúÿÿÿÿ
-vsquid:S1450Œ"^Remove the "lbBatchOffMeta1" field and declare it as a local variable in the relevant methods.(šµ³
-qsquid:S1450°"YRemove the "lbDownTime" field and declare it as a local variable in the relevant methods.(Å­ìü
-usquid:S1450Ò"XRemove the "lbPesagem" field and declare it as a local variable in the relevant methods.(¼ù¶¶øÿÿÿÿ
-qsquid:S1450­"YRemove the "lbCpkMeta2" field and declare it as a local variable in the relevant methods.(Ê°½Œ
-vsquid:S1450Í"YRemove the "lbOeeMeta2" field and declare it as a local variable in the relevant methods.(¹Ç¿Çÿÿÿÿÿ
-qsquid:S1450Î"YRemove the "lbOeeMeta3" field and declare it as a local variable in the relevant methods.(¢—İÊ
-ysquid:S1450å"aRemove the "lbRheometriaPonto2" field and declare it as a local variable in the relevant methods.(ŞÎéß
-qsquid:S1450Ÿ"TRemove the "lbBts" field and declare it as a local variable in the relevant methods.(µƒŞêùÿÿÿÿ
-zsquid:S1450˜"]Remove the "lbBlend2Ponto1" field and declare it as a local variable in the relevant methods.(¬Ÿİúÿÿÿÿ
-|squid:S1450í"_Remove the "lbSegurancaMeta1" field and declare it as a local variable in the relevant methods.(¢áñËıÿÿÿÿ
-xsquid:S1450Â"`Remove the "lbMisturadorMeta1" field and declare it as a local variable in the relevant methods.(Ûğ‡¢
-^squid:S2147ç
-"FCombine this catch with the one at line 1381, which has the same body.(¨¦Š½
-vsquid:S1450›"YRemove the "lbBtoMeta1" field and declare it as a local variable in the relevant methods.(ÚÒÉÜøÿÿÿÿ
-Rsquid:S1161Â":Add the "@Override" annotation above this method signature(®¸ù
-xsquid:S1450€"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
-osquid:S1450ü
-"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶
-tsquid:S1450"WRemove the "lbBlend1" field and declare it as a local variable in the relevant methods.(¸©şšøÿÿÿÿ
-zsquid:S1450™"]Remove the "lbBlend2Ponto2" field and declare it as a local variable in the relevant methods.(æøÑıÿÿÿÿ
-{squid:S1450ù"^Remove the "lbStrainerMeta1" field and declare it as a local variable in the relevant methods.(ò‡Ú§şÿÿÿÿ
-Bsquid:S1172Ë
-"*Remove this unused method parameter "evt".(‚À‡ä
-tsquid:S1450Æ"WRemove the "lbNormec" field and declare it as a local variable in the relevant methods.(™ïƒìıÿÿÿÿ
-tsquid:S1450÷"\Remove the "lbSetupPonto3" field and declare it as a local variable in the relevant methods.(ÒÙ×ø
-esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ğ´®ø
-nsquid:S1450ñ"VRemove the "lbSetup" field and declare it as a local variable in the relevant methods.(¥ó¼Ş
-{squid:S1450ª"^Remove the "lbChronosPonto2" field and declare it as a local variable in the relevant methods.(û¦²ğùÿÿÿÿ
-osquid:S1450‚"WRemove the "lbTitulo" field and declare it as a local variable in the relevant methods.(Í¥ ñ
-ssquid:S1450á"[Remove the "lbRheometria" field and declare it as a local variable in the relevant methods.(Ä«Òå
-wsquid:S1450Ï"ZRemove the "lbOeePonto1" field and declare it as a local variable in the relevant methods.(Ø²Ôæûÿÿÿÿ
-}squid:S1450Ã"`Remove the "lbMisturadorMeta2" field and declare it as a local variable in the relevant methods.(„ĞŒÿÿÿÿÿ
-rsquid:S1450¯"ZRemove the "lbCpkPonto2" field and declare it as a local variable in the relevant methods.(Á‰•”
-zsquid:S1450Ó"]Remove the "lbPesagemMeta1" field and declare it as a local variable in the relevant methods.(òÛ·¶şÿÿÿÿ
-ysquid:S1450ö"\Remove the "lbSetupPonto2" field and declare it as a local variable in the relevant methods.(èŠÀÔúÿÿÿÿ
-ssquid:S1450…"VRemove the "jpInput" field and declare it as a local variable in the relevant methods.(ÑËßÖÿÿÿÿÿ
