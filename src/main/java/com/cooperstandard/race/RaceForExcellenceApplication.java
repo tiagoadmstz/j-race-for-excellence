@@ -1,7 +1,7 @@
 package com.cooperstandard.race;
 
 import com.cooperstandard.race.enumerates.LOOKANDFEEL;
-import com.cooperstandard.race.frames.views.CinderTrack;
+import com.cooperstandard.race.frames.views.ViewLoading;
 
 import javax.swing.*;
 
@@ -14,8 +14,7 @@ public class RaceForExcellenceApplication {
     private static void start() {
         try {
             UIManager.setLookAndFeel(LOOKANDFEEL.WINDOWS_CLASSIC);
-            CinderTrack cinderTrack = new CinderTrack();
-            cinderTrack.setVisible(true);
+            new ViewLoading().setVisible(true);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
