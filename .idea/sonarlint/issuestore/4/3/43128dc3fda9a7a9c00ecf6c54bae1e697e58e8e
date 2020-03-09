@@ -1,0 +1,22 @@
+
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(Ä–úéúÿÿÿÿ
+C
+java:S1604["(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+j
+java:S1128"URemove this unused import 'com.cooperstandard.race.frames.panels.RacePanelTreeTurns'.(÷©½]
+l
+java:S1128"QRemove this unused import 'com.cooperstandard.race.frames.panels.CabecalhoPanel'.(”òùûÿÿÿÿ
+s
+java:S1450c"]Remove the "cabecalhoPanel" field and declare it as a local variable in the relevant methods.(üßğ
+v
+java:S1450d"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+q
+java:S1450e"VRemove the "jpInput" field and declare it as a local variable in the relevant methods.(ÑËßÖÿÿÿÿÿ
+S
+java:S1197?"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+Z
+java:S2147N"DCombine this catch with the one at line 76, which has the same body.(¨¦Š½
+Z
+java:S2147P"DCombine this catch with the one at line 76, which has the same body.(ã€ 
+Y
+java:S2147R"DCombine this catch with the one at line 76, which has the same body.(ñÎ¯%

@@ -1,0 +1,64 @@
+
+]
+java:S1192."GDefine a constant instead of duplicating this literal "Tahoma" 8 times.(€‚†…
+C
+java:S1604Q"(Make this anonymous inner class a lambda(Åûÿ¾øÿÿÿÿ
+N
+java:S1135Ç"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+m
+java:S1450û"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+\
+java:S2147à"ECombine this catch with the one at line 222, which has the same body.(¨¦Š½
+D
+java:S1604ê"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+A
+java:S1172Ê"*Remove this unused method parameter "evt".(Üæ¦‚
+N
+java:S1135Ë"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172Æ"*Remove this unused method parameter "evt".(è¿é¦
+n
+java:S1450÷"WRemove the "jButton7" field and declare it as a local variable in the relevant methods.(İöÏÒ
+r
+java:S1450ı"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+r
+java:S1450ú"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+r
+java:S1450ø"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+n
+java:S1450ó"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ
+m
+java:S1450ü"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+F
+java:S1172Â"*Remove this unused method parameter "evt".(ø¨Ì¾ûÿÿÿÿ
+V	java:S110	"<This class has 6 parents which is greater than 5 authorized.(æÀş™øÿÿÿÿ
+q
+java:S1450€"ZRemove the "jTextField1" field and declare it as a local variable in the relevant methods.(’É´š
+\
+java:S2147â"ECombine this catch with the one at line 222, which has the same body.(ã€ 
+T
+java:S1197Ñ"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+n
+java:S1450ò"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶
+>
+java:S16044"(Make this anonymous inner class a lambda(ÿóÎ×
+C
+java:S1604C"(Make this anonymous inner class a lambda(‹ıÉ¼üÿÿÿÿ
+s
+java:S1450ô"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ
+n
+java:S1450ö"WRemove the "jButton6" field and declare it as a local variable in the relevant methods.(á®İş
+r
+java:S1450ù"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450ş"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ
+F
+java:S1172¾"*Remove this unused method parameter "evt".(¹¾ûüÿÿÿÿ
+[
+java:S2147ä"ECombine this catch with the one at line 222, which has the same body.(ñÎ¯%
+z
+java:S1450ÿ"^Remove the "jPasswordField1" field and declare it as a local variable in the relevant methods.(À£§ÿÿÿÿÿ
+s
+java:S1450õ"WRemove the "jButton5" field and declare it as a local variable in the relevant methods.(â¦Î©ûÿÿÿÿ
+C
+java:S1604`"(Make this anonymous inner class a lambda(ÕÜÜ«ûÿÿÿÿ

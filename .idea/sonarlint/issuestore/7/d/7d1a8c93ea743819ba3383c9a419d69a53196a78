@@ -1,0 +1,38 @@
+
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(ÀÓ Çşÿÿÿÿ
+D
+java:S1604±"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+q
+java:S1450¹"ZRemove the "btAtualizar" field and declare it as a local variable in the relevant methods.(°™²ú
+v
+java:S1450º"ZRemove the "btPesquisar" field and declare it as a local variable in the relevant methods.(ÜÇü¦úÿÿÿÿ
+s
+java:S1450»"WRemove the "btSalvar" field and declare it as a local variable in the relevant methods.(¹üÉ˜úÿÿÿÿ
+r
+java:S1450¼"VRemove the "cbTurno" field and declare it as a local variable in the relevant methods.(ª™Îúÿÿÿÿ
+r
+java:S1450½"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+r
+java:S1450¾"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450¿"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+z
+java:S1450À"cRemove the "lbConferenciaValores" field and declare it as a local variable in the relevant methods.(ÔŸé
+o
+java:S1450Á"XRemove the "mainPanel" field and declare it as a local variable in the relevant methods.(£ğê—
+w
+java:S1450Â"[Remove the "scKpisAtivos" field and declare it as a local variable in the relevant methods.(ØÅ·ÿÿÿÿÿ
+q
+java:S1450Ã"[Remove the "tbKpisAtivos" field and declare it as a local variable in the relevant methods.(ĞßÛ
+|
+java:S1450Ä"`Remove the "txtDataReferencia" field and declare it as a local variable in the relevant methods.(Ïç¤Ùÿÿÿÿÿ
+U
+java:S1161C":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ
+T
+java:S1197˜"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147§"ECombine this catch with the one at line 165, which has the same body.(¨¦Š½
+\
+java:S2147©"ECombine this catch with the one at line 165, which has the same body.(ã€ 
+[
+java:S2147«"ECombine this catch with the one at line 165, which has the same body.(ñÎ¯%

@@ -1,0 +1,44 @@
+
+V	java:S110	"<This class has 6 parents which is greater than 5 authorized.(ïöÜüÿÿÿÿ
+>
+java:S16047"(Make this anonymous inner class a lambda(ÿóÎ×
+=
+java:S1604>"(Make this anonymous inner class a lambda(¥Šîj
+C
+java:S1604I"(Make this anonymous inner class a lambda(üåêøÿÿÿÿ
+D
+java:S1604¨"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+n
+java:S1450°"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶
+n
+java:S1450±"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ
+s
+java:S1450²"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ
+s
+java:S1450³"WRemove the "jButton4" field and declare it as a local variable in the relevant methods.(€„ˆÎÿÿÿÿÿ
+r
+java:S1450´"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+r
+java:S1450µ"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+w
+java:S1450¶"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+m
+java:S1450·"VRemove the "jTable1" field and declare it as a local variable in the relevant methods.(Ğÿ¿×
+m
+java:S1450¸"VRemove the "jdcData" field and declare it as a local variable in the relevant methods.(ĞüØÄ
+U
+java:S1161.":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ
+?
+java:S1172"*Remove this unused method parameter "evt".(Š–ÿG
+A
+java:S1172ƒ"*Remove this unused method parameter "evt".(™ÃŠñ
+F
+java:S1172ˆ"*Remove this unused method parameter "evt".(¹¾ûüÿÿÿÿ
+T
+java:S1197Œ"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147›"ECombine this catch with the one at line 153, which has the same body.(¨¦Š½
+\
+java:S2147"ECombine this catch with the one at line 153, which has the same body.(ã€ 
+[
+java:S2147Ÿ"ECombine this catch with the one at line 153, which has the same body.(ñÎ¯%

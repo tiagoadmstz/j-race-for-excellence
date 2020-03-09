@@ -1,11 +1,11 @@
 package com.cooperstandard.race.models;
 
-import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
@@ -22,6 +22,8 @@ public class Turno implements Serializable {
     private String nome;
     @Column(name = "ORDEM")
     private Integer ordem;
+    @Column(name = "CARRO", length = 100)
+    private String carro;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "turno")
     private List<Pontuacao> pontuacao;
     @Column(name = "TOTAL_PONTUACAO")

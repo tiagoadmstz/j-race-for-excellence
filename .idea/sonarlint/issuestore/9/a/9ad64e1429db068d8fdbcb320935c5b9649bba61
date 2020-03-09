@@ -1,0 +1,575 @@
+
+v
+java:S1450"ZRemove the "lbOeeMeta58" field and declare it as a local variable in the relevant methods.(°Î“ııÿÿÿÿ
+r
+java:S1450’"[Remove the "jSeparator60" field and declare it as a local variable in the relevant methods.(¨½”½
+l
+java:S1450Ã"VRemove the "lbOee10" field and declare it as a local variable in the relevant methods.(…ÿ‘y
+q
+java:S1450¢"ZRemove the "lbOeeMeta75" field and declare it as a local variable in the relevant methods.(Ò¾¥¨
+w
+java:S1450ÿ"[Remove the "jSeparator36" field and declare it as a local variable in the relevant methods.(ÌùÌÌûÿÿÿÿ
+m
+java:S1450Ç"VRemove the "lbOee14" field and declare it as a local variable in the relevant methods.(™ßï
+r
+java:S1450À"[Remove the "lbOeePonto35" field and declare it as a local variable in the relevant methods.(ê¼¨
+r
+java:S1450µ"[Remove the "lbOeePonto25" field and declare it as a local variable in the relevant methods.(£„«é
+q
+java:S1450‡"[Remove the "jSeparator43" field and declare it as a local variable in the relevant methods.(ÃÛ²}
+r
+java:S1450›"[Remove the "jSeparator69" field and declare it as a local variable in the relevant methods.(÷…¯¤
+u
+java:S1450û"YRemove the "lbOeeMeta4" field and declare it as a local variable in the relevant methods.(îëå–ûÿÿÿÿ
+s
+java:S1450Ó"WRemove the "jLabel16" field and declare it as a local variable in the relevant methods.(š¼ª¯üÿÿÿÿ
+r
+java:S1450Ï"VRemove the "lbOee21" field and declare it as a local variable in the relevant methods.(ÓÒş³üÿÿÿÿ
+r
+java:S1450ï"[Remove the "jSeparator21" field and declare it as a local variable in the relevant methods.(Ûô«ú
+v
+java:S1450ó"ZRemove the "lbOeeMeta32" field and declare it as a local variable in the relevant methods.(È§ùÿÿÿÿÿ
+
+java:S4144û"iUpdate this method so that its implementation is not identical to "jButton1ActionPerformed" on line 1905.(Š–ÿG
+q
+java:S1450Š"ZRemove the "lbOeeMeta53" field and declare it as a local variable in the relevant methods.(‰ú°½
+q
+java:S1450’"ZRemove the "lbOeeMeta60" field and declare it as a local variable in the relevant methods.(¹¨ÙÆ
+s
+java:S1450Ò"WRemove the "jLabel15" field and declare it as a local variable in the relevant methods.(³şâçøÿÿÿÿ
+q
+java:S1450‚"ZRemove the "lbOeeMeta46" field and declare it as a local variable in the relevant methods.(ïû¹˜
+v
+java:S1450º"ZRemove the "lbOeePonto3" field and declare it as a local variable in the relevant methods.(ñ÷Å¶ûÿÿÿÿ
+w
+java:S1450ç"[Remove the "jSeparator14" field and declare it as a local variable in the relevant methods.(·µµñşÿÿÿÿ
+p
+java:S1450Ú"YRemove the "lbOeeMeta1" field and declare it as a local variable in the relevant methods.(ö•´À
+n
+java:S1450É"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ
+r
+java:S1450¦"[Remove the "jSeparator79" field and declare it as a local variable in the relevant methods.(„ˆ½²
+q
+java:S1450Â"URemove the "lbOee1" field and declare it as a local variable in the relevant methods.(öÕ«èûÿÿÿÿ
+w
+java:S1450¸"[Remove the "lbOeePonto28" field and declare it as a local variable in the relevant methods.(£ı¹æıÿÿÿÿ
+q
+java:S1450è"ZRemove the "lbOeeMeta22" field and declare it as a local variable in the relevant methods.(Œ ÷Ì
+D
+java:S1604å"(Make this anonymous inner class a lambda(…æ©âÿÿÿÿÿ
+r
+java:S1450¼"[Remove the "lbOeePonto31" field and declare it as a local variable in the relevant methods.(õ¹¬ú
+v
+java:S1450“"ZRemove the "lbOeeMeta61" field and declare it as a local variable in the relevant methods.(Ñâå˜şÿÿÿÿ
+r
+java:S1450‚"[Remove the "jSeparator39" field and declare it as a local variable in the relevant methods.(–ÇÉû
+p
+java:S1450¿"TRemove the "lbKpi" field and declare it as a local variable in the relevant methods.(Ğ¸âúÿÿÿÿ
+q
+java:S1450ñ"ZRemove the "lbOeeMeta30" field and declare it as a local variable in the relevant methods.(¦Œ²É
+r
+java:S1450„"[Remove the "jSeparator40" field and declare it as a local variable in the relevant methods.(Ù•Ú°
+?
+java:S1604í"(Make this anonymous inner class a lambda(ÿóÎ×
+v
+java:S1450ø"ZRemove the "jSeparator3" field and declare it as a local variable in the relevant methods.(Éø¹Êÿÿÿÿÿ
+q
+java:S1450ö"ZRemove the "lbOeeMeta35" field and declare it as a local variable in the relevant methods.(ü£ŸÏ
+w
+java:S1450É"[Remove the "lbOeePonto43" field and declare it as a local variable in the relevant methods.(ˆÜŒ…üÿÿÿÿ
+q
+java:S1450€"ZRemove the "lbOeeMeta44" field and declare it as a local variable in the relevant methods.(Ú“ä¤
+m
+java:S1450Õ"WRemove the "jLabel18" field and declare it as a local variable in the relevant methods.(†«=
+w
+java:S1450¨"[Remove the "lbOeePonto13" field and declare it as a local variable in the relevant methods.(µëĞÍüÿÿÿÿ
+y
+java:S1192º"[Define a constant instead of duplicating this literal "config/images/largada.png" 18 times.(æàëÒ8‹µÕ‹.
+w
+java:S1450³"[Remove the "jSeparator90" field and declare it as a local variable in the relevant methods.(ó½£¸ùÿÿÿÿ
+r
+java:S1450É"VRemove the "lbOee16" field and declare it as a local variable in the relevant methods.(€ÆïÛıÿÿÿÿ
+v
+java:S1450"ZRemove the "lbOeeMeta45" field and declare it as a local variable in the relevant methods.(‹¶èèÿÿÿÿÿ
+w
+java:S1450²"[Remove the "lbOeePonto22" field and declare it as a local variable in the relevant methods.(‡¡¡²ûÿÿÿÿ
+\
+java:S2147›"FCombine this catch with the one at line 1941, which has the same body.(ñÎ¯%
+v
+java:S1450Œ"ZRemove the "lbOeeMeta55" field and declare it as a local variable in the relevant methods.(Ã§ Èøÿÿÿÿ
+m
+java:S1450ß"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢
+w
+java:S1450î"[Remove the "jSeparator20" field and declare it as a local variable in the relevant methods.(¬öàÒøÿÿÿÿ
+s
+java:S1450×"WRemove the "jLabel20" field and declare it as a local variable in the relevant methods.(ëƒß›úÿÿÿÿ
+w
+java:S1450­"[Remove the "lbOeePonto18" field and declare it as a local variable in the relevant methods.(¥ÈÂıÿÿÿÿ
+v
+java:S1450¥"ZRemove the "lbOeePonto1" field and declare it as a local variable in the relevant methods.(Ø²Ôæûÿÿÿÿ
+q
+java:S1450Ÿ"ZRemove the "lbOeeMeta72" field and declare it as a local variable in the relevant methods.(Ÿ´æ×
+w
+java:S1450©"[Remove the "lbOeePonto14" field and declare it as a local variable in the relevant methods.(Òÿ×²ûÿÿÿÿ
+q
+java:S1450Ô"URemove the "lbOee4" field and declare it as a local variable in the relevant methods.(ó¼áËùÿÿÿÿ
+q
+java:S1450"ZRemove the "lbOeeMeta59" field and declare it as a local variable in the relevant methods.(²éŠÑ
+r
+java:S1450Ï"[Remove the "lbOeePonto49" field and declare it as a local variable in the relevant methods.(‹ÍÉ
+w
+java:S1450Î"[Remove the "lbOeePonto48" field and declare it as a local variable in the relevant methods.(ù¯Ô¶şÿÿÿÿ
+v
+java:S1450õ"ZRemove the "lbOeeMeta34" field and declare it as a local variable in the relevant methods.(¬äØ­ùÿÿÿÿ
+w
+java:S1450¦"[Remove the "lbOeePonto11" field and declare it as a local variable in the relevant methods.(Ùü‚•ıÿÿÿÿ
+v
+java:S1450 "ZRemove the "lbOeeMeta73" field and declare it as a local variable in the relevant methods.(úôÂ†ÿÿÿÿÿ
+w
+java:S1450¬"[Remove the "jSeparator84" field and declare it as a local variable in the relevant methods.(ç»ùÿÿÿÿ
+q
+java:S1450ï"ZRemove the "lbOeeMeta29" field and declare it as a local variable in the relevant methods.(Úóûà
+w
+java:S1450±"[Remove the "jSeparator89" field and declare it as a local variable in the relevant methods.(é’¢Üÿÿÿÿÿ
+@
+java:S1172û"*Remove this unused method parameter "evt".(Š–ÿG
+q
+java:S1450ø"ZRemove the "lbOeeMeta37" field and declare it as a local variable in the relevant methods.(úô²
+w
+java:S1450®"[Remove the "lbOeePonto19" field and declare it as a local variable in the relevant methods.(ÿâ«êûÿÿÿÿ
+w
+java:S1450Ñ"[Remove the "lbOeePonto50" field and declare it as a local variable in the relevant methods.(îÀñÑùÿÿÿÿ
+m
+java:S1450Ê"VRemove the "lbOee17" field and declare it as a local variable in the relevant methods.(…Ú’š
+s
+java:S1450Ù"WRemove the "jLabel22" field and declare it as a local variable in the relevant methods.(šíŒÒúÿÿÿÿ
+v
+java:S1450Û"ZRemove the "lbOeeMeta10" field and declare it as a local variable in the relevant methods.(×ÎÇ¬ûÿÿÿÿ
+w
+java:S1450”"[Remove the "jSeparator62" field and declare it as a local variable in the relevant methods.(ü˜ìçÿÿÿÿÿ
+r
+java:S1450"[Remove the "jSeparator70" field and declare it as a local variable in the relevant methods.(±©Ì–
+m
+java:S1450Ì"VRemove the "lbOee19" field and declare it as a local variable in the relevant methods.(Ğèİ
+q
+java:S1450ˆ"ZRemove the "lbOeeMeta51" field and declare it as a local variable in the relevant methods.(¸Ëçü
+r
+java:S1450‹"[Remove the "jSeparator47" field and declare it as a local variable in the relevant methods.(˜™Ä¨
+r
+java:S1450ê"[Remove the "jSeparator17" field and declare it as a local variable in the relevant methods.(—ÁÑ°
+n
+java:S1450Ü"WRemove the "jLabel28" field and declare it as a local variable in the relevant methods.(ŒÄöı
+u
+java:S1450‘"YRemove the "lbOeeMeta6" field and declare it as a local variable in the relevant methods.(­Ö¨¦ıÿÿÿÿ
+w
+java:S1450³"[Remove the "lbOeePonto23" field and declare it as a local variable in the relevant methods.(çğıñûÿÿÿÿ
+v
+java:S1450›"ZRemove the "lbOeeMeta69" field and declare it as a local variable in the relevant methods.(å´¯Œÿÿÿÿÿ
+q
+java:S1450"ZRemove the "lbOeeMeta56" field and declare it as a local variable in the relevant methods.(§Ç½„
+r
+java:S1450Ã"[Remove the "lbOeePonto38" field and declare it as a local variable in the relevant methods.(åòØ
+v
+java:S1450"ZRemove the "lbOeeMeta70" field and declare it as a local variable in the relevant methods.(Á“È¡ûÿÿÿÿ
+v
+java:S1450÷"ZRemove the "lbOeeMeta36" field and declare it as a local variable in the relevant methods.(ş¤óÇûÿÿÿÿ
+w
+java:S1450¬"[Remove the "lbOeePonto17" field and declare it as a local variable in the relevant methods.(â”˜şıÿÿÿÿ
+w
+java:S1450¸"[Remove the "jSeparator95" field and declare it as a local variable in the relevant methods.(Ëƒˆ¾úÿÿÿÿ
+r
+java:S1450ü"[Remove the "jSeparator33" field and declare it as a local variable in the relevant methods.(ˆÍˆ‰
+q
+java:S1450í"ZRemove the "jSeparator2" field and declare it as a local variable in the relevant methods.(èÅĞø
+r
+java:S1450Ÿ"[Remove the "jSeparator72" field and declare it as a local variable in the relevant methods.(ü¬Æ•
+q
+java:S1450à"ZRemove the "lbOeeMeta15" field and declare it as a local variable in the relevant methods.(ïÉƒš
+r
+java:S1450È"[Remove the "lbOeePonto42" field and declare it as a local variable in the relevant methods.(ÎÿÁñ
+r
+java:S1450Í"[Remove the "lbOeePonto47" field and declare it as a local variable in the relevant methods.(Ô—³
+]
+java:S2147—"FCombine this catch with the one at line 1941, which has the same body.(¨¦Š½
+…
+java:S4144ö"iUpdate this method so that its implementation is not identical to "jButton1ActionPerformed" on line 1905.(¹¾ûüÿÿÿÿ
+w
+java:S1450ú"[Remove the "jSeparator31" field and declare it as a local variable in the relevant methods.(´£ºÅúÿÿÿÿ
+r
+java:S1450¤"[Remove the "jSeparator77" field and declare it as a local variable in the relevant methods.(ã¼¨•
+w
+java:S1450÷"[Remove the "jSeparator29" field and declare it as a local variable in the relevant methods.(æªÜÍıÿÿÿÿ
+q
+java:S1450‡"ZRemove the "lbOeeMeta50" field and declare it as a local variable in the relevant methods.(©ÕÌ·
+q
+java:S1450Ë"[Remove the "lbOeePonto45" field and declare it as a local variable in the relevant methods.(ÚÔŠn
+v
+java:S1450î"ZRemove the "lbOeeMeta28" field and declare it as a local variable in the relevant methods.(Æ„Ëüÿÿÿÿ
+q
+java:S1450•"ZRemove the "lbOeeMeta63" field and declare it as a local variable in the relevant methods.(üÒ¾„
+s
+java:S1450Ê"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ
+p
+java:S1450¼"ZRemove the "jpCabecalho" field and declare it as a local variable in the relevant methods.(¾»¯
+q
+java:S1450Õ"URemove the "lbOee5" field and declare it as a local variable in the relevant methods.(Ó¯¤ñüÿÿÿÿ
+w
+java:S1450º"[Remove the "jSeparator97" field and declare it as a local variable in the relevant methods.(ÏˆË¼üÿÿÿÿ
+F
+java:S1172ö"*Remove this unused method parameter "evt".(¹¾ûüÿÿÿÿ
+r
+java:S1450Ì"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+€
+java:S4144€"iUpdate this method so that its implementation is not identical to "jButton1ActionPerformed" on line 1905.(™ÃŠñ
+r
+java:S1450"[Remove the "jSeparator71" field and declare it as a local variable in the relevant methods.(½¨­®
+v
+java:S1450‹"ZRemove the "lbOeeMeta54" field and declare it as a local variable in the relevant methods.(‚ÜÃ½şÿÿÿÿ
+q
+java:S1450"ZRemove the "lbOeeMeta71" field and declare it as a local variable in the relevant methods.(§¦ÏÌ
+w
+java:S1450´"[Remove the "lbOeePonto24" field and declare it as a local variable in the relevant methods.(Û½·Àùÿÿÿÿ
+w
+java:S1450™"[Remove the "jSeparator67" field and declare it as a local variable in the relevant methods.(¼×ëøÿÿÿÿ
+q
+java:S1450ç"ZRemove the "lbOeeMeta21" field and declare it as a local variable in the relevant methods.(•Çê
+p
+java:S1450ş"ZRemove the "lbOeeMeta42" field and declare it as a local variable in the relevant methods.(‹®Ä^
+q
+java:S1450ä"ZRemove the "lbOeeMeta19" field and declare it as a local variable in the relevant methods.(¸²ı
+r
+java:S1450—"[Remove the "jSeparator65" field and declare it as a local variable in the relevant methods.(º“Ô‰
+m
+java:S1450Ë"VRemove the "lbOee18" field and declare it as a local variable in the relevant methods.(ÍÎ©€
+r
+java:S1450à"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ
+l
+java:S1450×"URemove the "lbOee7" field and declare it as a local variable in the relevant methods.(åÄÏ„
+e
+java:S1192©"IDefine a constant instead of duplicating this literal "Tahoma" 148 times.(ô´ŒÉşÿÿÿÿ
+n
+java:S1450Ú"WRemove the "jLabel23" field and declare it as a local variable in the relevant methods.(õöäò
+A
+java:S1172€"*Remove this unused method parameter "evt".(™ÃŠñ
+w
+java:S1450»"[Remove the "jSeparator98" field and declare it as a local variable in the relevant methods.(ì³³­ûÿÿÿÿ
+w
+java:S1450°"[Remove the "jSeparator88" field and declare it as a local variable in the relevant methods.(Ë¨ñ¯úÿÿÿÿ
+v
+java:S1450œ"ZRemove the "jSeparator7" field and declare it as a local variable in the relevant methods.(è‘¦Ìûÿÿÿÿ
+w
+java:S1450ı"[Remove the "jSeparator34" field and declare it as a local variable in the relevant methods.(úƒîûÿÿÿÿ
+w
+java:S1450–"[Remove the "jSeparator64" field and declare it as a local variable in the relevant methods.(ÏøËşÿÿÿÿ
+l
+java:S1450Í"URemove the "lbOee2" field and declare it as a local variable in the relevant methods.(Æ É
+n
+java:S1450Ô"WRemove the "jLabel17" field and declare it as a local variable in the relevant methods.(„Ç›Ä
+q
+java:S1450¹"[Remove the "lbOeePonto29" field and declare it as a local variable in the relevant methods.(é˜—7
+r
+java:S1450Ä"[Remove the "lbOeePonto39" field and declare it as a local variable in the relevant methods.(–¾“Ü
+r
+java:S1450¶"[Remove the "lbOeePonto26" field and declare it as a local variable in the relevant methods.(¶¦İ¹
+s
+java:S1450Û"WRemove the "jLabel24" field and declare it as a local variable in the relevant methods.(¢×µæúÿÿÿÿ
+w
+java:S1450ˆ"[Remove the "jSeparator44" field and declare it as a local variable in the relevant methods.(Ö£üÿÿÿÿ
+m
+java:S1450Å"VRemove the "lbOee12" field and declare it as a local variable in the relevant methods.(ÌÀ†Ó
+u
+java:S1450£"YRemove the "lbOeeMeta8" field and declare it as a local variable in the relevant methods.(ˆàœ°øÿÿÿÿ
+s
+java:S1450İ"WRemove the "jLabel29" field and declare it as a local variable in the relevant methods.(ùôÜ®şÿÿÿÿ
+u
+java:S1450å"YRemove the "lbOeeMeta2" field and declare it as a local variable in the relevant methods.(¹Ç¿Çÿÿÿÿÿ
+v
+java:S1450Ş"ZRemove the "lbOeeMeta13" field and declare it as a local variable in the relevant methods.(šÿ¾ãøÿÿÿÿ
+v
+java:S1450ù"ZRemove the "lbOeeMeta38" field and declare it as a local variable in the relevant methods.(¢¢Ö†ûÿÿÿÿ
+v
+java:S1450„"ZRemove the "lbOeeMeta48" field and declare it as a local variable in the relevant methods.(¿ÿ°·ùÿÿÿÿ
+r
+java:S1450¾"[Remove the "lbOeePonto33" field and declare it as a local variable in the relevant methods.(Í®êË
+r
+java:S1450ğ"[Remove the "jSeparator22" field and declare it as a local variable in the relevant methods.(¼¦Âç
+w
+java:S1450"[Remove the "jSeparator50" field and declare it as a local variable in the relevant methods.(”õëàşÿÿÿÿ
+A
+java:S1172ñ"*Remove this unused method parameter "evt".(‚À‡ä
+r
+java:S1450è"[Remove the "jSeparator15" field and declare it as a local variable in the relevant methods.(²°›‰
+s
+java:S1450Í"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ
+q
+java:S1450â"ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉ
+v
+java:S1450¯"ZRemove the "lbOeePonto2" field and declare it as a local variable in the relevant methods.(ùÈúöúÿÿÿÿ
+r
+java:S1450·"[Remove the "jSeparator94" field and declare it as a local variable in the relevant methods.(ùæÏ
+p
+java:S1450ë"ZRemove the "lbOeeMeta25" field and declare it as a local variable in the relevant methods.(¹Û­A
+p
+java:S1450ƒ"ZRemove the "lbOeeMeta47" field and declare it as a local variable in the relevant methods.(¬šÙs
+w
+java:S1450»"[Remove the "lbOeePonto30" field and declare it as a local variable in the relevant methods.(‡’ä”úÿÿÿÿ
+q
+java:S1450ÿ"ZRemove the "lbOeeMeta43" field and declare it as a local variable in the relevant methods.(ó‰É
+m
+java:S1450Ş"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+r
+java:S1450 "[Remove the "jSeparator73" field and declare it as a local variable in the relevant methods.(ãñ ‚
+r
+java:S1450¾"VRemove the "jpInput" field and declare it as a local variable in the relevant methods.(ÑËßÖÿÿÿÿÿ
+v
+java:S1450é"ZRemove the "lbOeeMeta23" field and declare it as a local variable in the relevant methods.(ÓÇ±ùÿÿÿÿ
+j
+java:S1450Á"TRemove the "lbOee" field and declare it as a local variable in the relevant methods.(Ç¾U
+w
+java:S1450Á"[Remove the "lbOeePonto36" field and declare it as a local variable in the relevant methods.(Ö¹Ûîüÿÿÿÿ
+w
+java:S1450Æ"[Remove the "lbOeePonto40" field and declare it as a local variable in the relevant methods.(»”ß¬ùÿÿÿÿ
+r
+java:S1450Ç"[Remove the "lbOeePonto41" field and declare it as a local variable in the relevant methods.(·›Ó
+r
+java:S1450§"[Remove the "lbOeePonto12" field and declare it as a local variable in the relevant methods.(–ÿ›²
+s
+java:S1450Î"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿ
+w
+java:S1450£"[Remove the "jSeparator76" field and declare it as a local variable in the relevant methods.(¦ÌÔÿøÿÿÿÿ
+w
+java:S1450á"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+v
+java:S1450ƒ"ZRemove the "jSeparator4" field and declare it as a local variable in the relevant methods.(¡¼äĞúÿÿÿÿ
+r
+java:S1450"[Remove the "jSeparator38" field and declare it as a local variable in the relevant methods.(¯ôã©
+v
+java:S1450ú"ZRemove the "lbOeeMeta39" field and declare it as a local variable in the relevant methods.(ú•íøûÿÿÿÿ
+q
+java:S1450ı"ZRemove the "lbOeeMeta41" field and declare it as a local variable in the relevant methods.(Ú°ö²
+r
+java:S1450Ñ"VRemove the "lbOee23" field and declare it as a local variable in the relevant methods.(¸Ãìşÿÿÿÿ
+r
+java:S1450Ä"VRemove the "lbOee11" field and declare it as a local variable in the relevant methods.(ıÂ€Ãşÿÿÿÿ
+q
+java:S1450Ù"URemove the "lbOee9" field and declare it as a local variable in the relevant methods.(èø°ûÿÿÿÿ
+s
+java:S1450Ñ"WRemove the "jLabel14" field and declare it as a local variable in the relevant methods.(ÖóœÍıÿÿÿÿ
+q
+java:S1450ê"ZRemove the "lbOeeMeta24" field and declare it as a local variable in the relevant methods.(ÓÔŒè
+v
+java:S1450ã"ZRemove the "lbOeeMeta18" field and declare it as a local variable in the relevant methods.(±ªÒŞıÿÿÿÿ
+q
+java:S1450…"ZRemove the "lbOeeMeta49" field and declare it as a local variable in the relevant methods.(½‰ÊÙ
+q
+java:S1450ª"[Remove the "lbOeePonto15" field and declare it as a local variable in the relevant methods.(Ûõ«
+l
+java:S1450Ò"VRemove the "lbOee24" field and declare it as a local variable in the relevant methods.(ğ££}
+p
+java:S1450œ"YRemove the "lbOeeMeta7" field and declare it as a local variable in the relevant methods.(ËŒæ‡
+s
+java:S1450Ø"WRemove the "jLabel21" field and declare it as a local variable in the relevant methods.(Üœäÿûÿÿÿÿ
+w
+java:S1450ş"[Remove the "jSeparator35" field and declare it as a local variable in the relevant methods.(ÛØ­ıÿÿÿÿ
+r
+java:S1450¶"[Remove the "jSeparator93" field and declare it as a local variable in the relevant methods.(Ù¥¯í
+m
+java:S1450Ğ"VRemove the "lbOee22" field and declare it as a local variable in the relevant methods.(ÖÏˆ
+q
+java:S1450˜"ZRemove the "lbOeeMeta66" field and declare it as a local variable in the relevant methods.(ÛÍò›
+w
+java:S1450ã"[Remove the "jSeparator10" field and declare it as a local variable in the relevant methods.(û®üŠúÿÿÿÿ
+r
+java:S1450€"[Remove the "jSeparator37" field and declare it as a local variable in the relevant methods.(Ô˜ÅÃ
+s
+java:S1450Ö"WRemove the "jLabel19" field and declare it as a local variable in the relevant methods.(Şù’±ıÿÿÿÿ
+r
+java:S1450†"[Remove the "jSeparator42" field and declare it as a local variable in the relevant methods.(ÎÔ«ñ
+v
+java:S1450ß"ZRemove the "lbOeeMeta14" field and declare it as a local variable in the relevant methods.(à¬·Äúÿÿÿÿ
+w
+java:S1450æ"[Remove the "jSeparator13" field and declare it as a local variable in the relevant methods.(ÙİĞªÿÿÿÿÿ
+v
+java:S1450”"ZRemove the "lbOeeMeta62" field and declare it as a local variable in the relevant methods.(åËøÿÿÿÿ
+s
+java:S1450Ë"WRemove the "jButton4" field and declare it as a local variable in the relevant methods.(€„ˆÎÿÿÿÿÿ
+r
+java:S1450ª"[Remove the "jSeparator82" field and declare it as a local variable in the relevant methods.(º¡±í
+T
+java:S1197ˆ"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+v
+java:S1450æ"ZRemove the "lbOeeMeta20" field and declare it as a local variable in the relevant methods.(±ÎæÖøÿÿÿÿ
+w
+java:S1450©"[Remove the "jSeparator81" field and declare it as a local variable in the relevant methods.(Ñ»ˆíûÿÿÿÿ
+q
+java:S1450İ"ZRemove the "lbOeeMeta12" field and declare it as a local variable in the relevant methods.(Œ¼ïï
+v
+java:S1450â"ZRemove the "lbOeeMeta17" field and declare it as a local variable in the relevant methods.(‡­×¯øÿÿÿÿ
+q
+java:S1450"ZRemove the "lbOeeMeta57" field and declare it as a local variable in the relevant methods.(¶”´×
+q
+java:S1450Ê"[Remove the "lbOeePonto44" field and declare it as a local variable in the relevant methods.(®Ï¦f
+r
+java:S1450Â"[Remove the "lbOeePonto37" field and declare it as a local variable in the relevant methods.(Äö—¨
+w
+java:S1450õ"[Remove the "jSeparator27" field and declare it as a local variable in the relevant methods.(†Ì»éıÿÿÿÿ
+w
+java:S1450ñ"[Remove the "jSeparator23" field and declare it as a local variable in the relevant methods.( „ğ¢øÿÿÿÿ
+r
+java:S1450Œ"[Remove the "jSeparator48" field and declare it as a local variable in the relevant methods.(ÄîåŸ
+q
+java:S1450ü"ZRemove the "lbOeeMeta40" field and declare it as a local variable in the relevant methods.(Æ¢²¤
+n
+java:S1450Ï"WRemove the "jLabel12" field and declare it as a local variable in the relevant methods.(¶“¡
+]
+java:S2147™"FCombine this catch with the one at line 1941, which has the same body.(ã€ 
+r
+java:S1450«"[Remove the "lbOeePonto16" field and declare it as a local variable in the relevant methods.(ŠË¤¸
+w
+java:S1450¿"[Remove the "lbOeePonto34" field and declare it as a local variable in the relevant methods.(ØÉµÌüÿÿÿÿ
+m
+java:S1450Æ"VRemove the "lbOee13" field and declare it as a local variable in the relevant methods.(Êòğó
+p
+java:S1450§"ZRemove the "jSeparator8" field and declare it as a local variable in the relevant methods.(¨‰
+w
+java:S1450ò"[Remove the "jSeparator24" field and declare it as a local variable in the relevant methods.( •øÙÿÿÿÿÿ
+n
+java:S1450Ò"WRemove the "lbTitulo" field and declare it as a local variable in the relevant methods.(Í¥ ñ
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ËÎˆùúÿÿÿÿ
+r
+java:S1450±"[Remove the "lbOeePonto21" field and declare it as a local variable in the relevant methods.(«‚ì†
+w
+java:S1450ë"[Remove the "jSeparator18" field and declare it as a local variable in the relevant methods.(Ë†¿ıÿÿÿÿÿ
+w
+java:S1450°"[Remove the "lbOeePonto20" field and declare it as a local variable in the relevant methods.(Ï®æûÿÿÿÿ
+v
+java:S1450Å"ZRemove the "lbOeePonto4" field and declare it as a local variable in the relevant methods.(‘ ±ôùÿÿÿÿ
+v
+java:S1450‘"ZRemove the "jSeparator6" field and declare it as a local variable in the relevant methods.(˜íüÿÿÿÿ
+w
+java:S1450ì"[Remove the "jSeparator19" field and declare it as a local variable in the relevant methods.(¢çì¦üÿÿÿÿ
+r
+java:S1450‰"[Remove the "jSeparator45" field and declare it as a local variable in the relevant methods.(Ïëªò
+w
+java:S1450•"[Remove the "jSeparator63" field and declare it as a local variable in the relevant methods.(³¼ÿ½ùÿÿÿÿ
+r
+java:S1450­"[Remove the "jSeparator85" field and declare it as a local variable in the relevant methods.(á±ç»
+r
+java:S1450µ"[Remove the "jSeparator92" field and declare it as a local variable in the relevant methods.(Ç¯…â
+w
+java:S1450®"[Remove the "jSeparator86" field and declare it as a local variable in the relevant methods.(É‚öÎıÿÿÿÿ
+w
+java:S1450¢"[Remove the "jSeparator75" field and declare it as a local variable in the relevant methods.(ì©şÿÿÿÿ
+q
+java:S1450Ü"ZRemove the "lbOeeMeta11" field and declare it as a local variable in the relevant methods.(í£‘
+v
+java:S1450í"ZRemove the "lbOeeMeta27" field and declare it as a local variable in the relevant methods.(è…üóùÿÿÿÿ
+v
+java:S1450‰"ZRemove the "lbOeeMeta52" field and declare it as a local variable in the relevant methods.(ä…ß—úÿÿÿÿ
+q
+java:S1450À"URemove the "lbMeta" field and declare it as a local variable in the relevant methods.(ƒ Øşÿÿÿÿ
+w
+java:S1450"[Remove the "jSeparator58" field and declare it as a local variable in the relevant methods.(¼Ä¥§ÿÿÿÿÿ
+q
+java:S1450¹"[Remove the "jSeparator96" field and declare it as a local variable in the relevant methods.(¯öÁn
+w
+java:S1450é"[Remove the "jSeparator16" field and declare it as a local variable in the relevant methods.(ˆ¤Óûÿÿÿÿ
+w
+java:S1450ö"[Remove the "jSeparator28" field and declare it as a local variable in the relevant methods.(òõÀ¥ÿÿÿÿÿ
+w
+java:S1450·"[Remove the "lbOeePonto27" field and declare it as a local variable in the relevant methods.(×½×§úÿÿÿÿ
+r
+java:S1450½"[Remove the "lbOeePonto32" field and declare it as a local variable in the relevant methods.(ï£®·
+q
+java:S1450¡"ZRemove the "lbOeeMeta74" field and declare it as a local variable in the relevant methods.(‰ÚËã
+
+java:S1450½"cRemove the "jpDescricaoCabecalho" field and declare it as a local variable in the relevant methods.(Êùí‘üÿÿÿÿ
+q
+java:S1450Ğ"ZRemove the "lbOeePonto5" field and declare it as a local variable in the relevant methods.(á®Å‘
+r
+java:S1450…"[Remove the "jSeparator41" field and declare it as a local variable in the relevant methods.(»İÀö
+r
+java:S1450"[Remove the "jSeparator49" field and declare it as a local variable in the relevant methods.(¿ğàş
+r
+java:S1450¨"[Remove the "jSeparator80" field and declare it as a local variable in the relevant methods.(‡ö“¦
+m
+java:S1450È"VRemove the "lbOee15" field and declare it as a local variable in the relevant methods.(ÛşÁÊ
+r
+java:S1450«"[Remove the "jSeparator83" field and declare it as a local variable in the relevant methods.(¨½ÅÏ
+s
+java:S1450Ğ"WRemove the "jLabel13" field and declare it as a local variable in the relevant methods.(ÑİĞİıÿÿÿÿ
+r
+java:S1450¯"[Remove the "jSeparator87" field and declare it as a local variable in the relevant methods.(¥âÀš
+v
+java:S1450²"ZRemove the "jSeparator9" field and declare it as a local variable in the relevant methods.(‹¨ª»úÿÿÿÿ
+D
+java:S1604À"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+V	java:S110	"<This class has 6 parents which is greater than 5 authorized.(ËÎˆùúÿÿÿÿ
+r
+java:S1450ä"[Remove the "jSeparator11" field and declare it as a local variable in the relevant methods.(ÊÓø
+w
+java:S1450û"[Remove the "jSeparator32" field and declare it as a local variable in the relevant methods.(§©£îúÿÿÿÿ
+q
+java:S1450–"ZRemove the "lbOeeMeta64" field and declare it as a local variable in the relevant methods.(ìì °
+u
+java:S1450¤"YRemove the "lbOeeMeta9" field and declare it as a local variable in the relevant methods.(â¦Ï„üÿÿÿÿ
+v
+java:S1450™"ZRemove the "lbOeeMeta67" field and declare it as a local variable in the relevant methods.(‰¸İßúÿÿÿÿ
+p
+java:S1450ğ"YRemove the "lbOeeMeta3" field and declare it as a local variable in the relevant methods.(¢—İÊ
+r
+java:S1450¡"[Remove the "jSeparator74" field and declare it as a local variable in the relevant methods.(©ÿ¢ï
+r
+java:S1450´"[Remove the "jSeparator91" field and declare it as a local variable in the relevant methods.(‚§Í
+w
+java:S1450ô"[Remove the "jSeparator26" field and declare it as a local variable in the relevant methods.(­óÌºşÿÿÿÿ
+n
+java:S1450È"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶
+q
+java:S1450Ø"URemove the "lbOee8" field and declare it as a local variable in the relevant methods.(¨É‚¸ûÿÿÿÿ
+q
+java:S1450ì"ZRemove the "lbOeeMeta26" field and declare it as a local variable in the relevant methods.(Õ÷¨Û
+q
+java:S1450ó"[Remove the "jSeparator25" field and declare it as a local variable in the relevant methods.(ÈôĞT
+q
+java:S1450á"ZRemove the "lbOeeMeta16" field and declare it as a local variable in the relevant methods.(ñõ—Í
+p
+java:S1450†"YRemove the "lbOeeMeta5" field and declare it as a local variable in the relevant methods.(ŸŒ¸
+w
+java:S1450Ì"[Remove the "lbOeePonto46" field and declare it as a local variable in the relevant methods.(æ©íùÿÿÿÿ
+q
+java:S1450š"[Remove the "jSeparator68" field and declare it as a local variable in the relevant methods.(Ä£‚^
+q
+java:S1450ò"ZRemove the "lbOeeMeta31" field and declare it as a local variable in the relevant methods.(¸¸ñÜ
+q
+java:S1450Ó"URemove the "lbOee3" field and declare it as a local variable in the relevant methods.(ÜÓ“‘ÿÿÿÿÿ
+w
+java:S1450å"[Remove the "jSeparator12" field and declare it as a local variable in the relevant methods.(ÎŒ˜´ÿÿÿÿÿ
+w
+java:S1450ù"[Remove the "jSeparator30" field and declare it as a local variable in the relevant methods.(à¢ã¼øÿÿÿÿ
+w
+java:S1450“"[Remove the "jSeparator61" field and declare it as a local variable in the relevant methods.(Ó˜ìòøÿÿÿÿ
+r
+java:S1450¥"[Remove the "jSeparator78" field and declare it as a local variable in the relevant methods.(ÿ…ú³
+q
+java:S1450—"ZRemove the "lbOeeMeta65" field and declare it as a local variable in the relevant methods.(ñÈ£ß
+q
+java:S1450Ö"URemove the "lbOee6" field and declare it as a local variable in the relevant methods.(–’ƒ»ùÿÿÿÿ
+r
+java:S1450"[Remove the "jSeparator59" field and declare it as a local variable in the relevant methods.(¿ôúö
+q
+java:S1450š"ZRemove the "lbOeeMeta68" field and declare it as a local variable in the relevant methods.(ËŒÈ»
+r
+java:S1450Š"[Remove the "jSeparator46" field and declare it as a local variable in the relevant methods.(·µ´¹
+w
+java:S1450˜"[Remove the "jSeparator66" field and declare it as a local variable in the relevant methods.(É¥ºÔùÿÿÿÿ
+m
+java:S1450Î"VRemove the "lbOee20" field and declare it as a local variable in the relevant methods.(ÕĞÎË
+p
+java:S1450ô"ZRemove the "lbOeeMeta33" field and declare it as a local variable in the relevant methods.(Õš¨
+‚
+java:S1192ã"dDefine a constant instead of duplicating this literal "config/images/icons8-inÃ­cio-30.png" 4 times.(û ñ8Î³¢ß‹.
+E
+java:S1604–"(Make this anonymous inner class a lambda(¥Šîj8Î³¢ß‹.
+K
+java:S1604Ÿ"(Make this anonymous inner class a lambda(üåêøÿÿÿÿ8Î³¢ß‹.

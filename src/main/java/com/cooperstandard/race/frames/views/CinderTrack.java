@@ -1,77 +1,57 @@
 package com.cooperstandard.race.frames.views;
 
 import com.cooperstandard.race.frames.panels.CabecalhoPanel;
-import com.cooperstandard.race.frames.panels.RacePanel;
-import javax.swing.GroupLayout;
+import com.cooperstandard.race.frames.panels.RacePanelTreeTurns;
+import com.cooperstandard.race.listeners.CinderTrackListener;
+import com.cooperstandard.race.models.Kpi;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.List;
 
 /**
- *
  * @author rsouza10
  */
 public class CinderTrack extends javax.swing.JFrame {
-    
+
     public CinderTrack() {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
-        addObjects();
+        new CinderTrackListener(this);
     }
-    
-    private void addObjects(){
-        CabecalhoPanel cabecalhoPanel = new CabecalhoPanel();
-        RacePanel racePanel = new RacePanel();
-        javax.swing.GroupLayout jpInputLayout = (GroupLayout) jpInput.getLayout();
-        jpInputLayout.setHorizontalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInputLayout.createSequentialGroup()
-                .addGroup(jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cabecalhoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1240, Short.MAX_VALUE)
-                    .addComponent(racePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(1, 1, 1))
-        );
-        jpInputLayout.setVerticalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInputLayout.createSequentialGroup()
-                .addComponent(cabecalhoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(racePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+
+    public void initPanel(List<Kpi> kpi) {
+        JPanel mainPanel = new JPanel();
+        BoxLayout boxLayout = new BoxLayout(mainPanel, BoxLayout.PAGE_AXIS);
+
+        mainPanel.setBackground(new Color(226, 226, 226));
+        mainPanel.setMinimumSize(new Dimension(200, 220));
+        mainPanel.setPreferredSize(new Dimension(200, 220));
+        mainPanel.setLayout(boxLayout);
+        mainPanel.add(new CabecalhoPanel());
+
+        kpi.stream().forEach(k -> mainPanel.add(new RacePanelTreeTurns(k)));
+
+        scMain.setViewportView(mainPanel);
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jpInput = new javax.swing.JPanel();
+        scMain = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        jpInput.setBackground(new java.awt.Color(226, 226, 226));
-        jpInput.setMinimumSize(new java.awt.Dimension(200, 220));
-        jpInput.setPreferredSize(new java.awt.Dimension(200, 220));
-
-        javax.swing.GroupLayout jpInputLayout = new javax.swing.GroupLayout(jpInput);
-        jpInput.setLayout(jpInputLayout);
-        jpInputLayout.setHorizontalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1241, Short.MAX_VALUE)
-        );
-        jpInputLayout.setVerticalGroup(
-            jpInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-
-        jScrollPane2.setViewportView(jpInput);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(scMain, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(scMain)
         );
 
         pack();
@@ -85,7 +65,7 @@ public class CinderTrack extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -104,9 +84,6 @@ public class CinderTrack extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CinderTrack.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -117,8 +94,7 @@ public class CinderTrack extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JPanel jpInput;
+    private javax.swing.JScrollPane scMain;
     // End of variables declaration//GEN-END:variables
 
 }

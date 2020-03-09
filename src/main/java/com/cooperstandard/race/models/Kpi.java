@@ -26,10 +26,10 @@ public class Kpi implements Serializable {
     private String tipoEntrada;
     @Column(name = "ATIVO", columnDefinition = "boolean")
     private Boolean ativo;
-    @Column(name = "CARRO", length = 100)
-    private String carro;
+    @Column(name = "META")
+    private Long meta;
     @ManyToMany
-    private List<Meta> meta;
+    private List<MetodoPontuacao> metodoPontuacao;
     @ManyToMany
     private List<Turno> turnos;
 

@@ -5,7 +5,7 @@
  */
 package com.cooperstandard.race.tables.models;
 
-import com.cooperstandard.race.models.Meta;
+import com.cooperstandard.race.models.MetodoPontuacao;
 import com.cooperstandard.race.tables.interfaces.DefaultTableModelCustom;
 
 import javax.swing.*;
@@ -14,7 +14,7 @@ import java.awt.*;
 /**
  * @author Tiago
  */
-public class MetaTableModel extends DefaultTableModelCustom<Meta> {
+public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
 
     @Override
     protected String[] getColumnsNames() {
@@ -23,16 +23,16 @@ public class MetaTableModel extends DefaultTableModelCustom<Meta> {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Meta meta = list.get(rowIndex);
+        MetodoPontuacao metodoPontuacao = list.get(rowIndex);
         switch (columnIndex) {
             case 0:
-                return meta.getValor();
+                return metodoPontuacao.getValor();
             case 1:
-                return meta.getComparacao();
+                return metodoPontuacao.getComparacao();
             case 2:
-                return meta.getPontuacao();
+                return metodoPontuacao.getPontuacao();
             case 3:
-                return meta.getCor() != null ? new Color(meta.getCor()) : null;
+                return metodoPontuacao.getCor() != null ? new Color(metodoPontuacao.getCor()) : null;
             default:
                 return "";
         }
@@ -40,19 +40,19 @@ public class MetaTableModel extends DefaultTableModelCustom<Meta> {
 
     @Override
     public void setValueAt(Object aValue, int row, int column) {
-        Meta meta = list.get(row);
+        MetodoPontuacao metodoPontuacao = list.get(row);
         switch (column) {
             case 0:
-                meta.setValor(Long.parseLong(aValue.toString()));
+                metodoPontuacao.setValor(Long.parseLong(aValue.toString()));
                 break;
             case 1:
-                meta.setComparacao(aValue.toString());
+                metodoPontuacao.setComparacao(aValue.toString());
                 break;
             case 2:
-                meta.setPontuacao(Long.parseLong(aValue.toString()));
+                metodoPontuacao.setPontuacao(Long.parseLong(aValue.toString()));
                 break;
             case 3:
-                meta.setCor(((Color) aValue).getRGB());
+                metodoPontuacao.setCor(((Color) aValue).getRGB());
                 break;
         }
     }

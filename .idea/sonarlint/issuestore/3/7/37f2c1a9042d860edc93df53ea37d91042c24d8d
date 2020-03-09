@@ -1,0 +1,318 @@
+
+}
+java:S1450Ø"aRemove the "lbMisturadorPonto1" field and declare it as a local variable in the relevant methods.(øùü¹üÿÿÿÿ
+q
+java:S1450€"ZRemove the "lbSeguranca" field and declare it as a local variable in the relevant methods.(ÓÈ±
+Q	java:S110	"<This class has 6 parents which is greater than 5 authorized.(ğ´®ø
+x
+java:S1450Ü"\Remove the "lbNormecMeta2" field and declare it as a local variable in the relevant methods.(õé¹åıÿÿÿÿ
+{
+java:S1450‘"_Remove the "lbStripMilPonto1" field and declare it as a local variable in the relevant methods.(ıÀö†üÿÿÿÿ
+€
+java:S4144â
+"iUpdate this method so that its implementation is not identical to "jButton3ActionPerformed" on line 1373.(è¿é¦
+>
+java:S1604Ã
+"(Make this anonymous inner class a lambda(¥Šîj
+s
+java:S1450ÿ"\Remove the "lbScrapPonto3" field and declare it as a local variable in the relevant methods.(µ©Œ…
+r
+java:S1450‹"VRemove the "cbTurno" field and declare it as a local variable in the relevant methods.(ª™Îúÿÿÿÿ
+y
+java:S1450İ"]Remove the "lbNormecPonto1" field and declare it as a local variable in the relevant methods.(›â©¾ıÿÿÿÿ
+s
+java:S1450Û"\Remove the "lbNormecMeta1" field and declare it as a local variable in the relevant methods.(ÆÓîã
+y
+java:S1450¬"]Remove the "lbBlend2Ponto1" field and declare it as a local variable in the relevant methods.(¬Ÿİúÿÿÿÿ
+x
+java:S1450¦"\Remove the "lbBlend1Meta2" field and declare it as a local variable in the relevant methods.(×à’ºúÿÿÿÿ
+x
+java:S1450Ñ"aRemove the "lbGranuladorPonto1" field and declare it as a local variable in the relevant methods.(ÔâÏ¹
+z
+java:S1450Æ"^Remove the "lbDownTimeMeta2" field and declare it as a local variable in the relevant methods.(ùÑŠÇøÿÿÿÿ
+n
+java:S1450©"WRemove the "lbBlend2" field and declare it as a local variable in the relevant methods.(Ï–ÉØ
+q
+java:S1450Ë"ZRemove the "lbDropMeta2" field and declare it as a local variable in the relevant methods.(‘Â—
+r
+java:S1450ˆ"[Remove the "lbSetupMeta3" field and declare it as a local variable in the relevant methods.(Ä¯˜ô
+v
+java:S1450"_Remove the "lbStrainerPonto2" field and declare it as a local variable in the relevant methods.(´´ºæ
+y
+java:S1450ò"bRemove the "lbQualidadeVgaMeta2" field and declare it as a local variable in the relevant methods.(Æ‘ø÷
+V
+java:S1161¢":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ
+v
+java:S1450–"ZRemove the "jSeparator3" field and declare it as a local variable in the relevant methods.(Éø¹Êÿÿÿÿÿ
+u
+java:S1450½"^Remove the "lbChronosPonto1" field and declare it as a local variable in the relevant methods.(¦—ªÛ
+w
+java:S1450Ö"`Remove the "lbMisturadorMeta1" field and declare it as a local variable in the relevant methods.(Ûğ‡¢
+y
+java:S1450Ş"]Remove the "lbNormecPonto2" field and declare it as a local variable in the relevant methods.(ƒ‰÷¾ıÿÿÿÿ
+x
+java:S1450ø"aRemove the "lbRheometriaPonto1" field and declare it as a local variable in the relevant methods.(Í—¼Á
+u
+java:S1450 "^Remove the "lbBatchOffMeta1" field and declare it as a local variable in the relevant methods.(šµ³
+y
+java:S1450‘"]Remove the "jMonthChooser1" field and declare it as a local variable in the relevant methods.(éñ³Âşÿÿÿÿ
+z
+java:S1450"^Remove the "lbStrainerMeta2" field and declare it as a local variable in the relevant methods.(£şäşÿÿÿÿ
+q
+java:S1450Ê"ZRemove the "lbDropMeta1" field and declare it as a local variable in the relevant methods.(»¡Òø
+
+java:S1450ó"cRemove the "lbQualidadeVgaPonto1" field and declare it as a local variable in the relevant methods.(Ö»ùŸÿÿÿÿÿ
+p
+java:S1450Ó"TRemove the "lbKpi" field and declare it as a local variable in the relevant methods.(Ğ¸âúÿÿÿÿ
+r
+java:S1450õ"[Remove the "lbRheometria" field and declare it as a local variable in the relevant methods.(Ä«Òå
+v
+java:S1450“"ZRemove the "lbStripMill" field and declare it as a local variable in the relevant methods.(ˆ—Üşÿÿÿÿ
+y
+java:S1450ô"cRemove the "lbQualidadeVgaPonto2" field and declare it as a local variable in the relevant methods.(ò·›j
+p
+java:S1450à"YRemove the "lbOeeMeta1" field and declare it as a local variable in the relevant methods.(ö•´À
+y
+java:S1450­"]Remove the "lbBlend2Ponto2" field and declare it as a local variable in the relevant methods.(æøÑıÿÿÿÿ
+s
+java:S1450—"WRemove the "tbPontos" field and declare it as a local variable in the relevant methods.(şÅôøúÿÿÿÿ
+t
+java:S1450¨"]Remove the "lbBlend1Ponto2" field and declare it as a local variable in the relevant methods.(•Á¥ª
+w
+java:S1450ö"`Remove the "lbRheometriaMeta1" field and declare it as a local variable in the relevant methods.(´ãÄ®
+{
+java:S1450‚"_Remove the "lbSegurancaMeta2" field and declare it as a local variable in the relevant methods.(ë¼¢·ÿÿÿÿÿ
+z
+java:S1450"^Remove the "lbStrainerMeta1" field and declare it as a local variable in the relevant methods.(ò‡Ú§şÿÿÿÿ
+v
+java:S1450ä"ZRemove the "lbOeePonto2" field and declare it as a local variable in the relevant methods.(ùÈúöúÿÿÿÿ
+{
+java:S1450”"_Remove the "lbStripMillMeta1" field and declare it as a local variable in the relevant methods.(äÎ–›üÿÿÿÿ
+q
+java:S1450¹"ZRemove the "lbBtsPonto3" field and declare it as a local variable in the relevant methods.(›³¼°
+v
+java:S1450±"ZRemove the "lbBtoPonto1" field and declare it as a local variable in the relevant methods.(±æÔíúÿÿÿÿ
+p
+java:S1450¿"TRemove the "lbCpk" field and declare it as a local variable in the relevant methods.(¯Úƒãüÿÿÿÿ
+q
+java:S1450Â"ZRemove the "lbCpkPonto1" field and declare it as a local variable in the relevant methods.(‚½–
+y
+java:S1450è"]Remove the "lbPesagemMeta2" field and declare it as a local variable in the relevant methods.(­ãÉåüÿÿÿÿ
+u
+java:S1450Œ"YRemove the "lbStrainer" field and declare it as a local variable in the relevant methods.(„ÕêÆşÿÿÿÿ
+r
+java:S1450™"VRemove the "jpInput" field and declare it as a local variable in the relevant methods.(ÑËßÖÿÿÿÿÿ
+q
+java:S1450Ô"URemove the "lbMeta" field and declare it as a local variable in the relevant methods.(ƒ Øşÿÿÿÿ
+w
+java:S1450’"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+u
+java:S1450¯"YRemove the "lbBtoMeta1" field and declare it as a local variable in the relevant methods.(ÚÒÉÜøÿÿÿÿ
+p
+java:S1450â"YRemove the "lbOeeMeta3" field and declare it as a local variable in the relevant methods.(¢—İÊ
+y
+java:S1450ñ"bRemove the "lbQualidadeVgaMeta1" field and declare it as a local variable in the relevant methods.(¥ğ
+u
+java:S1450Å"^Remove the "lbDownTimeMeta1" field and declare it as a local variable in the relevant methods.(¸ëë
+|
+java:S1450Ğ"`Remove the "lbGranuladorMeta2" field and declare it as a local variable in the relevant methods.(€¬“şÿÿÿÿ
+p
+java:S1450Ä"YRemove the "lbDownTime" field and declare it as a local variable in the relevant methods.(Å­ìü
+n
+java:S1450–"WRemove the "lbTitulo" field and declare it as a local variable in the relevant methods.(Í¥ ñ
+|
+java:S1450×"`Remove the "lbMisturadorMeta2" field and declare it as a local variable in the relevant methods.(„ĞŒÿÿÿÿÿ
+A
+java:S1172â
+"*Remove this unused method parameter "evt".(è¿é¦
+{
+java:S1450"_Remove the "lbStrainerPonto1" field and declare it as a local variable in the relevant methods.(…Í×Ãıÿÿÿÿ
+q
+java:S1450•"ZRemove the "jSeparator2" field and declare it as a local variable in the relevant methods.(èÅĞø
+p
+java:S1450Á"YRemove the "lbCpkMeta2" field and declare it as a local variable in the relevant methods.(Ê°½Œ
+|
+java:S1450Ï"`Remove the "lbGranuladorMeta1" field and declare it as a local variable in the relevant methods.(³ï°Şûÿÿÿÿ
+t
+java:S1450æ"XRemove the "lbPesagem" field and declare it as a local variable in the relevant methods.(¼ù¶¶øÿÿÿÿ
+w
+java:S1450÷"`Remove the "lbRheometriaMeta2" field and declare it as a local variable in the relevant methods.(ÀÑ”‡
+u
+java:S1450á"YRemove the "lbOeeMeta2" field and declare it as a local variable in the relevant methods.(¹Ç¿Çÿÿÿÿÿ
+w
+java:S1450Î"[Remove the "lbGranulador" field and declare it as a local variable in the relevant methods.(Ú’ÊÃúÿÿÿÿ
+u
+java:S1450ê"^Remove the "lbPesagemPonto2" field and declare it as a local variable in the relevant methods.(¯ƒéµ
+{
+java:S1450"_Remove the "lbSegurancaMeta1" field and declare it as a local variable in the relevant methods.(¢áñËıÿÿÿÿ
+u
+java:S1450"^Remove the "lbAbsentePonto1" field and declare it as a local variable in the relevant methods.(¦ğêÄ
+`
+java:S1192ª"IDefine a constant instead of duplicating this literal "Tahoma" 130 times.(§¤â€
+v
+java:S1450£"_Remove the "lbBatchOffPonto2" field and declare it as a local variable in the relevant methods.(ç­ğÕ
+v
+java:S1450å"ZRemove the "lbOeePonto3" field and declare it as a local variable in the relevant methods.(ñ÷Å¶ûÿÿÿÿ
+t
+java:S1450ë"]Remove the "lbQualidadeAtb" field and declare it as a local variable in the relevant methods.(÷úä’
+
+java:S1450î"cRemove the "lbQualidadeAtbPonto1" field and declare it as a local variable in the relevant methods.(î€ÆÄıÿÿÿÿ
+z
+java:S1450ï"cRemove the "lbQualidadeAtbPonto2" field and declare it as a local variable in the relevant methods.(¥É¥
+v
+java:S1450’"_Remove the "lbStripMilPonto2" field and declare it as a local variable in the relevant methods.(ÃÓÙ
+w
+java:S1450“"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+Q
+java:S1161¦":Add the "@Override" annotation above this method signature(®¸ù
+p
+java:S1450—"ZRemove the "jpCabecalho" field and declare it as a local variable in the relevant methods.(¾»¯
+u
+java:S1450°"YRemove the "lbBtoMeta2" field and declare it as a local variable in the relevant methods.(İèÅÓúÿÿÿÿ
+w
+java:S1450û"[Remove the "lbScrapMeta2" field and declare it as a local variable in the relevant methods.(Êçœ’ıÿÿÿÿ
+w
+java:S1450‡"[Remove the "lbSetupMeta2" field and declare it as a local variable in the relevant methods.(™“™œÿÿÿÿÿ
+q
+java:S1450ü"[Remove the "lbScrapMeta3" field and declare it as a local variable in the relevant methods.(›ëÛQ
+t
+java:S1450¼"]Remove the "lbChronosMeta2" field and declare it as a local variable in the relevant methods.(¬¸¹‘
+w
+java:S1450Í"[Remove the "lbDropPonto2" field and declare it as a local variable in the relevant methods.(ú¡§ÿÿÿÿÿÿ
+m
+java:S1450…"VRemove the "lbSetup" field and declare it as a local variable in the relevant methods.(¥ó¼Ş
+p
+java:S1450³"TRemove the "lbBts" field and declare it as a local variable in the relevant methods.(µƒŞêùÿÿÿÿ
+z
+java:S1450é"^Remove the "lbPesagemPonto1" field and declare it as a local variable in the relevant methods.(½òÕœûÿÿÿÿ
+o
+java:S1450š"XRemove the "lbAbsente" field and declare it as a local variable in the relevant methods.(­˜†œ
+p
+java:S1450´"YRemove the "lbBtsMeta1" field and declare it as a local variable in the relevant methods.(Ö§üÚ
+v
+java:S1450¸"ZRemove the "lbBtsPonto2" field and declare it as a local variable in the relevant methods.(¶Ú®„üÿÿÿÿ
+x
+java:S1450ù"aRemove the "lbRheometriaPonto2" field and declare it as a local variable in the relevant methods.(ŞÎéß
+p
+java:S1450®"TRemove the "lbBto" field and declare it as a local variable in the relevant methods.(èœüÙüÿÿÿÿ
+u
+java:S1450¡"^Remove the "lbBatchOffMeta2" field and declare it as a local variable in the relevant methods.(âÌ­†
+x
+java:S1450Š"\Remove the "lbSetupPonto2" field and declare it as a local variable in the relevant methods.(èŠÀÔúÿÿÿÿ
+p
+java:S1450µ"YRemove the "lbBtsMeta2" field and declare it as a local variable in the relevant methods.(Øğ´¨
+z
+java:S1450¾"^Remove the "lbChronosPonto2" field and declare it as a local variable in the relevant methods.(û¦²ğùÿÿÿÿ
+s
+java:S1450"WRemove the "jButton5" field and declare it as a local variable in the relevant methods.(â¦Î©ûÿÿÿÿ
+{
+java:S1450¢"_Remove the "lbBatchOffPonto1" field and declare it as a local variable in the relevant methods.(Åàİòúÿÿÿÿ
+s
+java:S1450‰"\Remove the "lbSetupPonto1" field and declare it as a local variable in the relevant methods.(ĞùÛØ
+y
+java:S1450í"bRemove the "lbQualidadeAtbMeta2" field and declare it as a local variable in the relevant methods.(ïµ„Ä
+t
+java:S1450ğ"]Remove the "lbQualidadeVga" field and declare it as a local variable in the relevant methods.(ş×ø«
+]
+java:S2147û
+"FCombine this catch with the one at line 1399, which has the same body.(ã€ 
+y
+java:S1450›"]Remove the "lbAbsenteMeta1" field and declare it as a local variable in the relevant methods.(õĞÔ£ûÿÿÿÿ
+t
+java:S1450º"XRemove the "lbChronos" field and declare it as a local variable in the relevant methods.(ÍŠ”¿ûÿÿÿÿ
+t
+java:S1450§"]Remove the "lbBlend1Ponto1" field and declare it as a local variable in the relevant methods.(úÀ™Å
+s
+java:S1450ı"\Remove the "lbScrapPonto1" field and declare it as a local variable in the relevant methods.(Ó„¡ó
+r
+java:S1450Õ"[Remove the "lbMisturador" field and declare it as a local variable in the relevant methods.(òŞç—
+w
+java:S1450ú"[Remove the "lbScrapMeta1" field and declare it as a local variable in the relevant methods.(à¨²äşÿÿÿÿ
+}
+java:S1450Ò"aRemove the "lbGranuladorPonto2" field and declare it as a local variable in the relevant methods.(®şöîúÿÿÿÿ
+q
+java:S1450²"ZRemove the "lbBtoPonto2" field and declare it as a local variable in the relevant methods.(¨¿çé
+y
+java:S1450ç"]Remove the "lbPesagemMeta1" field and declare it as a local variable in the relevant methods.(òÛ·¶şÿÿÿÿ
+\
+java:S2147ı
+"FCombine this catch with the one at line 1399, which has the same body.(ñÎ¯%
+s
+java:S1450Œ"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ
+D
+java:S1604Ë"(Make this anonymous inner class a lambda(‹ıÉ¼üÿÿÿÿ
+{
+java:S1450È"_Remove the "lbDownTimePonto2" field and declare it as a local variable in the relevant methods.(˜£¹”üÿÿÿÿ
+s
+java:S1450Ú"WRemove the "lbNormec" field and declare it as a local variable in the relevant methods.(™ïƒìıÿÿÿÿ
+s
+java:S1450‹"\Remove the "lbSetupPonto3" field and declare it as a local variable in the relevant methods.(ÒÙ×ø
+v
+java:S1450•"_Remove the "lbStripMillMeta2" field and declare it as a local variable in the relevant methods.(ÃÁÒ¹
+x
+java:S1450ş"\Remove the "lbScrapPonto2" field and declare it as a local variable in the relevant methods.(ãÁÑºøÿÿÿÿ
+j
+java:S1450ß"TRemove the "lbOee" field and declare it as a local variable in the relevant methods.(Ç¾U
+s
+java:S1450«"\Remove the "lbBlend2Meta2" field and declare it as a local variable in the relevant methods.(œ¥¸Ü
+u
+java:S1450À"YRemove the "lbCpkMeta1" field and declare it as a local variable in the relevant methods.(óÎ·»úÿÿÿÿ
+|
+java:S1450„"`Remove the "lbSegurancaPonto2" field and declare it as a local variable in the relevant methods.(ıÛë¦ÿÿÿÿÿ
+v
+java:S1450ã"ZRemove the "lbOeePonto1" field and declare it as a local variable in the relevant methods.(Ø²Ôæûÿÿÿÿ
+q
+java:S1450Ã"ZRemove the "lbCpkPonto2" field and declare it as a local variable in the relevant methods.(Á‰•”
+w
+java:S1450†"[Remove the "lbSetupMeta1" field and declare it as a local variable in the relevant methods.(Üƒ…ğûÿÿÿÿ
+~
+java:S1450ì"bRemove the "lbQualidadeAtbMeta1" field and declare it as a local variable in the relevant methods.(ºïõğøÿÿÿÿ
+q
+java:S1450É"URemove the "lbDrop" field and declare it as a local variable in the relevant methods.(ÿß¾Èúÿÿÿÿ
+v
+java:S1450Ç"_Remove the "lbDownTimePonto1" field and declare it as a local variable in the relevant methods.(ŞÇÌÀ
+s
+java:S1450¤"WRemove the "lbBlend1" field and declare it as a local variable in the relevant methods.(¸©şšøÿÿÿÿ
+s
+java:S1450¥"\Remove the "lbBlend1Meta1" field and declare it as a local variable in the relevant methods.(°şÒ
+|
+java:S1450ƒ"`Remove the "lbSegurancaPonto1" field and declare it as a local variable in the relevant methods.(é‡³ûıÿÿÿÿ
+z
+java:S1450"^Remove the "lbAbsentePonto2" field and declare it as a local variable in the relevant methods.(»ò‰áşÿÿÿÿ
+y
+java:S1450œ"]Remove the "lbAbsenteMeta2" field and declare it as a local variable in the relevant methods.(ü­òşÿÿÿÿ
+x
+java:S1450Ù"aRemove the "lbMisturadorPonto2" field and declare it as a local variable in the relevant methods.(¡°µæ
+s
+java:S1450ª"\Remove the "lbBlend2Meta1" field and declare it as a local variable in the relevant methods.(á°ã‘
+q
+java:S1450·"ZRemove the "lbBtsPonto1" field and declare it as a local variable in the relevant methods.(øıÃÔ
+u
+java:S1450¶"YRemove the "lbBtsMeta3" field and declare it as a local variable in the relevant methods.(ò¶ëùşÿÿÿÿ
+@
+java:S1172İ
+"*Remove this unused method parameter "evt".(Š–ÿG
+]
+java:S2147ù
+"FCombine this catch with the one at line 1399, which has the same body.(¨¦Š½
+r
+java:S1450"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+D
+java:S1604ƒ"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+w
+java:S1450Ì"[Remove the "lbDropPonto1" field and declare it as a local variable in the relevant methods.(»£Óÿÿÿÿÿ
+y
+java:S1450»"]Remove the "lbChronosMeta1" field and declare it as a local variable in the relevant methods.(¿Şï…ùÿÿÿÿ
+q
+java:S1450”"ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉ
+u
+java:S1450Ÿ"YRemove the "lbBatchOff" field and declare it as a local variable in the relevant methods.(¨äáùÿÿÿÿ
+r
+java:S1450"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+m
+java:S1450"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+T
+java:S1197ê
+"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+
+java:S1450˜"cRemove the "jpDescricaoCabecalho" field and declare it as a local variable in the relevant methods.(Êùí‘üÿÿÿÿ

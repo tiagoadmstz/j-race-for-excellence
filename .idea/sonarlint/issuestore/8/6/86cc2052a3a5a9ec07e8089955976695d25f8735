@@ -1,0 +1,25 @@
+
+@
+java:S1148!"#Use a logger to log this exception.(Ç’Çê8Çâ…Õ‹.
+a
+java:S2147r"ECombine this catch with the one at line 108, which has the same body.(ñÎ¯%8Çâ…Õ‹.
+X	java:S110
+"<This class has 6 parents which is greater than 5 authorized.(¸‡þÄ8Çâ…Õ‹.
+b
+java:S2147p"ECombine this catch with the one at line 108, which has the same body.(ã€ 8Çâ…Õ‹.
+Z
+java:S1197_"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ8Çâ…Õ‹.
+y
+java:S1450€"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8Çâ…Õ‹.
+J
+java:S1604x"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8Çâ…Õ‹.
+m
+java:S1450‚"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+r
+java:S1450ƒ"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+r
+java:S1450"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+b
+java:S2147n"ECombine this catch with the one at line 108, which has the same body.(¨¦Š½8Çâ…Õ‹.
+h
+java:S2142 "FEither re-interrupt this method or rethrow the "InterruptedException".(è®ã¶øÿÿÿÿ8Çâ…Õ‹.

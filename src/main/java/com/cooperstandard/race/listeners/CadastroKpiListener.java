@@ -9,7 +9,7 @@ import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.frames.views.CadastroKpi;
 import com.cooperstandard.race.interfaces.CrudListener;
 import com.cooperstandard.race.interfaces.DefaultListenerCustom;
-import com.cooperstandard.race.models.Meta;
+import com.cooperstandard.race.models.MetodoPontuacao;
 import com.cooperstandard.race.models.Turno;
 import com.cooperstandard.race.services.CadastroKpiService;
 import com.cooperstandard.race.tables.editors.ColorCellEditor;
@@ -63,7 +63,7 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
     }
 
     public void addMeta() {
-        frame.getTbMetasVinculadasModel().addObject(new Meta());
+        frame.getTbMetasVinculadasModel().addObject(new MetodoPontuacao());
     }
 
     public void deleteMeta() {

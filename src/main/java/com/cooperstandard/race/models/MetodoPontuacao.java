@@ -17,7 +17,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Entity
 @Table(name = "CAD_META")
-public class Meta implements Serializable {
+public class MetodoPontuacao implements Serializable {
 
     @Id
     @Column(name = "META")

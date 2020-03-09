@@ -35,7 +35,7 @@ public class CadastroKpi extends javax.swing.JFrame {
         return Kpi.builder()
                 .ativo(ckAtivo.isSelected())
                 .nome(txtNomeKpi.getText())
-                .meta(getTbMetasVinculadasModel().getList())
+                .metodoPontuacao(getTbMetasVinculadasModel().getList())
                 .turnos(getTbTurnosModel().getList())
                 .build();
     }
@@ -43,7 +43,7 @@ public class CadastroKpi extends javax.swing.JFrame {
     public void setKpi(Kpi kpi) {
         ckAtivo.setSelected(kpi.getAtivo());
         txtNomeKpi.setText(kpi.getNome());
-        getTbMetasVinculadasModel().setList(kpi.getMeta());
+        getTbMetasVinculadasModel().setList(kpi.getMetodoPontuacao());
         getTbTurnosModel().setList(kpi.getTurnos());
     }
 

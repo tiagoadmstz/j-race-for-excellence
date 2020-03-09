@@ -1,0 +1,70 @@
+
+P	java:S110"<This class has 6 parents which is greater than 5 authorized.(âÃ°p
+=
+java:S1604O"(Make this anonymous inner class a lambda(¥Šîj
+C
+java:S1604X"(Make this anonymous inner class a lambda(üåêøÿÿÿÿ
+D
+java:S1604›"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+n
+java:S1450£"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶
+n
+java:S1450¤"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ
+s
+java:S1450¥"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ
+s
+java:S1450¦"WRemove the "jButton4" field and declare it as a local variable in the relevant methods.(€„ˆÎÿÿÿÿÿ
+s
+java:S1450§"WRemove the "jButton5" field and declare it as a local variable in the relevant methods.(â¦Î©ûÿÿÿÿ
+n
+java:S1450¨"WRemove the "jButton6" field and declare it as a local variable in the relevant methods.(á®İş
+n
+java:S1450©"WRemove the "jButton7" field and declare it as a local variable in the relevant methods.(İöÏÒ
+n
+java:S1450ª"WRemove the "jButton8" field and declare it as a local variable in the relevant methods.(ç™Ôô
+p
+java:S1450«"YRemove the "jCheckBox1" field and declare it as a local variable in the relevant methods.(×µ„Ò
+p
+java:S1450¬"YRemove the "jComboBox1" field and declare it as a local variable in the relevant methods.(ëõ«­
+r
+java:S1450­"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+r
+java:S1450®"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450¯"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+m
+java:S1450°"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+m
+java:S1450±"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+r
+java:S1450²"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+w
+java:S1450³"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ
+w
+java:S1450´"[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ
+m
+java:S1450µ"VRemove the "jTable1" field and declare it as a local variable in the relevant methods.(Ğÿ¿×
+r
+java:S1450¶"VRemove the "jTable2" field and declare it as a local variable in the relevant methods.(¢Ú„öıÿÿÿÿ
+q
+java:S1450·"ZRemove the "jTextField1" field and declare it as a local variable in the relevant methods.(’É´š
+U
+java:S1161>":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ
+P
+java:S1161B":Add the "@Override" annotation above this method signature(®¸ù
+V
+java:S1161":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ
+Q
+java:S1161‘":Add the "@Override" annotation above this method signature(®¸ù
+@
+java:S1172ö"*Remove this unused method parameter "evt".(Š–ÿG
+A
+java:S1172û"*Remove this unused method parameter "evt".(™ÃŠñ
+T
+java:S1197‚"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147‘"ECombine this catch with the one at line 271, which has the same body.(¨¦Š½
+\
+java:S2147“"ECombine this catch with the one at line 271, which has the same body.(ã€ 
+[
+java:S2147•"ECombine this catch with the one at line 271, which has the same body.(ñÎ¯%
