@@ -59,7 +59,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton5.setIcon(ImageUtil.getImageIconFromUserPath("config/images/calendario.png")); // NOI18N
         jButton5.setText("Inserir Dados                 ");
-        jButton5.setEnabled(false);
         jButton5.setFocusable(false);
         jButton5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
@@ -88,7 +87,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton7.setIcon(ImageUtil.getImageIconFromUserPath("config/images/engrenagem.png")); // NOI18N
         jButton7.setText("Configuração                 ");
-        jButton7.setEnabled(false);
         jButton7.setFocusable(false);
         jButton7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
@@ -195,11 +193,11 @@ public class ViewPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        new EntradaDadosKpi().setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
+        new CadastroKpi().setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**

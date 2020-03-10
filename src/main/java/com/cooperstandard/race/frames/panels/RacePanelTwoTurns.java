@@ -20,8 +20,8 @@ public class RacePanelTwoTurns extends javax.swing.JPanel {
      */
     public RacePanelTwoTurns() {
         initComponents();
-        addCinderTrack(jSlider1, "config/images/cars/2018-f1-ferrari.png");
-        addCinderTrack(jSlider2, "config/images/cars/2018-f1-mclaren.png");
+        addCinderTrack(jSlider1, "config/images/cars/ferrari.png");
+        addCinderTrack(jSlider2, "config/images/cars/mclaren.png");
     }
 
     public void setLabel(String label) {

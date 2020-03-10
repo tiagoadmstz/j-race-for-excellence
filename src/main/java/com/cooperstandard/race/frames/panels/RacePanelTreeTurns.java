@@ -39,10 +39,15 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
 
     private void setActualValue(JSlider jslider, Integer value) {
         new Thread(() -> {
-            int v = 0;
-            while (v <= value) {
-                jslider.setValue(v);
-                v += 10;
+            try {
+                int v = 0;
+                while (v <= value) {
+                    jslider.setValue(v);
+                    Thread.sleep(2000L);
+                    v += 10;
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
             }
         }).start();
     }

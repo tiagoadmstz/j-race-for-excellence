@@ -33,6 +33,7 @@ public class CinderTrack extends javax.swing.JFrame {
         kpi.stream().forEach(k -> mainPanel.add(new RacePanelTreeTurns(k)));
 
         scMain.setViewportView(mainPanel);
+        pack();
     }
 
     @SuppressWarnings("unchecked")

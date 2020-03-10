@@ -820,7 +820,7 @@ public class ViewRace_BK extends javax.swing.JFrame {
         jpInput.add(lbOeePonto50, new org.netbeans.lib.awtextra.AbsoluteConstraints(2335, 29, 47, 20));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(ImageUtil.getImageIconFromUserPath("config/images/Cars/2018-f1-haas.png")); // NOI18N
+        jLabel1.setIcon(ImageUtil.getImageIconFromUserPath("config/images/Cars/haas.png")); // NOI18N
         jpInput.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 97, -1, 25));
 
         jLabel4.setIcon(ImageUtil.getImageIconFromUserPath("config/images/largada.png")); // NOI18N
@@ -1870,11 +1870,11 @@ public class ViewRace_BK extends javax.swing.JFrame {
         jpInput.add(jSeparator96, new org.netbeans.lib.awtextra.AbsoluteConstraints(2289, 30, 47, 1748));
 
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setIcon(ImageUtil.getImageIconFromUserPath("config/images/Cars/2018-f1-ferrari.png")); // NOI18N
+        jLabel28.setIcon(ImageUtil.getImageIconFromUserPath("config/images/Cars/ferrari.png")); // NOI18N
         jpInput.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 49, 70, 25));
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setIcon(ImageUtil.getImageIconFromUserPath("config/images/Cars/2018-f1-force-india.png")); // NOI18N
+        jLabel29.setIcon(ImageUtil.getImageIconFromUserPath("config/images/Cars/force-india.png")); // NOI18N
         jpInput.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 73, -1, 25));
 
         jSeparator97.setOrientation(javax.swing.SwingConstants.VERTICAL);

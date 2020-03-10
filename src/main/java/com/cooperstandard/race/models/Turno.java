@@ -1,6 +1,7 @@
 package com.cooperstandard.race.models;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,6 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -17,6 +19,7 @@ public class Turno implements Serializable {
 
     @Id
     @Column(name = "TURNO")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "NOME", length = 100)
     private String nome;

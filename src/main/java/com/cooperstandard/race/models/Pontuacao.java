@@ -18,6 +18,7 @@ public class Pontuacao implements Serializable {
 
     @Id
     @Column(name = "PONTUACAO")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TURNO_ID", referencedColumnName = "TURNO")

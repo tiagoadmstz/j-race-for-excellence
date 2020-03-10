@@ -22,7 +22,7 @@ public class RacePanelOneTurn extends javax.swing.JPanel {
      */
     public RacePanelOneTurn() {
         initComponents();
-        addCinderTrack(jSlider1, "config/images/cars/2018-f1-ferrari.png");
+        addCinderTrack(jSlider1, "config/images/cars/ferrari.png");
     }
 
     public void setLabel(String label) {

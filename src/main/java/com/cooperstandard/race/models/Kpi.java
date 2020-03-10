@@ -19,6 +19,7 @@ public class Kpi implements Serializable {
 
     @Id
     @Column(name = "KPI")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "NOME", length = 100)
     private String nome;
@@ -28,9 +29,9 @@ public class Kpi implements Serializable {
     private Boolean ativo;
     @Column(name = "META")
     private Long meta;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<MetodoPontuacao> metodoPontuacao;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Turno> turnos;
 
 }
