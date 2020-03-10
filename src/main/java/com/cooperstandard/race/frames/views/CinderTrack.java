@@ -7,6 +7,7 @@ import com.cooperstandard.race.models.Kpi;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -30,10 +31,25 @@ public class CinderTrack extends javax.swing.JFrame {
         mainPanel.setLayout(boxLayout);
         mainPanel.add(new CabecalhoPanel());
 
-        kpi.stream().forEach(k -> mainPanel.add(new RacePanelTreeTurns(k)));
+        List<RacePanelTreeTurns> treeTurnsList = new ArrayList();
+        kpi.stream().forEach(k -> {
+            RacePanelTreeTurns racePanelTreeTurns = new RacePanelTreeTurns(k);
+            treeTurnsList.add(racePanelTreeTurns);
+            mainPanel.add(racePanelTreeTurns);
+        });
+
+        new Thread(() -> {
+            try {
+                Thread.sleep(500L);
+                treeTurnsList.forEach(panel -> {
+                    panel.startRace();
+                });
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }).start();
 
         scMain.setViewportView(mainPanel);
-        pack();
     }
 
     @SuppressWarnings("unchecked")

@@ -6,10 +6,15 @@
 package com.cooperstandard.race.frames.panels;
 
 import com.cooperstandard.race.models.Kpi;
+import com.cooperstandard.race.models.Turno;
 import com.cooperstandard.race.ui.IconThumbSliderUI;
 import com.cooperstandard.race.util.ImageUtil;
 
 import javax.swing.*;
+import java.awt.*;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Tiago
@@ -17,6 +22,7 @@ import javax.swing.*;
 public class RacePanelTreeTurns extends javax.swing.JPanel {
 
     private static final long serialVersionUID = -5407934704880959443L;
+    private Map<String, Object[]> tracks = new HashMap();
 
     /**
      * Creates new form RacePanel
@@ -24,26 +30,49 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
     public RacePanelTreeTurns(Kpi kpi) {
         initComponents();
         if (kpi != null) {
-            kpi.getTurnos().forEach(turno -> {
+            lbKpi.setText(kpi.getNome());
+            lbLargada.setIcon(ImageUtil.getImageIconFromUserPath("config/images/largada.png"));
+            lbChegada.setIcon(ImageUtil.getImageIconFromUserPath("config/images/largada.png"));
+            kpi.getTurnos().stream().sorted(Comparator.comparing(Turno::getNome)).forEach(turno -> {
                 JSlider jslider = new JSlider();
                 jslider.setMajorTickSpacing(10);
                 jslider.setValue(0);
                 jslider.setMaximum(kpi.getMeta() != null ? kpi.getMeta().intValue() : 0);
                 jslider.setPaintTrack(false);
-                lbOee1.setText(kpi.getNome());
+                jslider.setOpaque(false);
+                jslider.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
+                racePanel.add(jslider);
                 addCinderTrack(jslider, "config/images/cars/".concat(turno.getCarro()));
-                setActualValue(jslider, turno.getTotalPontuacao() != null ? turno.getTotalPontuacao().intValue() : 0);
+                tracks.put(turno.getNome(), new Object[]{jslider, turno.getTotalPontuacao()});
             });
         }
     }
 
-    private void setActualValue(JSlider jslider, Integer value) {
+    public void startRace() {
+        tracks.entrySet().forEach(entry -> {
+            new Thread(() -> {
+                try {
+                    Long value = (Long) entry.getValue()[1];
+                    int v = 0;
+                    while (v <= value) {
+                        ((JSlider) entry.getValue()[0]).setValue(v);
+                        Thread.sleep(50L);
+                        v += 2;
+                    }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }).start();
+        });
+    }
+
+    public void setActualValue(JSlider jslider, Long value) {
         new Thread(() -> {
             try {
                 int v = 0;
                 while (v <= value) {
                     jslider.setValue(v);
-                    Thread.sleep(2000L);
+                    Thread.sleep(50L);
                     v += 10;
                 }
             } catch (Exception ex) {
@@ -67,104 +96,127 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbOee1 = new javax.swing.JLabel();
-        lbOeeMeta4 = new javax.swing.JLabel();
-        lbOeeMeta5 = new javax.swing.JLabel();
-        lbOeeMeta6 = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
-        jSlider2 = new javax.swing.JSlider();
-        jSlider3 = new javax.swing.JSlider();
+        lbCabecalho = new javax.swing.JPanel();
+        lbKpi = new javax.swing.JLabel();
+        lbTurnoA = new javax.swing.JLabel();
+        lbTurnoB = new javax.swing.JLabel();
+        lbTurnoC = new javax.swing.JLabel();
+        layredPanel = new javax.swing.JLayeredPane();
+        racePanel = new javax.swing.JPanel();
+        lbLargada = new javax.swing.JLabel();
+        lbChegada = new javax.swing.JLabel();
 
-        lbOee1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        lbOee1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbOee1.setText("OEE");
-        lbOee1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        setPreferredSize(new java.awt.Dimension(380, 62));
 
-        lbOeeMeta4.setBackground(new java.awt.Color(255, 0, 0));
-        lbOeeMeta4.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
-        lbOeeMeta4.setForeground(new java.awt.Color(255, 255, 255));
-        lbOeeMeta4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbOeeMeta4.setText("C");
-        lbOeeMeta4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        lbOeeMeta4.setOpaque(true);
+        lbCabecalho.setPreferredSize(new java.awt.Dimension(173, 61));
 
-        lbOeeMeta5.setBackground(new java.awt.Color(255, 255, 0));
-        lbOeeMeta5.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
-        lbOeeMeta5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbOeeMeta5.setText("B");
-        lbOeeMeta5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        lbOeeMeta5.setOpaque(true);
+        lbKpi.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lbKpi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbKpi.setText("KPI");
+        lbKpi.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        lbOeeMeta6.setBackground(new java.awt.Color(51, 255, 51));
-        lbOeeMeta6.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
-        lbOeeMeta6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbOeeMeta6.setText("A");
-        lbOeeMeta6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        lbOeeMeta6.setOpaque(true);
+        lbTurnoA.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
+        lbTurnoA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbTurnoA.setText("A");
+        lbTurnoA.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lbTurnoA.setOpaque(true);
 
-        jSlider1.setMajorTickSpacing(10);
-        jSlider1.setMaximum(480);
-        jSlider1.setPaintTrack(false);
-        jSlider1.setValue(0);
+        lbTurnoB.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
+        lbTurnoB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbTurnoB.setText("B");
+        lbTurnoB.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lbTurnoB.setOpaque(true);
 
-        jSlider2.setMajorTickSpacing(10);
-        jSlider2.setMaximum(480);
-        jSlider2.setPaintTrack(false);
-        jSlider2.setValue(0);
+        lbTurnoC.setFont(new java.awt.Font("Tahoma", 1, 9)); // NOI18N
+        lbTurnoC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbTurnoC.setText("C");
+        lbTurnoC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lbTurnoC.setOpaque(true);
 
-        jSlider3.setMajorTickSpacing(10);
-        jSlider3.setMaximum(480);
-        jSlider3.setPaintTrack(false);
-        jSlider3.setValue(0);
+        javax.swing.GroupLayout lbCabecalhoLayout = new javax.swing.GroupLayout(lbCabecalho);
+        lbCabecalho.setLayout(lbCabecalhoLayout);
+        lbCabecalhoLayout.setHorizontalGroup(
+            lbCabecalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(lbCabecalhoLayout.createSequentialGroup()
+                .addComponent(lbKpi, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addGroup(lbCabecalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbTurnoB, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbTurnoC, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbTurnoA, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0))
+        );
+        lbCabecalhoLayout.setVerticalGroup(
+            lbCabecalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbKpi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(lbCabecalhoLayout.createSequentialGroup()
+                .addComponent(lbTurnoA, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lbTurnoB, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lbTurnoC, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        racePanel.setOpaque(false);
+        racePanel.setLayout(new javax.swing.BoxLayout(racePanel, javax.swing.BoxLayout.PAGE_AXIS));
+
+        layredPanel.setLayer(racePanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layredPanel.setLayer(lbLargada, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layredPanel.setLayer(lbChegada, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout layredPanelLayout = new javax.swing.GroupLayout(layredPanel);
+        layredPanel.setLayout(layredPanelLayout);
+        layredPanelLayout.setHorizontalGroup(
+            layredPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layredPanelLayout.createSequentialGroup()
+                .addComponent(lbLargada, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 164, Short.MAX_VALUE)
+                .addComponent(lbChegada, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layredPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(racePanel, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE))
+        );
+        layredPanelLayout.setVerticalGroup(
+            layredPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layredPanelLayout.createSequentialGroup()
+                .addGroup(layredPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(lbChegada, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbLargada, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layredPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layredPanelLayout.createSequentialGroup()
+                    .addComponent(racePanel, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lbOee1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(129, 129, 129)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(lbOeeMeta4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(lbOeeMeta6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(lbOeeMeta5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
-                                        .addComponent(jSlider2, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE)
-                                        .addComponent(jSlider3, javax.swing.GroupLayout.DEFAULT_SIZE, 394, Short.MAX_VALUE))
-                                .addGap(0, 0, 0))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lbCabecalho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(layredPanel))
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(lbOee1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(lbOeeMeta6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jSlider2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(lbOeeMeta5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                .addGap(0, 0, 0)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(lbOeeMeta4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(jSlider3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                .addGap(0, 0, 0))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lbCabecalho, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
+                    .addComponent(layredPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JSlider jSlider1;
-    private javax.swing.JSlider jSlider2;
-    private javax.swing.JSlider jSlider3;
-    private javax.swing.JLabel lbOee1;
-    private javax.swing.JLabel lbOeeMeta4;
-    private javax.swing.JLabel lbOeeMeta5;
-    private javax.swing.JLabel lbOeeMeta6;
+    private javax.swing.JLayeredPane layredPanel;
+    private javax.swing.JPanel lbCabecalho;
+    private javax.swing.JLabel lbChegada;
+    private javax.swing.JLabel lbKpi;
+    private javax.swing.JLabel lbLargada;
+    private javax.swing.JLabel lbTurnoA;
+    private javax.swing.JLabel lbTurnoB;
+    private javax.swing.JLabel lbTurnoC;
+    private javax.swing.JPanel racePanel;
     // End of variables declaration//GEN-END:variables
 }

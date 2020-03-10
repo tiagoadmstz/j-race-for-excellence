@@ -2,6 +2,8 @@ package com.cooperstandard.race.frames.views;
 
 import com.cooperstandard.race.util.ImageUtil;
 
+import javax.swing.*;
+
 /**
  * @author rsouza10
  */
@@ -13,6 +15,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
     public ViewPrincipal() {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     @SuppressWarnings("unchecked")
