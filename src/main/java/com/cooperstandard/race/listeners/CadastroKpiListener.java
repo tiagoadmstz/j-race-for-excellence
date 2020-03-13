@@ -9,13 +9,12 @@ import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.frames.views.CadastroKpi;
 import com.cooperstandard.race.interfaces.CrudListener;
 import com.cooperstandard.race.interfaces.DefaultListenerCustom;
+import com.cooperstandard.race.models.Kpi;
 import com.cooperstandard.race.models.MetodoPontuacao;
 import com.cooperstandard.race.models.Turno;
 import com.cooperstandard.race.services.CadastroKpiService;
-import com.cooperstandard.race.tables.editors.ColorCellEditor;
 import com.cooperstandard.race.tables.models.MetaTableModel;
 import com.cooperstandard.race.tables.models.TurnoTableModel;
-import com.cooperstandard.race.tables.renderers.ColorCellRenderer;
 
 import java.awt.event.ActionEvent;
 
@@ -39,24 +38,22 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
     @Override
     protected void initTable() {
         frame.getTbMetasVinculadas().setModel(new MetaTableModel());
-        frame.getTbMetasVinculadas().getColumnModel().getColumn(3).setCellRenderer(new ColorCellRenderer());
-        frame.getTbMetasVinculadas().getColumnModel().getColumn(3).setCellEditor(new ColorCellEditor());
         frame.getTbTurnos().setModel(new TurnoTableModel());
     }
 
     @Override
     public void actionPerformed(ActionEvent event) {
         switch (actionPerformance(event.getActionCommand().toLowerCase())) {
-            case "adicionarmeta":
+            case "addmeta":
                 addMeta();
                 break;
-            case "excluirmeta":
+            case "deletemeta":
                 deleteMeta();
                 break;
-            case "adicionarturno":
+            case "addturno":
                 addTurno();
                 break;
-            case "excluirturno":
+            case "deleteturno":
                 deleteTurno();
                 break;
         }

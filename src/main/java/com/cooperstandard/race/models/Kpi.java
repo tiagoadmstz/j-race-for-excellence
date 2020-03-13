@@ -17,6 +17,7 @@ import java.util.List;
 @Table(name = "CAD_KPI")
 public class Kpi implements Serializable {
 
+    private static final long serialVersionUID = -8639352766092615216L;
     @Id
     @Column(name = "KPI")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,9 +30,9 @@ public class Kpi implements Serializable {
     private Boolean ativo;
     @Column(name = "META")
     private Long meta;
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<MetodoPontuacao> metodoPontuacao;
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Turno> turnos;
 
 }

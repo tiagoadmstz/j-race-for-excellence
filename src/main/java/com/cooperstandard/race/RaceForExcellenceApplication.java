@@ -2,7 +2,7 @@ package com.cooperstandard.race;
 
 import com.cooperstandard.race.dal.DummyData;
 import com.cooperstandard.race.enumerates.LOOKANDFEEL;
-import com.cooperstandard.race.frames.views.CinderTrack;
+import com.cooperstandard.race.frames.views.ViewLoading;
 
 import javax.swing.*;
 
@@ -16,8 +16,7 @@ public class RaceForExcellenceApplication {
         try {
             new DummyData();
             UIManager.setLookAndFeel(LOOKANDFEEL.WINDOWS_CLASSIC);
-            //new ViewLoading().setVisible(true);
-            new CinderTrack().setVisible(true);
+            new ViewLoading().setVisible(true);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

@@ -5,8 +5,16 @@
  */
 package com.cooperstandard.race.frames.views;
 
+import br.com.dev.engine.date.Datas;
+import com.cooperstandard.race.listeners.EntradaDadosKpiListener;
+import com.cooperstandard.race.models.EntradaKpi;
+import com.cooperstandard.race.tables.models.PontuacaoTableModel;
+
+import javax.swing.*;
+import java.util.Arrays;
+import java.util.List;
+
 /**
- *
  * @author Tiago
  */
 public class EntradaDadosKpi extends javax.swing.JFrame {
@@ -16,6 +24,27 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
      */
     public EntradaDadosKpi() {
         initComponents();
+        new EntradaDadosKpiListener(this);
+    }
+
+    public List<AbstractButton> getButtonList() {
+        return Arrays.asList(btSalvar, btAtualizar, btPesquisar);
+    }
+
+    public JTable getTbKpisAtivos() {
+        return tbKpisAtivos;
+    }
+
+    public PontuacaoTableModel getTbKpisAtivosModel() {
+        return (PontuacaoTableModel) tbKpisAtivos.getModel();
+    }
+
+    public EntradaKpi getEntradaKpi() {
+        return EntradaKpi.builder()
+                .dataReferencia(Datas.stringToLocalDate(txtDataReferencia.getText()))
+                .turno(cbTurno.getSelectedItem().toString())
+                .kpiPontuacao(getTbKpisAtivosModel().getList())
+                .build();
     }
 
     /**
@@ -50,7 +79,13 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
         jLabel3.setText("Turno");
 
         lbConferenciaValores.setForeground(new java.awt.Color(255, 0, 0));
+        lbConferenciaValores.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lbConferenciaValores.setText(",./*");
+
+        txtDataReferencia.setPreferredSize(new java.awt.Dimension(111, 20));
+
+        cbTurno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
+        cbTurno.setPreferredSize(new java.awt.Dimension(111, 22));
 
         tbKpisAtivos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,10 +106,16 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
         scKpisAtivos.setViewportView(tbKpisAtivos);
 
         btSalvar.setText("Salvar");
+        btSalvar.setActionCommand("save");
+        btSalvar.setPreferredSize(new java.awt.Dimension(80, 23));
 
         btAtualizar.setText("Atualizar");
+        btAtualizar.setActionCommand("update");
+        btAtualizar.setPreferredSize(new java.awt.Dimension(80, 23));
 
         btPesquisar.setText("Pesquisar");
+        btPesquisar.setActionCommand("search");
+        btPesquisar.setPreferredSize(new java.awt.Dimension(80, 23));
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
@@ -85,22 +126,22 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(scKpisAtivos)
                     .addGroup(mainPanelLayout.createSequentialGroup()
-                        .addComponent(btSalvar)
+                        .addComponent(btSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btAtualizar)
+                        .addComponent(btAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btPesquisar))
+                        .addComponent(btPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
-                            .addComponent(txtDataReferencia, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtDataReferencia, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(cbTurno, 0, 111, Short.MAX_VALUE)
+                            .addComponent(cbTurno, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lbConferenciaValores)))
+                        .addComponent(lbConferenciaValores, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainPanelLayout.setVerticalGroup(
@@ -122,9 +163,9 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
                 .addComponent(scKpisAtivos, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btSalvar)
-                    .addComponent(btAtualizar)
-                    .addComponent(btPesquisar))
+                    .addComponent(btSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -144,6 +185,7 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -153,7 +195,7 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

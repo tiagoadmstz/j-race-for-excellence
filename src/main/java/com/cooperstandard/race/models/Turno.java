@@ -17,6 +17,7 @@ import java.util.List;
 @Table(name = "MOV_TURNO")
 public class Turno implements Serializable {
 
+    private static final long serialVersionUID = -1415446929429882753L;
     @Id
     @Column(name = "TURNO")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

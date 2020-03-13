@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.swing.*;
+
 @Service
 @RequiredArgsConstructor(onConstructor_ = @Autowired)
 public class CadastroKpiService {
@@ -14,7 +16,11 @@ public class CadastroKpiService {
     private final KpiRepository cadastroKpiRepository;
 
     public Kpi saveOrUpdate(Kpi kpi) {
-        return ExecutionUtil.trySelfExecution(() -> cadastroKpiRepository.save(kpi), kpi);
+        return ExecutionUtil.trySelfExecution(() -> {
+            Kpi save = cadastroKpiRepository.save(kpi);
+            JOptionPane.showMessageDialog(null, "Registro salvo com sucesso!");
+            return save;
+        }, kpi);
     }
 
     public boolean delete(Long id) {

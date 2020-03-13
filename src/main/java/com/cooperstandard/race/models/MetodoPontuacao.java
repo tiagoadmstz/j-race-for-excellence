@@ -13,11 +13,12 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "CAD_META")
+@Table(name = "CAD_METODO_PONTUACAO")
 public class MetodoPontuacao implements Serializable {
 
+    private static final long serialVersionUID = -8828799741223222509L;
     @Id
-    @Column(name = "META")
+    @Column(name = "METODO_PONTUACAO")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "VALOR")

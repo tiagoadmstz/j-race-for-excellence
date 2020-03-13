@@ -26,8 +26,10 @@ public class CinderTrack extends javax.swing.JFrame {
         BoxLayout boxLayout = new BoxLayout(mainPanel, BoxLayout.PAGE_AXIS);
 
         mainPanel.setBackground(new Color(226, 226, 226));
-        mainPanel.setMinimumSize(new Dimension(200, 220));
-        mainPanel.setPreferredSize(new Dimension(200, 220));
+        //mainPanel.setMinimumSize(new Dimension(200, 220));
+        //mainPanel.setPreferredSize(new Dimension(200, 220));
+        mainPanel.setMinimumSize(new Dimension(800, 600));
+        mainPanel.setPreferredSize(new Dimension(800, 600));
         mainPanel.setLayout(boxLayout);
         mainPanel.add(new CabecalhoPanel());
 
@@ -60,15 +62,18 @@ public class CinderTrack extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        scMain.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        scMain.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(scMain, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(scMain, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(scMain)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(scMain)
         );
 
         pack();

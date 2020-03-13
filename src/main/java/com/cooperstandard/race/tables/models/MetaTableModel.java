@@ -8,9 +8,6 @@ package com.cooperstandard.race.tables.models;
 import com.cooperstandard.race.models.MetodoPontuacao;
 import com.cooperstandard.race.tables.interfaces.DefaultTableModelCustom;
 
-import javax.swing.*;
-import java.awt.*;
-
 /**
  * @author Tiago
  */
@@ -18,7 +15,7 @@ public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
 
     @Override
     protected String[] getColumnsNames() {
-        return new String[]{"Valor", "Comparação", "Pontuação", "Cor"};
+        return new String[]{"Valor", "Comparação", "Pontuação"};
     }
 
     @Override
@@ -31,8 +28,6 @@ public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
                 return metodoPontuacao.getComparacao();
             case 2:
                 return metodoPontuacao.getPontuacao();
-            case 3:
-                return metodoPontuacao.getCor() != null ? new Color(metodoPontuacao.getCor()) : null;
             default:
                 return "";
         }
@@ -51,9 +46,6 @@ public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
             case 2:
                 metodoPontuacao.setPontuacao(Long.parseLong(aValue.toString()));
                 break;
-            case 3:
-                metodoPontuacao.setCor(((Color) aValue).getRGB());
-                break;
         }
     }
 
@@ -65,8 +57,6 @@ public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
                 return Long.class;
             case 1:
                 return String.class;
-            case 3:
-                return JLabel.class;
             default:
                 return Object.class;
         }
