@@ -31,7 +31,7 @@ public class SQLServerConfiguration implements DatabaseConfiguration {
         Properties properties = new Properties();
         properties.put("eclipselink.target-database", "SQLServer");
         properties.put("eclipselink.logging.level", "OFF");
-        properties.put("eclipselink.ddl-generation", "none");
+        properties.put("eclipselink.ddl-generation", "create-or-extend-tables");
         properties.put("eclipselink.persistence-context.flush-mode", "commit");
         properties.put("eclipselink.persistence-context.close-on-commit", "true");
         properties.put("eclipselink.cache.shared.default", "false");
