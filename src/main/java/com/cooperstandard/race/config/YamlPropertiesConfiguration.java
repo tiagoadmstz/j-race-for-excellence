@@ -12,6 +12,7 @@ import org.springframework.format.support.DefaultFormattingConversionService;
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.regex.Pattern;
 
 @Configuration
@@ -40,9 +41,23 @@ public class YamlPropertiesConfiguration {
             }
             return null;
         });
+        cs.addConverter(String.class, ImageIcon.class, s -> {
+            try {
+                return new ImageIcon(new PathResource(s).getURL());
+            } catch (Exception ex) {
+            }
+            return null;
+        });
         cs.addConverter(String.class, URL.class, s -> {
             try {
                 return new ClassPathResource(s).getURL();
+            } catch (Exception ex) {
+            }
+            return null;
+        });
+        cs.addConverter(String.class, Integer[].class, s -> {
+            try {
+                return Arrays.stream(s.split(",")).map(str -> Integer.parseInt(str)).toArray(Integer[]::new);
             } catch (Exception ex) {
             }
             return null;

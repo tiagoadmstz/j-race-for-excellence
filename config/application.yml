@@ -3,4 +3,5 @@ spring:
     active: dev
 
 cooperstandard:
-  icon: teste
+  race-size: 1920,1500
+  checkered-flag: largada.png

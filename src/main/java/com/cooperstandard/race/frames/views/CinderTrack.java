@@ -1,5 +1,7 @@
 package com.cooperstandard.race.frames.views;
 
+import com.cooperstandard.race.config.CooperstandardContext;
+import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.frames.panels.CabecalhoPanel;
 import com.cooperstandard.race.frames.panels.RacePanelTreeTurns;
 import com.cooperstandard.race.listeners.CinderTrackListener;
@@ -22,14 +24,15 @@ public class CinderTrack extends javax.swing.JFrame {
     }
 
     public void initPanel(List<Kpi> kpi) {
+        Integer[] raceSize = SpringContext.getContext().getBean(CooperstandardContext.class).getRaceSize();
         JPanel mainPanel = new JPanel();
         BoxLayout boxLayout = new BoxLayout(mainPanel, BoxLayout.PAGE_AXIS);
 
         mainPanel.setBackground(new Color(226, 226, 226));
         //mainPanel.setMinimumSize(new Dimension(200, 220));
         //mainPanel.setPreferredSize(new Dimension(200, 220));
-        mainPanel.setMinimumSize(new Dimension(800, 600));
-        mainPanel.setPreferredSize(new Dimension(800, 600));
+        mainPanel.setMinimumSize(new Dimension(raceSize[0], raceSize[1]));
+        mainPanel.setPreferredSize(new Dimension(raceSize[0], raceSize[1]));
         mainPanel.setLayout(boxLayout);
         mainPanel.add(new CabecalhoPanel());
 
@@ -51,7 +54,9 @@ public class CinderTrack extends javax.swing.JFrame {
             }
         }).start();
 
+        scMain.getViewport().setSize(mainPanel.getWidth(), mainPanel.getHeight());
         scMain.setViewportView(mainPanel);
+        pack();
     }
 
     @SuppressWarnings("unchecked")
@@ -68,12 +73,12 @@ public class CinderTrack extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(scMain, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(scMain, javax.swing.GroupLayout.DEFAULT_SIZE, 1243, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(scMain)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(scMain)
         );
 
         pack();
