@@ -26,7 +26,7 @@ public class Kpi implements Serializable {
     private String nome;
     @Column(name = "TIPO_ENTRADA", length = 100)
     private String tipoEntrada;
-    @Column(name = "ATIVO", columnDefinition = "boolean")
+    @Column(name = "ATIVO", columnDefinition = "bit")
     private Boolean ativo;
     @Column(name = "META")
     private Long meta;
