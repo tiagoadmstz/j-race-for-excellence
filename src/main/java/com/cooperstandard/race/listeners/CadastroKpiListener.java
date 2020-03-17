@@ -9,7 +9,6 @@ import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.frames.views.CadastroKpi;
 import com.cooperstandard.race.interfaces.CrudListener;
 import com.cooperstandard.race.interfaces.DefaultListenerCustom;
-import com.cooperstandard.race.models.Kpi;
 import com.cooperstandard.race.models.MetodoPontuacao;
 import com.cooperstandard.race.models.Turno;
 import com.cooperstandard.race.services.CadastroKpiService;
@@ -23,16 +22,17 @@ import java.awt.event.ActionEvent;
  */
 public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> implements CrudListener {
 
-    private final CadastroKpiService kpiService;
+    private CadastroKpiService kpiService;
 
     public CadastroKpiListener(CadastroKpi frame) {
         super(frame);
-        kpiService = SpringContext.getContext().getBean(CadastroKpiService.class);
     }
 
     @Override
     protected void attachListeners() {
+        if (kpiService == null) kpiService = SpringContext.getContext().getBean(CadastroKpiService.class);
         frame.getButtonList().forEach(bt -> bt.addActionListener(this));
+        frame.getTbTurnos().addMouseListener(kpiService.selectedCarListener(frame));
     }
 
     @Override
@@ -55,6 +55,9 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
                 break;
             case "deleteturno":
                 deleteTurno();
+                break;
+            case "selecionarcarro":
+                selectCar();
                 break;
         }
     }
@@ -88,6 +91,10 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
     @Override
     public void search() {
 
+    }
+
+    public void selectCar() {
+        kpiService.selectCar(frame);
     }
 
 }

@@ -1,5 +1,9 @@
-package com.cooperstandard.util;
+package com.cooperstandard.race.util;
 
+import org.springframework.core.io.PathResource;
+
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -7,14 +11,8 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.UIManager;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
- *
  * @author tiago.teixeira
  */
 public abstract class Utilidades {
@@ -23,10 +21,10 @@ public abstract class Utilidades {
      * Esta função arredonda valores para qualquer quantidade de casas decimais
      * após a vírgula
      *
-     * @param valor valor a ser arredondado.
-     * @param casas quantidade de casas que se quer após a vírgula.
+     * @param valor       valor a ser arredondado.
+     * @param casas       quantidade de casas que se quer após a vírgula.
      * @param ceilOrFloor se 0 o valor é aproximado para cima, se 1 o valor é
-     * aproximado para baixo.
+     *                    aproximado para baixo.
      * @return double arredondado.
      */
     public static double arredondar(double valor, int casas, int ceilOrFloor) {
@@ -72,22 +70,25 @@ public abstract class Utilidades {
     /**
      * Exibe um selecionar de arquivos padrão
      *
-     * @param legenda título do form
-     * @param filtro tipo de arquivos que devem ser mostrados
+     * @param legenda    título do form
+     * @param extensions tipo de arquivos que devem ser mostrados
      * @return
      */
-    public static String selecionadorArquivos(String legenda, String filtro) {
+    public static String selectFiles(String legenda, String currentDirectory, String... extensions) {
         JFileChooser fileChooser = new JFileChooser();
-        if (!"".equals(filtro) && filtro != null) {
-            fileChooser.setFileFilter(new FileNameExtensionFilter(null, filtro));
+        if (!"".equals(extensions) && extensions != null)
+            fileChooser.setFileFilter(new FileNameExtensionFilter(null, extensions));
+        if (!"".equals(currentDirectory) && currentDirectory != null) {
+            try {
+                fileChooser.setCurrentDirectory(new PathResource(currentDirectory).getFile());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         }
         fileChooser.setDialogTitle(legenda);
         int acao = fileChooser.showDialog(null, "Selecionar");
-        if (acao == JFileChooser.APPROVE_OPTION) {
-            return fileChooser.getSelectedFile().getAbsolutePath();
-        } else {
-            return null;
-        }
+        if (acao == JFileChooser.APPROVE_OPTION) return fileChooser.getSelectedFile().getName();
+        else return null;
     }
 
     public static String tratarAcentuacao(String palavra) {
@@ -156,7 +157,7 @@ public abstract class Utilidades {
      * Este método é utilizado para gerar chaves criptografadas em SHA de 512
      * bits com saída de chave hexadecimal de 160 bits utilizando SALT.
      *
-     * @param msg - texto a ser criptografado.
+     * @param msg  - texto a ser criptografado.
      * @param salt
      * @return - chave hexadecimal de 160 bits.
      */

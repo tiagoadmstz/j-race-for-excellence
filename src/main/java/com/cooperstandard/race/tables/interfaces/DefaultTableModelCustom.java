@@ -74,4 +74,9 @@ public abstract class DefaultTableModelCustom<T> extends AbstractTableModel {
         fireTableDataChanged();
     }
 
+    public T getObject(int rowIndex) {
+        if (rowIndex >= 0) return list.get(rowIndex);
+        return null;
+    }
+
 }
