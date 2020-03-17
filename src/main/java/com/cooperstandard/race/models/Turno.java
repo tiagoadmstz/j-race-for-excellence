@@ -20,7 +20,7 @@ public class Turno implements Serializable {
     private static final long serialVersionUID = -1415446929429882753L;
     @Id
     @Column(name = "TURNO")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "NOME", length = 100)
     private String nome;

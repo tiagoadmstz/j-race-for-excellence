@@ -9,6 +9,7 @@ import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @param <T>
@@ -70,7 +71,7 @@ public abstract class DefaultTableModelCustom<T> extends AbstractTableModel {
     }
 
     public void removeObjects(int... indexes) {
-        list.removeAll(Arrays.asList(indexes));
+        list.removeAll(Arrays.stream(indexes).boxed().map(id -> list.get(id)).collect(Collectors.toList()));
         fireTableDataChanged();
     }
 

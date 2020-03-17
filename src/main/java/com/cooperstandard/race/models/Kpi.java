@@ -20,7 +20,7 @@ public class Kpi implements Serializable {
     private static final long serialVersionUID = -8639352766092615216L;
     @Id
     @Column(name = "KPI")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "NOME", length = 100)
     private String nome;

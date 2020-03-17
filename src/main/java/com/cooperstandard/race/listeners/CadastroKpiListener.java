@@ -67,7 +67,7 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
     }
 
     public void deleteMeta() {
-        frame.getTbMetasVinculadasModel().removeObjects(frame.getTbMetasVinculadas().getSelectedRows());
+        frame.getTbMetasVinculadasModel().removeObject(frame.getTbMetasVinculadas().getSelectedRow());
     }
 
     public void addTurno() {
@@ -75,7 +75,7 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
     }
 
     public void deleteTurno() {
-        frame.getTbTurnosModel().removeObjects(frame.getTbTurnos().getSelectedRows());
+        frame.getTbTurnosModel().removeObject(frame.getTbTurnos().getSelectedRow());
     }
 
     @Override

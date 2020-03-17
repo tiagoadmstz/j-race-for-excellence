@@ -23,7 +23,7 @@ public class Pontuacao implements Serializable {
     private static final long serialVersionUID = -2091110799679025869L;
     @Id
     @Column(name = "PONTUACAO")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TURNO_ID", referencedColumnName = "TURNO")

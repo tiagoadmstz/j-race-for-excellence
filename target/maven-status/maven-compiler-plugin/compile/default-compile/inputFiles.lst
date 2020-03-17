@@ -9,6 +9,7 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\CinderTrack.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\Kpi.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\services\CadastroKpiService.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\listeners\EntradaDadosKpiListener.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\config\SpringContext.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\interfaces\DatabaseConfiguration.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\repositories\MetaRepository.java
@@ -19,6 +20,8 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\ViewLoading.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\interfaces\CrudListener.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\search\models\PesquisaKpi.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\EntradaKpiPontuacao.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\services\EntradaDadosService.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\repositories\TurnoRepository.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\ViewNewKPI.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\converters\LocalDateConverter.java
@@ -48,6 +51,7 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\MetodoPontuacao.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\util\Utilidades.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\listeners\CadastroKpiListener.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\EntradaKpi.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\Pontuacao.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\config\PersistenceConfiguration.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\enumerates\LOOKANDFEEL.java
@@ -55,3 +59,4 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\util\ExecutionUtil.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\config\YamlPropertiesConfiguration.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\enumerates\MESSAGES.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\models\PontuacaoTableModel.java

@@ -15,7 +15,7 @@ public interface CrudListener {
                 search();
                 break;
         }
-        return actionCommand;
+        return actionCommand.toLowerCase();
     }
 
     void saveOrUpdate();

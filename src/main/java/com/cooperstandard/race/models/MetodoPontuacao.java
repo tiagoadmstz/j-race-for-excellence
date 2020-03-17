@@ -19,7 +19,7 @@ public class MetodoPontuacao implements Serializable {
     private static final long serialVersionUID = -8828799741223222509L;
     @Id
     @Column(name = "METODO_PONTUACAO")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "VALOR")
     private Long valor;
