@@ -51,9 +51,9 @@ public class CadastroKpi extends javax.swing.JFrame {
         ckAtivo.setSelected(true);
         txtNomeKpi.setText("");
         lbCarro.setIcon(null);
-        cbTipoEntrada.setSelectedIndex(0);
-        getTbMetasVinculadasModel().getList().clear();
-        getTbTurnosModel().getList().clear();
+        cbTipoEntrada.setSelectedIndex(-1);
+        getTbMetasVinculadasModel().clear();
+        getTbTurnosModel().clear();
     }
 
     public JLabel getLbCarro() {

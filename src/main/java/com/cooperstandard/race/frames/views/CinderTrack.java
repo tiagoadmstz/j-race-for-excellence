@@ -29,8 +29,6 @@ public class CinderTrack extends javax.swing.JFrame {
         BoxLayout boxLayout = new BoxLayout(mainPanel, BoxLayout.PAGE_AXIS);
 
         mainPanel.setBackground(new Color(226, 226, 226));
-        //mainPanel.setMinimumSize(new Dimension(200, 220));
-        //mainPanel.setPreferredSize(new Dimension(200, 220));
         mainPanel.setMinimumSize(new Dimension(raceSize[0], raceSize[1]));
         mainPanel.setPreferredSize(new Dimension(raceSize[0], raceSize[1]));
         mainPanel.setLayout(boxLayout);
@@ -46,9 +44,7 @@ public class CinderTrack extends javax.swing.JFrame {
         new Thread(() -> {
             try {
                 Thread.sleep(500L);
-                treeTurnsList.forEach(panel -> {
-                    panel.startRace();
-                });
+                treeTurnsList.forEach(panel -> panel.startRace());
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

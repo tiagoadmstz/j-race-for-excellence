@@ -80,4 +80,9 @@ public abstract class DefaultTableModelCustom<T> extends AbstractTableModel {
         return null;
     }
 
+    public void clear() {
+        list.clear();
+        fireTableDataChanged();
+    }
+
 }
