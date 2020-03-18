@@ -7,7 +7,7 @@ package com.cooperstandard.race.frames.views;
 
 import com.cooperstandard.race.listeners.CadastroKpiListener;
 import com.cooperstandard.race.models.Kpi;
-import com.cooperstandard.race.tables.models.MetaTableModel;
+import com.cooperstandard.race.tables.models.MetodoPontuacaoTableModel;
 import com.cooperstandard.race.tables.models.TurnoTableModel;
 
 import javax.swing.*;
@@ -47,6 +47,15 @@ public class CadastroKpi extends javax.swing.JFrame {
         getTbTurnosModel().setList(kpi.getTurnos());
     }
 
+    public void clear() {
+        ckAtivo.setSelected(true);
+        txtNomeKpi.setText("");
+        lbCarro.setIcon(null);
+        cbTipoEntrada.setSelectedIndex(0);
+        getTbMetasVinculadasModel().getList().clear();
+        getTbTurnosModel().getList().clear();
+    }
+
     public JLabel getLbCarro() {
         return lbCarro;
     }
@@ -59,8 +68,8 @@ public class CadastroKpi extends javax.swing.JFrame {
         return tbTurnos;
     }
 
-    public MetaTableModel getTbMetasVinculadasModel() {
-        return (MetaTableModel) tbMetasVinculadas.getModel();
+    public MetodoPontuacaoTableModel getTbMetasVinculadasModel() {
+        return (MetodoPontuacaoTableModel) tbMetasVinculadas.getModel();
     }
 
     public TurnoTableModel getTbTurnosModel() {

@@ -94,8 +94,8 @@ com\cooperstandard\race\frames\views\ViewKpi$1.class
 com\cooperstandard\race\frames\views\ViewValue$2.class
 com\cooperstandard\race\tables\editors\ColorCellEditor.class
 com\cooperstandard\race\frames\panels\RacePanelTwoTurns.class
-com\cooperstandard\race\tables\models\MetaTableModel.class
 com\cooperstandard\race\frames\views\ViewRace_BK$3.class
 com\cooperstandard\race\frames\views\ViewNewKPI.class
 com\cooperstandard\race\models\EntradaKpi.class
+com\cooperstandard\race\tables\models\MetodoPontuacaoTableModel.class
 com\cooperstandard\race\dal\config\SQLServerConfiguration.class

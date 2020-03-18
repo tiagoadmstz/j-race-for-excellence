@@ -11,7 +11,7 @@ import com.cooperstandard.race.tables.interfaces.DefaultTableModelCustom;
 /**
  * @author Tiago
  */
-public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
+public class MetodoPontuacaoTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
 
     @Override
     protected String[] getColumnsNames() {
@@ -38,7 +38,7 @@ public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
         MetodoPontuacao metodoPontuacao = list.get(row);
         switch (column) {
             case 0:
-                metodoPontuacao.setValor(Long.parseLong(aValue.toString()));
+                metodoPontuacao.setValor(Float.parseFloat(aValue.toString().replace(",", ".")));
                 break;
             case 1:
                 metodoPontuacao.setComparacao(aValue.toString());
@@ -53,10 +53,11 @@ public class MetaTableModel extends DefaultTableModelCustom<MetodoPontuacao> {
     public Class<?> getColumnClass(int columnIndex) {
         switch (columnIndex) {
             case 0:
-            case 2:
-                return Long.class;
+                return Float.class;
             case 1:
                 return String.class;
+            case 2:
+                return Long.class;
             default:
                 return Object.class;
         }

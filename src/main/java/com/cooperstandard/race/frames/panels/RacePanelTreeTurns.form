@@ -172,6 +172,10 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
+        <Component class="javax.swing.JLabel" name="lbLargada">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbChegada">
+        </Component>
         <Container class="javax.swing.JPanel" name="racePanel">
           <Properties>
             <Property name="opaque" type="boolean" value="false"/>
@@ -181,10 +185,6 @@
             <Property name="axis" type="int" value="3"/>
           </Layout>
         </Container>
-        <Component class="javax.swing.JLabel" name="lbLargada">
-        </Component>
-        <Component class="javax.swing.JLabel" name="lbChegada">
-        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

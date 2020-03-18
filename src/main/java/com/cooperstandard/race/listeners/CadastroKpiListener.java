@@ -12,7 +12,7 @@ import com.cooperstandard.race.interfaces.DefaultListenerCustom;
 import com.cooperstandard.race.models.MetodoPontuacao;
 import com.cooperstandard.race.models.Turno;
 import com.cooperstandard.race.services.CadastroKpiService;
-import com.cooperstandard.race.tables.models.MetaTableModel;
+import com.cooperstandard.race.tables.models.MetodoPontuacaoTableModel;
 import com.cooperstandard.race.tables.models.TurnoTableModel;
 
 import java.awt.event.ActionEvent;
@@ -37,7 +37,7 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
 
     @Override
     protected void initTable() {
-        frame.getTbMetasVinculadas().setModel(new MetaTableModel());
+        frame.getTbMetasVinculadas().setModel(new MetodoPontuacaoTableModel());
         frame.getTbTurnos().setModel(new TurnoTableModel());
     }
 
@@ -80,7 +80,7 @@ public class CadastroKpiListener extends DefaultListenerCustom<CadastroKpi> impl
 
     @Override
     public void saveOrUpdate() {
-        kpiService.saveOrUpdate(frame.getKpi());
+        if (kpiService.saveOrUpdate(frame.getKpi()).getId() != null) frame.clear();
     }
 
     @Override

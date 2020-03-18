@@ -22,7 +22,7 @@ public class MetodoPontuacao implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "VALOR")
-    private Long valor;
+    private Float valor;
     @Column(name = "COMPARACAO", length = 10)
     private String comparacao;
     @Column(name = "PONTUACAO")
