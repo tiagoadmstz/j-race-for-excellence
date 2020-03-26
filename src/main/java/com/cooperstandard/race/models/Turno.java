@@ -30,7 +30,13 @@ public class Turno implements Serializable {
     private String carro;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "turno")
     private List<Pontuacao> pontuacao;
-    @Column(name = "TOTAL_PONTUACAO")
+    @Transient
     private Long totalPontuacao;
+
+    public Long getTotalPontuacao() {
+        if (totalPontuacao == 0)
+            totalPontuacao = pontuacao.stream().map(Pontuacao::getPontos).reduce(Integer::sum).orElse(0).longValue();
+        return totalPontuacao;
+    }
 
 }

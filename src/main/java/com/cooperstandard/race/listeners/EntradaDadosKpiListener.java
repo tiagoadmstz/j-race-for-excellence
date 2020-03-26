@@ -8,6 +8,8 @@ import com.cooperstandard.race.services.EntradaDadosService;
 import com.cooperstandard.race.tables.models.PontuacaoTableModel;
 
 import java.awt.event.ActionEvent;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 
 public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosKpi> implements CrudListener {
 
@@ -20,6 +22,7 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
     @Override
     protected void attachListeners() {
         frame.getButtonList().forEach(bt -> bt.addActionListener(this));
+        frame.getTxtDataReferencia().addFocusListener(focusDataReferencia());
     }
 
     @Override
@@ -50,6 +53,15 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
     @Override
     public void search() {
 
+    }
+
+    public FocusAdapter focusDataReferencia() {
+        return new FocusAdapter() {
+            @Override
+            public void focusLost(FocusEvent event) {
+                frame.getTbKpisAtivosModel().setList(entradaDadosService.getKpiListByDataReferencia(frame.getDataReferencia()));
+            }
+        };
     }
 
 }

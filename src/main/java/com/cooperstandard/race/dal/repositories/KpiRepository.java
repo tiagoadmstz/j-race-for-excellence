@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Repository
@@ -14,5 +15,8 @@ public interface KpiRepository extends JpaRepository<Kpi, Long> {
     List<String> findNomeAll();
 
     Kpi findByNome(String nome);
+
+    @Query("FROM Kpi AS k WHERE k.pontuacao.dataRealizacao = :dataReferencia")
+    Kpi findByDataRealizacao(LocalDate dataReferencia);
 
 }

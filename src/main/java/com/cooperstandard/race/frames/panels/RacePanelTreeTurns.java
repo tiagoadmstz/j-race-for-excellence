@@ -33,10 +33,10 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
         initComponents();
         racePanel.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
         if (kpi != null) {
-            String checkeredFlag = SpringContext.getContext().getBean(CooperstandardContext.class).getCheckeredFlag().trim();
+            CooperstandardContext cooperstandardContext = SpringContext.getContext().getBean(CooperstandardContext.class);
             lbKpi.setText(kpi.getNome());
-            lbLargada.setIcon(ImageUtil.getImageIconFromUserPath("config/images/".concat(checkeredFlag)));
-            lbChegada.setIcon(ImageUtil.getImageIconFromUserPath("config/images/".concat(checkeredFlag)));
+            lbLargada.setIcon(ImageUtil.getImageIconFromUserPath(cooperstandardContext.getImagePath().concat(cooperstandardContext.getCheckeredFlag())));
+            lbChegada.setIcon(ImageUtil.getImageIconFromUserPath(cooperstandardContext.getImagePath().concat(cooperstandardContext.getCheckeredFlag())));
             kpi.getTurnos().stream().sorted(Comparator.comparing(Turno::getNome)).forEach(turno -> {
                 JSlider jslider = new JSlider();
                 jslider.setMajorTickSpacing(10);
@@ -46,7 +46,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
                 jslider.setOpaque(false);
                 jslider.setEnabled(false);
                 racePanel.add(jslider);
-                addCinderTrack(jslider, "config/images/cars/".concat(turno.getCarro()));
+                addCinderTrack(jslider, cooperstandardContext.getImagePath().concat("cars/".concat(turno.getCarro())));
                 tracks.put(turno.getNome(), new Object[]{jslider, turno.getTotalPontuacao()});
             });
         }

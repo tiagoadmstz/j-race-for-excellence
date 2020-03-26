@@ -68,14 +68,13 @@ com\cooperstandard\race\frames\views\ViewPrincipal$4.class
 com\cooperstandard\race\frames\panels\RacePanelTreeTurns.class
 com\cooperstandard\race\frames\views\ViewRace_BK$1.class
 com\cooperstandard\race\frames\views\ViewPrincipal.class
-com\cooperstandard\race\frames\views\EntradaDadosKpi$2.class
 com\cooperstandard\race\dal\config\H2Configuration.class
 com\cooperstandard\race\frames\views\ViewKpi$3.class
 com\cooperstandard\race\interfaces\CrudListener.class
 com\cooperstandard\race\enumerates\LOOKANDFEEL.class
+com\cooperstandard\race\listeners\EntradaDadosKpiListener$1.class
 com\cooperstandard\race\RaceForExcellenceApplication.class
 com\cooperstandard\race\frames\views\ViewValue$1.class
-com\cooperstandard\race\frames\views\CinderTrack$1.class
 com\cooperstandard\race\frames\views\ViewPoints$1.class
 com\cooperstandard\race\interfaces\DefaultListenerCustom.class
 com\cooperstandard\race\dal\repositories\KpiRepository.class
