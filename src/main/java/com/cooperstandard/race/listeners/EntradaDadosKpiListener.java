@@ -59,7 +59,7 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
         return new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent event) {
-                frame.getTbKpisAtivosModel().setList(entradaDadosService.getKpiListByDataReferencia(frame.getDataReferencia()));
+                frame.getTbKpisAtivosModel().setList(entradaDadosService.getKpiListByDataReferencia(frame.getEntradaKpi(), frame.getSelectedTurno()));
             }
         };
     }

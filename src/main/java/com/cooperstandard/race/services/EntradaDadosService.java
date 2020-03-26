@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.swing.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -44,8 +43,10 @@ public class EntradaDadosService {
         return kpiRepository.findNomeAll().stream().map(kpi -> new EntradaKpiPontuacao(kpi)).collect(Collectors.toList());
     }
 
-    public List<EntradaKpiPontuacao> getKpiListByDataReferencia(LocalDate dataReferencia) {
-        return kpiRepository.findNomeAll().stream().map(kpi -> new EntradaKpiPontuacao(kpi)).collect(Collectors.toList());
+    public List<EntradaKpiPontuacao> getKpiListByDataReferencia(EntradaKpi entradaKpi, String turno) {
+        return kpiRepository.findKpiByTurnosNomeAndTurnosPontuacaoDataRealizacao(entradaKpi.getTurno(), entradaKpi.getDataReferencia()).stream()
+                .map(kpi -> EntradaKpiPontuacao.turnoToEntradaKpiPontuacao(kpi.getNome(), kpi.getTurnoByNome(turno)))
+                .collect(Collectors.toList());
     }
 
 }

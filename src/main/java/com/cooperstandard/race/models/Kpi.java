@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -34,5 +35,13 @@ public class Kpi implements Serializable {
     private List<MetodoPontuacao> metodoPontuacao;
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Turno> turnos;
+
+    public List<Pontuacao> getPontuacaoByTurnoName(String turno) {
+        return turnos.stream().filter(t -> turno.equals(t.getNome())).map(Turno::getPontuacao).findFirst().orElse(new ArrayList());
+    }
+
+    public Turno getTurnoByNome(String turno) {
+        return turnos.stream().filter(t -> turno.equals(t.getNome())).findFirst().orElse(null);
+    }
 
 }

@@ -21,9 +21,10 @@ public class EntradaKpiPontuacao implements Serializable {
         this.kpi = kpi;
     }
 
-    public static EntradaKpiPontuacao KpiToEntradaKpiPontuacao(Kpi kpi) {
+    public static EntradaKpiPontuacao turnoToEntradaKpiPontuacao(String kpiNome, Turno turno) {
         return EntradaKpiPontuacao.builder()
-                .kpi(kpi.getNome())
+                .kpi(kpiNome)
+                .valor(turno.getTotalPontuacao().intValue())
                 .build();
     }
 

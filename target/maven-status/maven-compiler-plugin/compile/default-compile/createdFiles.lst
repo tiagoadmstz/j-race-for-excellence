@@ -40,7 +40,6 @@ com\cooperstandard\race\services\EntradaDadosService.class
 com\cooperstandard\race\ui\IconThumbSliderUI.class
 com\cooperstandard\race\frames\views\CinderTrack.class
 com\cooperstandard\race\enumerates\MESSAGES.class
-com\cooperstandard\race\frames\views\CadastroKpi$1.class
 com\cooperstandard\race\util\Utilidades.class
 com\cooperstandard\race\tables\renderers\MetaCellTableRenderer.class
 com\cooperstandard\race\tables\models\PontuacaoTableModel.class

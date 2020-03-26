@@ -40,6 +40,10 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
         return txtDataReferencia;
     }
 
+    public String getSelectedTurno() {
+        return cbTurno.getSelectedItem().toString();
+    }
+
     public LocalDate getDataReferencia() {
         txtDataReferencia.setText(Datas.getDateString(txtDataReferencia.getText(), 1));
         return !"".equals(txtDataReferencia.getText()) ? Datas.stringToLocalDate(txtDataReferencia.getText()) : null;
@@ -51,7 +55,7 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
 
     public EntradaKpi getEntradaKpi() {
         return EntradaKpi.builder()
-                .dataReferencia(Datas.stringToLocalDate(txtDataReferencia.getText()))
+                .dataReferencia(getDataReferencia())
                 .turno(cbTurno.getSelectedItem().toString())
                 .kpiPontuacao(getTbKpisAtivosModel().getList())
                 .build();

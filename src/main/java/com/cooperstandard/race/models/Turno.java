@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "MOV_TURNO")
+@Table(name = "MOV_TURNO") ////SELECT * FROM CAD_KPI K LEFT JOIN (SELECT MOV_TURNO T)
 public class Turno implements Serializable {
 
     private static final long serialVersionUID = -1415446929429882753L;
@@ -31,10 +31,10 @@ public class Turno implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "turno")
     private List<Pontuacao> pontuacao;
     @Transient
-    private Long totalPontuacao;
+    private Long totalPontuacao = 0L;
 
     public Long getTotalPontuacao() {
-        if (totalPontuacao == 0)
+        if (totalPontuacao == 0L)
             totalPontuacao = pontuacao.stream().map(Pontuacao::getPontos).reduce(Integer::sum).orElse(0).longValue();
         return totalPontuacao;
     }
