@@ -7,16 +7,13 @@ import java.util.List;
 
 public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontuacao> {
 
-    public PontuacaoTableModel() {
-    }
-
     public PontuacaoTableModel(List<EntradaKpiPontuacao> list) {
         super(list);
     }
 
     @Override
     protected String[] getColumnsNames() {
-        return new String[]{"KPI", "Valor"};
+        return new String[]{"KPI", "Tipo de Entrada", "Valor"};
     }
 
     @Override
@@ -26,6 +23,8 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
             case 0:
                 return pontuacao.getKpi();
             case 1:
+                return pontuacao.getTipoEntrada();
+            case 2:
                 return pontuacao.getValor();
             default:
                 return null;
@@ -40,7 +39,10 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
                 pontuacao.setKpi(aValue != null ? aValue.toString() : null);
                 break;
             case 1:
-                pontuacao.setValor(aValue != null ? Integer.parseInt(aValue.toString()) : null);
+                pontuacao.setTipoEntrada(aValue != null ? aValue.toString() : null);
+                break;
+            case 2:
+                pontuacao.setValor(aValue != null ? Float.parseFloat(aValue.toString()) : null);
                 break;
         }
     }
@@ -49,9 +51,10 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
     public Class<?> getColumnClass(int columnIndex) {
         switch (columnIndex) {
             case 0:
-                return String.class;
             case 1:
-                return Integer.class;
+                return String.class;
+            case 2:
+                return Float.class;
             default:
                 return Object.class;
         }
@@ -59,7 +62,7 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
 
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
-        return true;
+        return columnIndex == 2;
     }
 
 }

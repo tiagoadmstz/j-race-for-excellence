@@ -25,11 +25,10 @@ public class Pontuacao implements Serializable {
     @Column(name = "PONTUACAO")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "TURNO_ID", referencedColumnName = "TURNO")
-    private Turno turno;
+    @Column(name = "TURNO")
+    private Long turnoId;
     @Convert(converter = LocalDateConverter.class)
-    @Column(name = "DATA_REALIZACAO")
+    @Column(name = "DATA_REALIZACAO", columnDefinition = "date")
     private LocalDate dataRealizacao;
     @Column(name = "PONTOS")
     private Integer pontos;
@@ -42,7 +41,7 @@ public class Pontuacao implements Serializable {
                         Pontuacao.builder()
                                 .dataRealizacao(entradaKpi.getDataReferencia())
                                 .kpi(pontuacao.getKpi())
-                                .pontos(pontuacao.getValor() != null ? pontuacao.getValor() : 0)
+                                .pontos(pontuacao.getValorReal())
                                 .build())
                 .collect(Collectors.toList());
     }

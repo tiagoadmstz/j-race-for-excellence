@@ -16,6 +16,4 @@ public interface KpiRepository extends JpaRepository<Kpi, Long> {
 
     Kpi findByNome(String nome);
 
-    List<Kpi> findKpiByTurnosNomeAndTurnosPontuacaoDataRealizacao(String turno, LocalDate dataReferencia);
-
 }

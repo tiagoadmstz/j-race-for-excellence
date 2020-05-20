@@ -28,13 +28,13 @@ public class Turno implements Serializable {
     private Integer ordem;
     @Column(name = "CARRO", length = 100)
     private String carro;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "turno")
+    @Transient
     private List<Pontuacao> pontuacao;
     @Transient
     private Long totalPontuacao = 0L;
 
     public Long getTotalPontuacao() {
-        if (totalPontuacao == 0L)
+        if (totalPontuacao == 0L) if (pontuacao != null)
             totalPontuacao = pontuacao.stream().map(Pontuacao::getPontos).reduce(Integer::sum).orElse(0).longValue();
         return totalPontuacao;
     }

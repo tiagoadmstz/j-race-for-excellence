@@ -3,6 +3,8 @@ spring:
     active: dev
 
 cooperstandard:
-  race-size: 1920,1500
+  race-updates: true
+  race-updates-time: 0.5
+  race-size: 2500,1500
   checkered-flag: largada.png
   image-path: config/images/

@@ -34,11 +34,13 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
         racePanel.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
         if (kpi != null) {
             CooperstandardContext cooperstandardContext = SpringContext.getContext().getBean(CooperstandardContext.class);
+            this.setName(kpi.getNome());
             lbKpi.setText(kpi.getNome());
             lbLargada.setIcon(ImageUtil.getImageIconFromUserPath(cooperstandardContext.getImagePath().concat(cooperstandardContext.getCheckeredFlag())));
             lbChegada.setIcon(ImageUtil.getImageIconFromUserPath(cooperstandardContext.getImagePath().concat(cooperstandardContext.getCheckeredFlag())));
             kpi.getTurnos().stream().sorted(Comparator.comparing(Turno::getNome)).forEach(turno -> {
                 JSlider jslider = new JSlider();
+                jslider.setName(turno.getNome());
                 jslider.setMajorTickSpacing(10);
                 jslider.setValue(0);
                 jslider.setMaximum(kpi.getMeta() != null ? kpi.getMeta().intValue() : 0);
@@ -70,15 +72,24 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
         });
     }
 
-    public void setActualValue(JSlider jslider, Long value) {
+    public void setActualValue(Kpi kpi) {
         new Thread(() -> {
             try {
-                int v = 0;
-                while (v <= value) {
-                    jslider.setValue(v);
-                    Thread.sleep(50L);
-                    v += 10;
-                }
+                tracks.entrySet().stream().forEach(entry -> {
+                    new Thread(() -> {
+                        try {
+                            Long v = (Long) entry.getValue()[1];
+                            Long value = kpi.getTurnos().stream().filter(t -> t.getNome().equalsIgnoreCase(entry.getKey())).findFirst().get().getTotalPontuacao();
+                            while (v <= value) {
+                                ((JSlider) entry.getValue()[0]).setValue(v.intValue());
+                                Thread.sleep(50L);
+                                v += 2;
+                            }
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                    }).start();
+                });
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

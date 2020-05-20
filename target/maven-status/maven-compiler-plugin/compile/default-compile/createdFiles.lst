@@ -2,7 +2,6 @@ com\cooperstandard\race\frames\views\ViewKpi.class
 com\cooperstandard\race\frames\views\EntradaDadosKpi$1.class
 com\cooperstandard\race\models\Pontuacao$PontuacaoBuilder.class
 com\cooperstandard\race\listeners\CadastroKpiListener.class
-com\cooperstandard\race\frames\views\ViewPrincipal$5.class
 com\cooperstandard\race\dal\config\PersistenceConfiguration.class
 com\cooperstandard\race\frames\views\ViewKpi$2.class
 com\cooperstandard\race\services\CadastroKpiService.class
@@ -10,6 +9,7 @@ com\cooperstandard\race\frames\views\ViewRace_BK$2.class
 com\cooperstandard\race\frames\views\ViewRace_BK.class
 com\cooperstandard\race\frames\panels\CabecalhoPanel.class
 com\cooperstandard\race\config\CooperstandardContext.class
+com\cooperstandard\race\tables\renderers\CheckBoxRenderer.class
 com\cooperstandard\race\dal\repositories\MetaRepository.class
 com\cooperstandard\race\converters\LocalDateConverter.class
 com\cooperstandard\race\frames\views\ViewKpi$5.class
@@ -74,6 +74,7 @@ com\cooperstandard\race\enumerates\LOOKANDFEEL.class
 com\cooperstandard\race\listeners\EntradaDadosKpiListener$1.class
 com\cooperstandard\race\RaceForExcellenceApplication.class
 com\cooperstandard\race\frames\views\ViewValue$1.class
+com\cooperstandard\race\frames\views\CinderTrack$1.class
 com\cooperstandard\race\frames\views\ViewPoints$1.class
 com\cooperstandard\race\interfaces\DefaultListenerCustom.class
 com\cooperstandard\race\dal\repositories\KpiRepository.class

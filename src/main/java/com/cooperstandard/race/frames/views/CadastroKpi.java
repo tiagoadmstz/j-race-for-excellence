@@ -5,6 +5,8 @@
  */
 package com.cooperstandard.race.frames.views;
 
+import com.cooperstandard.race.config.CooperstandardContext;
+import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.listeners.CadastroKpiListener;
 import com.cooperstandard.race.models.Kpi;
 import com.cooperstandard.race.tables.models.MetodoPontuacaoTableModel;
@@ -23,6 +25,7 @@ public class CadastroKpi extends javax.swing.JFrame {
      * Creates new form CadastroKpi
      */
     public CadastroKpi() {
+        setIconImage(SpringContext.getContext().getBean(CooperstandardContext.class).getIcon());
         initComponents();
         new CadastroKpiListener(this);
     }

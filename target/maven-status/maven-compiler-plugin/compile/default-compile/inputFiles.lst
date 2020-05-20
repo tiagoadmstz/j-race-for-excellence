@@ -16,12 +16,14 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\DummyData.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\config\FlywayMigrationConfiguration.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\ViewValue.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\util\PointuationUtil.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\ViewLoading.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\interfaces\CrudListener.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\search\models\PesquisaKpi.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\EntradaKpiPontuacao.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\services\EntradaDadosService.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\models\MetodoPontuacaoTableModel.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\renderers\CheckBoxRenderer.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\repositories\TurnoRepository.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\ViewNewKPI.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\converters\LocalDateConverter.java
@@ -39,6 +41,7 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\ui\IconThumbSliderUI.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\util\ImageUtil.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\views\EntradaDadosKpi.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\editors\CheckBoxCellEditor.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\models\TurnoTableModel.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\editors\ColorCellEditor.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\config\SQLServerConfiguration.java

@@ -30,4 +30,21 @@ public class MetodoPontuacao implements Serializable {
     @Column(name = "COR")
     private Integer cor;
 
+    public Integer compararValores(Float valorEntrada) {
+        switch (comparacao) {
+            case ">":
+                return valor > valorEntrada ? pontuacao.intValue() : 0;
+            case ">=":
+                return valor >= valorEntrada ? pontuacao.intValue() : 0;
+            case "<":
+                return valor < valorEntrada ? pontuacao.intValue() : 0;
+            case "<=":
+                return valor <= valorEntrada ? pontuacao.intValue() : 0;
+            case "=":
+                return valor == valorEntrada ? pontuacao.intValue() : 0;
+            default:
+                return 0;
+        }
+    }
+
 }

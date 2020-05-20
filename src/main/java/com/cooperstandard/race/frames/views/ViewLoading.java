@@ -1,6 +1,7 @@
 package com.cooperstandard.race.frames.views;
 
-import com.cooperstandard.race.util.ImageUtil;
+import com.cooperstandard.race.config.CooperstandardContext;
+import com.cooperstandard.race.config.SpringContext;
 
 import javax.swing.*;
 
@@ -13,9 +14,9 @@ public class ViewLoading extends javax.swing.JFrame {
      * Creates new form ViewLoading
      */
     public ViewLoading() {
+        setIconImage(SpringContext.getContext().getBean(CooperstandardContext.class).getIcon());
         initComponents();
         progress();
-
     }
 
     public void progress() {
@@ -62,16 +63,16 @@ public class ViewLoading extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Lucida Handwriting", 2, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(ImageUtil.getImageIconFromUserPath("config/images/logoSemFundo.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSemFundo.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 640, 50));
         jPanel1.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 640, 20));
 
-        jLabel2.setIcon(ImageUtil.getImageIconFromUserPath("config/images/istockphoto-532585408-640x640.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/istockphoto-532585408-640x640.jpg"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 640, 360));
 
         jLabel5.setFont(new java.awt.Font("Arial Unicode MS", 2, 24)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(ImageUtil.getImageIconFromUserPath("config/images/logo.JPG")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.JPG"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 640, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
