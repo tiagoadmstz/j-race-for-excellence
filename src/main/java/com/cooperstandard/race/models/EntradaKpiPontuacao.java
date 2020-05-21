@@ -16,19 +16,19 @@ public class EntradaKpiPontuacao implements Serializable {
     private static final long serialVersionUID = 6041155012364856673L;
     private String kpi;
     private String tipoEntrada;
-    private Float valor = 0F;
-    private Integer valorReal = 0;
+    private Float entrada = 0F;
+    private Integer valor = 0;
 
     public EntradaKpiPontuacao(String kpi, String tipoEntrada) {
         this.kpi = kpi;
         this.tipoEntrada = tipoEntrada;
     }
 
-    public static EntradaKpiPontuacao turnoToEntradaKpiPontuacao(String kpiNome, String tipoEntrada) {
+    public static EntradaKpiPontuacao turnoToEntradaKpiPontuacao(String kpiNome, String tipoEntrada, Float entrada) {
         return EntradaKpiPontuacao.builder()
                 .kpi(kpiNome)
                 .tipoEntrada(tipoEntrada)
-                .valor(0F)
+                .entrada(entrada)
                 .build();
     }
 

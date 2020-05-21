@@ -91,7 +91,6 @@ public class ViewPrincipal extends javax.swing.JFrame {
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/engrenagem.png"))); // NOI18N
         jButton7.setText("Configuração                 ");
-        jButton7.setEnabled(false);
         jButton7.setFocusable(false);
         jButton7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);

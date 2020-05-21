@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -29,7 +30,7 @@ public class Turno implements Serializable {
     @Column(name = "CARRO", length = 100)
     private String carro;
     @Transient
-    private List<Pontuacao> pontuacao;
+    private List<Pontuacao> pontuacao = new ArrayList();
     @Transient
     private Long totalPontuacao = 0L;
 

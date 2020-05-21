@@ -6,9 +6,7 @@ import com.cooperstandard.race.interfaces.CrudListener;
 import com.cooperstandard.race.interfaces.DefaultListenerCustom;
 import com.cooperstandard.race.models.EntradaKpiPontuacao;
 import com.cooperstandard.race.services.EntradaDadosService;
-import com.cooperstandard.race.tables.editors.CheckBoxCellEditor;
 import com.cooperstandard.race.tables.models.PontuacaoTableModel;
-import com.cooperstandard.race.tables.renderers.CheckBoxRenderer;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
@@ -21,6 +19,12 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
 
     public EntradaDadosKpiListener(EntradaDadosKpi frame) {
         super(frame);
+    }
+
+    @Override
+    protected void initComponents() {
+        super.initComponents();
+        pesquisarLancamentoDia();
     }
 
     @Override
@@ -61,13 +65,17 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
 
     }
 
+    private void pesquisarLancamentoDia() {
+        List<EntradaKpiPontuacao> kpiListByDataReferencia = entradaDadosService.getKpiListByDataReferencia(frame.getEntradaKpi(), frame.getSelectedTurno());
+        if (kpiListByDataReferencia != null & !kpiListByDataReferencia.isEmpty())
+            frame.getTbKpisAtivosModel().setList(kpiListByDataReferencia);
+    }
+
     public FocusAdapter focusDataReferencia() {
         return new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent event) {
-                List<EntradaKpiPontuacao> kpiListByDataReferencia = entradaDadosService.getKpiListByDataReferencia(frame.getEntradaKpi(), frame.getSelectedTurno());
-                if (kpiListByDataReferencia != null & !kpiListByDataReferencia.isEmpty())
-                    frame.getTbKpisAtivosModel().setList(kpiListByDataReferencia);
+                pesquisarLancamentoDia();
             }
         };
     }

@@ -29,19 +29,22 @@ public class Pontuacao implements Serializable {
     private Long turnoId;
     @Convert(converter = LocalDateConverter.class)
     @Column(name = "DATA_REALIZACAO", columnDefinition = "date")
-    private LocalDate dataRealizacao;
+    private LocalDate dataRealizacao = LocalDate.now();
+    @Column(name = "ENTRADA")
+    private Float entrada = 0F;
     @Column(name = "PONTOS")
-    private Integer pontos;
+    private Integer pontos = 0;
     @Transient
     private String kpi;
 
-    public static List<Pontuacao> entradaKpiToPontuario(EntradaKpi entradaKpi) {
+    public static List<Pontuacao> entradaKpiToPontuacao(EntradaKpi entradaKpi) {
         return entradaKpi.getKpiPontuacao().stream()
                 .map(pontuacao ->
                         Pontuacao.builder()
                                 .dataRealizacao(entradaKpi.getDataReferencia())
                                 .kpi(pontuacao.getKpi())
-                                .pontos(pontuacao.getValorReal())
+                                .entrada(pontuacao.getEntrada())
+                                .pontos(pontuacao.getValor())
                                 .build())
                 .collect(Collectors.toList());
     }

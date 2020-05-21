@@ -13,7 +13,7 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
 
     @Override
     protected String[] getColumnsNames() {
-        return new String[]{"KPI", "Tipo de Entrada", "Valor"};
+        return new String[]{"KPI", "Tipo de Entrada", "Entrada", "Valor"};
     }
 
     @Override
@@ -25,6 +25,8 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
             case 1:
                 return pontuacao.getTipoEntrada();
             case 2:
+                return pontuacao.getEntrada();
+            case 3:
                 return pontuacao.getValor();
             default:
                 return null;
@@ -42,7 +44,10 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
                 pontuacao.setTipoEntrada(aValue != null ? aValue.toString() : null);
                 break;
             case 2:
-                pontuacao.setValor(aValue != null ? Float.parseFloat(aValue.toString()) : null);
+                pontuacao.setEntrada(aValue != null ? Float.parseFloat(aValue.toString()) : null);
+                break;
+            case 3:
+                pontuacao.setValor(aValue != null ? Integer.parseInt(aValue.toString()) : null);
                 break;
         }
     }
@@ -55,6 +60,8 @@ public class PontuacaoTableModel extends DefaultTableModelCustom<EntradaKpiPontu
                 return String.class;
             case 2:
                 return Float.class;
+            case 3:
+                return Integer.class;
             default:
                 return Object.class;
         }

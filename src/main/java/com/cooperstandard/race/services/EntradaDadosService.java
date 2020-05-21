@@ -2,10 +2,7 @@ package com.cooperstandard.race.services;
 
 import com.cooperstandard.race.dal.repositories.KpiRepository;
 import com.cooperstandard.race.dal.repositories.PontuacaoRepository;
-import com.cooperstandard.race.models.EntradaKpi;
-import com.cooperstandard.race.models.EntradaKpiPontuacao;
-import com.cooperstandard.race.models.MetodoPontuacao;
-import com.cooperstandard.race.models.Pontuacao;
+import com.cooperstandard.race.models.*;
 import com.cooperstandard.race.util.ExecutionUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,11 +23,12 @@ public class EntradaDadosService {
     public List<Pontuacao> saveOrUpdate(EntradaKpi entradaKpi) {
         return ExecutionUtil.trySelfExecution(() -> {
             setPontuacaoReal(entradaKpi.getKpiPontuacao());
-            List<Pontuacao> pontuacaoList = Pontuacao.entradaKpiToPontuario(entradaKpi).stream()
+            List<Pontuacao> pontuacaoList = Pontuacao.entradaKpiToPontuacao(entradaKpi).stream()
                     .map(pontuacao -> {
                         pontuacao.setTurnoId(kpiRepository.findByNome(pontuacao.getKpi()).getTurnos().stream()
                                 .filter(turno -> entradaKpi.getTurno().equals(turno.getNome()))
                                 .findFirst().get().getId());
+                        pontuacao.setId(pontuacaoRepository.findIdByDataRealizacaoAndTurnoId(entradaKpi.getDataReferencia(), pontuacao.getTurnoId()).orElse(null));
                         return pontuacao;
                     })
                     .collect(Collectors.toList());
@@ -41,9 +39,9 @@ public class EntradaDadosService {
     }
 
     public void setPontuacaoReal(List<EntradaKpiPontuacao> entradaKpiPontuacaoList) {
-        entradaKpiPontuacaoList.stream().filter(ekp -> ekp.getValor() > 0).forEach(pontuacao -> {
-            Long pontos = kpiRepository.findByNome(pontuacao.getKpi()).getMetodoPontuacao().stream().filter(mp -> mp.compararValores(pontuacao.getValor()) > 0).map(MetodoPontuacao::getPontuacao).findFirst().orElse(0L);
-            pontuacao.setValorReal(pontos.intValue());
+        entradaKpiPontuacaoList.stream().filter(ekp -> ekp.getEntrada() > 0).forEach(pontuacao -> {
+            Long pontos = kpiRepository.findByNome(pontuacao.getKpi()).getMetodoPontuacao().stream().filter(mp -> mp.compararValores(pontuacao.getEntrada()) > 0).map(MetodoPontuacao::getPontuacao).findFirst().orElse(0L);
+            pontuacao.setValor(pontos.intValue());
         });
     }
 
@@ -52,10 +50,14 @@ public class EntradaDadosService {
     }
 
     public List<EntradaKpiPontuacao> getKpiListByDataReferencia(EntradaKpi entradaKpi, String turno) {
-        return kpiRepository.findAll().stream()
+        List<Kpi> kpiList = kpiRepository.findAll();
+        return kpiList.stream()
                 .filter(kpi -> kpi.getTurnos().stream().anyMatch(t -> turno.equals(t.getNome()) && t.getPontuacao().stream().anyMatch(p -> entradaKpi.getDataReferencia().equals(p.getDataRealizacao()))))
-                .map(kpi -> EntradaKpiPontuacao.turnoToEntradaKpiPontuacao(kpi.getNome(), kpi.getTipoEntrada()))
-                .collect(Collectors.toList());
+                .map(kpi -> EntradaKpiPontuacao.turnoToEntradaKpiPontuacao(
+                        kpi.getNome(),
+                        kpi.getTipoEntrada(),
+                        kpi.getTurnos().stream().map(Turno::getPontuacao).map(p -> p.get(0)).map(Pontuacao::getEntrada).findFirst().orElse(0F)
+                )).collect(Collectors.toList());
     }
 
 }

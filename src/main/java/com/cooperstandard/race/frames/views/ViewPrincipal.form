@@ -136,7 +136,6 @@
               <Image iconType="3" name="/images/engrenagem.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xe3;o                 "/>
-            <Property name="enabled" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="horizontalTextPosition" type="int" value="10"/>
