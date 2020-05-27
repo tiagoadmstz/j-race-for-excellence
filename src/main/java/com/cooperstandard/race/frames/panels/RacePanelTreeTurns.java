@@ -29,7 +29,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
     /**
      * Creates new form RacePanel
      */
-    public RacePanelTreeTurns(Kpi kpi) {
+    public RacePanelTreeTurns(int meta, Kpi kpi) {
         initComponents();
         racePanel.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
         if (kpi != null) {
@@ -43,7 +43,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
                 jslider.setName(turno.getNome());
                 jslider.setMajorTickSpacing(10);
                 jslider.setValue(0);
-                jslider.setMaximum(kpi.getMeta() != null ? kpi.getMeta().intValue() : 0);
+                jslider.setMaximum(meta);
                 jslider.setPaintTrack(false);
                 jslider.setOpaque(false);
                 jslider.setEnabled(false);

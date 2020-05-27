@@ -4,14 +4,13 @@ import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.frames.views.EntradaDadosKpi;
 import com.cooperstandard.race.interfaces.CrudListener;
 import com.cooperstandard.race.interfaces.DefaultListenerCustom;
-import com.cooperstandard.race.models.EntradaKpiPontuacao;
 import com.cooperstandard.race.services.EntradaDadosService;
 import com.cooperstandard.race.tables.models.PontuacaoTableModel;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
-import java.util.List;
+import java.time.LocalDate;
 
 public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosKpi> implements CrudListener {
 
@@ -39,7 +38,7 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
             entradaDadosService = SpringContext.getContext().getBean(EntradaDadosService.class);
         //frame.getTbKpisAtivos().setCellEditor(new CheckBoxCellEditor());
         //frame.getTbKpisAtivos().getColumnModel().getColumn(1).setCellRenderer(new CheckBoxRenderer());
-        frame.getTbKpisAtivos().setModel(new PontuacaoTableModel(entradaDadosService.getKpiList()));
+        frame.getTbKpisAtivos().setModel(new PontuacaoTableModel(entradaDadosService.getKpiListByDataReferencia(frame.getSelectedTurno(), LocalDate.now())));
     }
 
     @Override
@@ -66,9 +65,7 @@ public class EntradaDadosKpiListener extends DefaultListenerCustom<EntradaDadosK
     }
 
     private void pesquisarLancamentoDia() {
-        List<EntradaKpiPontuacao> kpiListByDataReferencia = entradaDadosService.getKpiListByDataReferencia(frame.getEntradaKpi(), frame.getSelectedTurno());
-        if (kpiListByDataReferencia != null & !kpiListByDataReferencia.isEmpty())
-            frame.getTbKpisAtivosModel().setList(kpiListByDataReferencia);
+        frame.getTbKpisAtivosModel().setList(entradaDadosService.getKpiListByDataReferencia(frame.getSelectedTurno(), frame.getDataReferencia()));
     }
 
     public FocusAdapter focusDataReferencia() {

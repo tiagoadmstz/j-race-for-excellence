@@ -1,5 +1,6 @@
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\panels\RacePanelTwoTurns.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\factories\BeanFactory.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\repositories\CorridaRepository.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\repositories\PontuacaoRepository.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\listeners\CinderTrackListener.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\tables\renderers\ColorCellRenderer.java
@@ -56,6 +57,7 @@ C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\coo
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\listeners\CadastroKpiListener.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\EntradaKpi.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\Pontuacao.java
+C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\models\Corrida.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\dal\config\PersistenceConfiguration.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\enumerates\LOOKANDFEEL.java
 C:\Users\tiago.teixeira\IdeaProjects\j-race-for-excellence\src\main\java\com\cooperstandard\race\frames\panels\RacePanelOneTurn.java

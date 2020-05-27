@@ -2,14 +2,15 @@ package com.cooperstandard.race.services;
 
 import com.cooperstandard.race.dal.repositories.KpiRepository;
 import com.cooperstandard.race.dal.repositories.PontuacaoRepository;
+import com.cooperstandard.race.dal.repositories.TurnoRepository;
 import com.cooperstandard.race.models.*;
-import com.cooperstandard.race.util.ExecutionUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.swing.*;
-import java.util.ArrayList;
+import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,23 +20,17 @@ public class EntradaDadosService {
 
     private final PontuacaoRepository pontuacaoRepository;
     private final KpiRepository kpiRepository;
+    private final TurnoRepository turnoRepository;
 
-    public List<Pontuacao> saveOrUpdate(EntradaKpi entradaKpi) {
-        return ExecutionUtil.trySelfExecution(() -> {
-            setPontuacaoReal(entradaKpi.getKpiPontuacao());
-            List<Pontuacao> pontuacaoList = Pontuacao.entradaKpiToPontuacao(entradaKpi).stream()
-                    .map(pontuacao -> {
-                        pontuacao.setTurnoId(kpiRepository.findByNome(pontuacao.getKpi()).getTurnos().stream()
-                                .filter(turno -> entradaKpi.getTurno().equals(turno.getNome()))
-                                .findFirst().get().getId());
-                        pontuacao.setId(pontuacaoRepository.findIdByDataRealizacaoAndTurnoId(entradaKpi.getDataReferencia(), pontuacao.getTurnoId()).orElse(null));
-                        return pontuacao;
-                    })
-                    .collect(Collectors.toList());
-            List<Pontuacao> pontuacoes = pontuacaoRepository.saveAll(pontuacaoList);
-            JOptionPane.showMessageDialog(null, "Registro salvo com sucesso!");
-            return pontuacoes;
-        }, new ArrayList());
+    public void saveOrUpdate(EntradaKpi entradaKpi) {
+        setPontuacaoReal(entradaKpi.getKpiPontuacao());
+        Pontuacao.entradaKpiToPontuacao(entradaKpi)
+                .forEach(pt -> turnoRepository.findById(pt.getTurnoId())
+                        .ifPresent(t -> {
+                            t.setPontuacao(Arrays.asList(pt));
+                            turnoRepository.save(t);
+                        }));
+        JOptionPane.showMessageDialog(null, "Registro salvo com sucesso!");
     }
 
     public void setPontuacaoReal(List<EntradaKpiPontuacao> entradaKpiPontuacaoList) {
@@ -45,19 +40,10 @@ public class EntradaDadosService {
         });
     }
 
-    public List<EntradaKpiPontuacao> getKpiList() {
-        return kpiRepository.findAll().stream().map(kpi -> new EntradaKpiPontuacao(kpi.getNome(), kpi.getTipoEntrada())).collect(Collectors.toList());
-    }
-
-    public List<EntradaKpiPontuacao> getKpiListByDataReferencia(EntradaKpi entradaKpi, String turno) {
-        List<Kpi> kpiList = kpiRepository.findAll();
-        return kpiList.stream()
-                .filter(kpi -> kpi.getTurnos().stream().anyMatch(t -> turno.equals(t.getNome()) && t.getPontuacao().stream().anyMatch(p -> entradaKpi.getDataReferencia().equals(p.getDataRealizacao()))))
-                .map(kpi -> EntradaKpiPontuacao.turnoToEntradaKpiPontuacao(
-                        kpi.getNome(),
-                        kpi.getTipoEntrada(),
-                        kpi.getTurnos().stream().map(Turno::getPontuacao).map(p -> p.get(0)).map(Pontuacao::getEntrada).findFirst().orElse(0F)
-                )).collect(Collectors.toList());
+    public List<EntradaKpiPontuacao> getKpiListByDataReferencia(String turno, LocalDate dataReferencia) {
+        return kpiRepository.findByTurnosNomeAndTurnosPontuacaoDataRealizacao(turno, dataReferencia)
+                .map(kpis -> kpis.stream().map(EntradaKpiPontuacao::kpiToEntradaKpiPontuacao).collect(Collectors.toList()))
+                .orElseGet(() -> kpiRepository.findByTurnosNome(turno).stream().map(EntradaKpiPontuacao::kpiToEntradaKpiPontuacao).collect(Collectors.toList()));
     }
 
 }

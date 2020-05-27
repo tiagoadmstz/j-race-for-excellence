@@ -1,10 +1,7 @@
 package com.cooperstandard.race.models;
 
 import com.cooperstandard.race.converters.LocalDateConverter;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +11,8 @@ import java.util.stream.Collectors;
 
 @Data
 @Builder
+@ToString(exclude = "kpi")
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -41,12 +40,14 @@ public class Pontuacao implements Serializable {
         return entradaKpi.getKpiPontuacao().stream()
                 .map(pontuacao ->
                         Pontuacao.builder()
+                                .id(pontuacao.getPontuacaoId())
+                                .turnoId(pontuacao.getTurnoId())
                                 .dataRealizacao(entradaKpi.getDataReferencia())
                                 .kpi(pontuacao.getKpi())
                                 .entrada(pontuacao.getEntrada())
                                 .pontos(pontuacao.getValor())
-                                .build())
-                .collect(Collectors.toList());
+                                .build()
+                ).collect(Collectors.toList());
     }
 
 }

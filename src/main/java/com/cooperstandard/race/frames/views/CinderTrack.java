@@ -35,7 +35,7 @@ public class CinderTrack extends javax.swing.JFrame {
         new CinderTrackListener(this);
     }
 
-    public void initPanel(List<Kpi> kpi) {
+    public void initPanel(int meta, List<Kpi> kpi) {
         Integer[] raceSize = SpringContext.getContext().getBean(CooperstandardContext.class).getRaceSize();
         JPanel mainPanel = new JPanel();
         BoxLayout boxLayout = new BoxLayout(mainPanel, BoxLayout.PAGE_AXIS);
@@ -47,7 +47,7 @@ public class CinderTrack extends javax.swing.JFrame {
         mainPanel.add(new CabecalhoPanel());
 
         kpi.stream().forEach(k -> {
-            RacePanelTreeTurns racePanelTreeTurns = new RacePanelTreeTurns(k);
+            RacePanelTreeTurns racePanelTreeTurns = new RacePanelTreeTurns(meta, k);
             treeTurnsList.add(racePanelTreeTurns);
             mainPanel.add(racePanelTreeTurns);
         });

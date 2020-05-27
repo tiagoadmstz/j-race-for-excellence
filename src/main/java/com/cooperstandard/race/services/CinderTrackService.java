@@ -1,30 +1,28 @@
 package com.cooperstandard.race.services;
 
-import com.cooperstandard.race.dal.repositories.KpiRepository;
-import com.cooperstandard.race.dal.repositories.PontuacaoRepository;
+import com.cooperstandard.race.dal.repositories.CorridaRepository;
 import com.cooperstandard.race.frames.views.CinderTrack;
+import com.cooperstandard.race.models.Corrida;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.stream.Collectors;
+import java.time.LocalDate;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor(onConstructor_ = @Autowired)
 public class CinderTrackService {
 
     @Autowired
-    private final KpiRepository kpiRepository;
-    private final PontuacaoRepository pontuacaoRepository;
+    private final CorridaRepository corridaRepository;
 
     public void initRacePanel(CinderTrack cinderTrack) {
-        cinderTrack.initPanel(kpiRepository.findAll().stream().map(kpi -> {
-            kpi.setTurnos(kpi.getTurnos().stream().map(turno -> {
-                turno.setPontuacao(pontuacaoRepository.findByTurnoId(turno.getId()));
-                return turno;
-            }).collect(Collectors.toList()));
-            return kpi;
-        }).collect(Collectors.toList()));
+        Optional<Corrida> corridaOptional = corridaRepository.findById(1L);
+        if (corridaOptional.isPresent()) {
+            Corrida corrida = corridaOptional.get();
+            cinderTrack.initPanel(corrida.getMeta().intValue(), corrida.getKpis());
+        }
     }
 
 }

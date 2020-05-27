@@ -1,9 +1,6 @@
 package com.cooperstandard.race.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -12,6 +9,8 @@ import java.util.List;
 
 @Data
 @Builder
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -29,19 +28,17 @@ public class Kpi implements Serializable {
     private String tipoEntrada;
     @Column(name = "ATIVO", columnDefinition = "bit")
     private Boolean ativo;
-    @Column(name = "META")
-    private Long meta;
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<MetodoPontuacao> metodoPontuacao;
+    private List<MetodoPontuacao> metodoPontuacao = new ArrayList<>();
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Turno> turnos;
+    private List<Turno> turnos = new ArrayList<>();
 
-    public List<Pontuacao> getPontuacaoByTurnoName(String turno) {
-        return turnos.stream().filter(t -> turno.equals(t.getNome())).map(Turno::getPontuacao).findFirst().orElse(new ArrayList());
-    }
+    //public List<Pontuacao> getPontuacaoByTurnoName(String turno) {
+    //    return turnos.stream().filter(t -> turno.equals(t.getNome())).map(Turno::getPontuacao).findFirst().orElse(new ArrayList());
+    //}
 
-    public Turno getTurnoByNome(String turno) {
-        return turnos.stream().filter(t -> turno.equals(t.getNome())).findFirst().orElse(null);
-    }
+    //public Turno getTurnoByNome(String turno) {
+    //    return turnos.stream().filter(t -> turno.equals(t.getNome())).findFirst().orElse(null);
+    //}
 
 }

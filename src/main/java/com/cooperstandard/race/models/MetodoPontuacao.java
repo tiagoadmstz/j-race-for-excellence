@@ -1,15 +1,14 @@
 package com.cooperstandard.race.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
 @Builder
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -27,8 +26,6 @@ public class MetodoPontuacao implements Serializable {
     private String comparacao;
     @Column(name = "PONTUACAO")
     private Long pontuacao;
-    @Column(name = "COR")
-    private Integer cor;
 
     public Integer compararValores(Float valorEntrada) {
         switch (comparacao) {
