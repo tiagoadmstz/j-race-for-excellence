@@ -75,10 +75,10 @@ public class CinderTrack extends javax.swing.JFrame {
                     Thread.sleep(sleepTime.longValue());
                     treeTurnsList.forEach(panel -> {
                         Kpi kpi = SpringContext.getContext().getBean(KpiRepository.class).findByNome(panel.getName());
-                        kpi.setTurnos(kpi.getTurnos().stream().map(turno -> {
-                            turno.setPontuacao(SpringContext.getContext().getBean(PontuacaoRepository.class).findByTurnoId(turno.getId()));
-                            return turno;
-                        }).collect(Collectors.toList()));
+//                        kpi.setTurnos(kpi.getTurnos().stream().map(turno -> {
+//                            turno.setPontuacao(SpringContext.getContext().getBean(PontuacaoRepository.class).findByTurnoId(turno.getId()));
+//                            return turno;
+//                        }).collect(Collectors.toList()));
                         panel.setActualValue(kpi);
                     });
                 }

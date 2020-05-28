@@ -38,7 +38,7 @@ public class MetodoPontuacao implements Serializable {
             case "<=":
                 return valor <= valorEntrada ? pontuacao.intValue() : 0;
             case "=":
-                return valor == valorEntrada ? pontuacao.intValue() : 0;
+                return valor.equals(valorEntrada) ? pontuacao.intValue() : 0;
             default:
                 return 0;
         }

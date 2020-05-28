@@ -43,6 +43,10 @@ public class EntradaDadosKpi extends javax.swing.JFrame {
         return txtDataReferencia;
     }
 
+    public JComboBox<String> getCbTurno() {
+        return cbTurno;
+    }
+
     public String getSelectedTurno() {
         return cbTurno.getSelectedItem().toString();
     }

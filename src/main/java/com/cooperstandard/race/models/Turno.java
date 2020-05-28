@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Data
 @Builder
@@ -32,6 +33,18 @@ public class Turno implements Serializable {
     private List<Pontuacao> pontuacao = new ArrayList();
     @Transient
     private Long totalPontuacao = 0L;
+
+    public void addPontuacao(Pontuacao pontuacao) {
+        Optional<Pontuacao> optional = this.pontuacao.stream()
+                .filter(pt -> pt.getKpi().equals(pontuacao.getKpi())
+                        && pt.getDataRealizacao().isEqual(pontuacao.getDataRealizacao()))
+                .findFirst();
+        if (!optional.isPresent()) this.pontuacao.add(pontuacao);
+        optional.ifPresent(p -> {
+            p.setEntrada(pontuacao.getEntrada());
+            p.setPontos(pontuacao.getPontos());
+        });
+    }
 
     public Long getTotalPontuacao() {
         if (totalPontuacao == 0L) if (!pontuacao.isEmpty())

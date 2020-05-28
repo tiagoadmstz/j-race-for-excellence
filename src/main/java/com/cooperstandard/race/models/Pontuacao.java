@@ -33,7 +33,7 @@ public class Pontuacao implements Serializable {
     private Float entrada = 0F;
     @Column(name = "PONTOS")
     private Integer pontos = 0;
-    @Transient
+    @Column(name = "KPI")
     private String kpi;
 
     public static List<Pontuacao> entradaKpiToPontuacao(EntradaKpi entradaKpi) {
