@@ -20,6 +20,8 @@ public class CooperstandardContext {
     private Boolean raceUpdates = false;
     @Value("${cooperstandard.race-updates-time}")
     private Float raceUpdatesTime = 5.0F;
+    @Value("${cooperstandard.car-speed}")
+    private Long carSpeed = 50L;
     @Value("${cooperstandard.race-size}")
     private Integer[] raceSize = {1920, 1080};
     @Value("${cooperstandard.checkered-flag}")

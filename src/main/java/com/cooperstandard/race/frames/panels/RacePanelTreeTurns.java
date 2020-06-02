@@ -25,6 +25,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
 
     private static final long serialVersionUID = -5407934704880959443L;
     private Map<String, Object[]> tracks = new HashMap();
+    private CooperstandardContext cooperstandardContext;
 
     /**
      * Creates new form RacePanel
@@ -33,7 +34,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
         initComponents();
         racePanel.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 0)));
         if (kpi != null) {
-            CooperstandardContext cooperstandardContext = SpringContext.getContext().getBean(CooperstandardContext.class);
+            cooperstandardContext = SpringContext.getContext().getBean(CooperstandardContext.class);
             this.setName(kpi.getNome());
             lbKpi.setText(kpi.getNome());
             lbLargada.setIcon(ImageUtil.getImageIconFromUserPath(cooperstandardContext.getImagePath().concat(cooperstandardContext.getCheckeredFlag())));
@@ -62,7 +63,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
                     int v = 0;
                     while (v <= value) {
                         ((JSlider) entry.getValue()[0]).setValue(v);
-                        Thread.sleep(50L);
+                        Thread.sleep(cooperstandardContext.getCarSpeed());
                         v += 2;
                     }
                 } catch (Exception ex) {
@@ -82,7 +83,7 @@ public class RacePanelTreeTurns extends javax.swing.JPanel {
                             Long value = kpi.getTurnos().stream().filter(t -> t.getNome().equalsIgnoreCase(entry.getKey())).findFirst().get().getTotalPontuacao();
                             while (v <= value) {
                                 ((JSlider) entry.getValue()[0]).setValue(v.intValue());
-                                Thread.sleep(50L);
+                                Thread.sleep(cooperstandardContext.getCarSpeed());
                                 v += 2;
                             }
                         } catch (Exception ex) {

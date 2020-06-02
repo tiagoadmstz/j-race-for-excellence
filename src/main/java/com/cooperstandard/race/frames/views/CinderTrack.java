@@ -3,7 +3,6 @@ package com.cooperstandard.race.frames.views;
 import com.cooperstandard.race.config.CooperstandardContext;
 import com.cooperstandard.race.config.SpringContext;
 import com.cooperstandard.race.dal.repositories.KpiRepository;
-import com.cooperstandard.race.dal.repositories.PontuacaoRepository;
 import com.cooperstandard.race.frames.panels.CabecalhoPanel;
 import com.cooperstandard.race.frames.panels.RacePanelTreeTurns;
 import com.cooperstandard.race.listeners.CinderTrackListener;
@@ -15,7 +14,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author rsouza10
@@ -75,10 +73,6 @@ public class CinderTrack extends javax.swing.JFrame {
                     Thread.sleep(sleepTime.longValue());
                     treeTurnsList.forEach(panel -> {
                         Kpi kpi = SpringContext.getContext().getBean(KpiRepository.class).findByNome(panel.getName());
-//                        kpi.setTurnos(kpi.getTurnos().stream().map(turno -> {
-//                            turno.setPontuacao(SpringContext.getContext().getBean(PontuacaoRepository.class).findByTurnoId(turno.getId()));
-//                            return turno;
-//                        }).collect(Collectors.toList()));
                         panel.setActualValue(kpi);
                     });
                 }

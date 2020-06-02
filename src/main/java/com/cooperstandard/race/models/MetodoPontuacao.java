@@ -30,13 +30,13 @@ public class MetodoPontuacao implements Serializable {
     public Integer compararValores(Float valorEntrada) {
         switch (comparacao) {
             case ">":
-                return valor > valorEntrada ? pontuacao.intValue() : 0;
+                return valorEntrada > valor ? pontuacao.intValue() : 0;
             case ">=":
-                return valor >= valorEntrada ? pontuacao.intValue() : 0;
+                return valorEntrada >= valor ? pontuacao.intValue() : 0;
             case "<":
-                return valor < valorEntrada ? pontuacao.intValue() : 0;
+                return valorEntrada < valor ? pontuacao.intValue() : 0;
             case "<=":
-                return valor <= valorEntrada ? pontuacao.intValue() : 0;
+                return valorEntrada <= valor ? pontuacao.intValue() : 0;
             case "=":
                 return valor.equals(valorEntrada) ? pontuacao.intValue() : 0;
             default:

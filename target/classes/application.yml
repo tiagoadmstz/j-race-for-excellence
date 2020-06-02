@@ -1,2 +1,11 @@
+spring:
+  profiles:
+    active: dev
+
 cooperstandard:
-  icon: images/icon.jpeg
+  race-updates: true
+  race-updates-time: 0.5
+  race-size: 2500,1500
+  car-speed: 50
+  checkered-flag: largada.png
+  image-path: config/images/
